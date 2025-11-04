@@ -1,93 +1,198 @@
-# IEAT_ENT
+# โครงการพัฒนาซอฟต์แวร์ DOEB Phase 3
+
+[![PHP](https://img.shields.io/badge/PHP-%3E%3D%208.1-blue.svg)](https://www.php.net/)
+[![CodeIgniter](https://img.shields.io/badge/CodeIgniter-4-brightgreen.svg)](https://codeigniter.com/)
+[![Docker](https://img.shields.io/badge/Docker-ready-blueviolet.svg)](https://www.docker.com/)
+[![MS SQL Server](https://img.shields.io/badge/MS%20SQL%20Server-2022-red.svg)](https://www.microsoft.com/en-us/sql-server/sql-server-2022)
+[![License](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
+``` mermaid
+graph LR
+    A("PHP 8, CodeIgniter 4 (View/Controller)")
+    B("HTML, CSS, JavaScript")
+    C("PHP 8, CodeIgniter 4 (Model/Controller/Libraries/Helpers)")
+    D[("MS SQL Server 2022")]
 
-## Getting started
+    %% Presentation Tier
+    subgraph Presentation Tier
+        A
+        B
+    end
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+    %% Business Logic Tier
+    subgraph Business Logic Tier
+        C
+    end
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+    %% Data Access Tier
+    subgraph Data Access Tier
+        D
+    end
 
-## Add your files
-
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/ee/gitlab-basics/add-file.html#add-a-file-using-the-command-line) or push an existing Git repository with the following command:
-
+    A -- "SOAP XML" --> C
+    B -- (เรียกใช้) --> A
+    C -- Database Connection --> D
 ```
-cd existing_repo
-git remote add origin https://git.nidprotech.com/narapong.h/ieat_ent.git
-git branch -M main
-git push -uf origin main
-```
 
-## Integrate with your tools
+**ภาพรวมโครงการ**
 
-- [ ] [Set up project integrations](https://git.nidprotech.com/narapong.h/ieat_ent/-/settings/integrations)
+โครงการนี้เป็นการพัฒนาซอฟต์แวร์ประเภท **เว็บแอปพลิเคชันสำหรับบริหารจัดการโครงการ DOEB ระยะที่ 3** โดยมีวัตถุประสงค์เพื่อ **[???]** พัฒนาด้วยเทคโนโลยีหลักคือ 
+- PHP 8.1.x 
+- บน Framework CodeIgniter 4 
+- ทำงานบน Apache Web Server 
+- ใช้ MS SQL Server 2022
+- สถาปัตยกรรม N-Tier
+- Tier ทั้งหมดเป็น Docker เพื่อให้มีความยืดหยุ่นสูง ง่ายต่อการพัฒนาเพิ่มเติม การบำรุงรักษา และการปรับขนาด  
 
-## Collaborate with your team
+**สถาปัตยกรรมระบบ (N-Tier Architecture)**
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html)
+ระบบนี้ถูกออกแบบตามสถาปัตยกรรม N-Tier ซึ่งแบ่งการทำงานออกเป็น 3 ระดับชั้นหลัก ๆ ที่ทำงานแยกกันบน Server หรือ Container เพื่อให้เกิดการแบ่งแยกความรับผิดชอบและเพิ่มความสามารถในการปรับขนาด:
 
-## Test and Deploy
+1.  **Tier ที่ 1: Presentation Tier (Frontend/UI/UX)**
+    * **หน้าที่:** นำเสนอส่วนติดต่อผู้ใช้งาน (User Interface) และมอบประสบการณ์ที่ดีในการใช้งาน (User Experience) แก่ผู้ใช้ รวมถึงการรับคำสั่งจากผู้ใช้และแสดงผลข้อมูล
+    * **เทคโนโลยี:** PHP 8, CodeIgniter 4 (ส่วนของ View และ Controller ที่เกี่ยวข้องกับการแสดงผล) อาจมีการใช้เทคโนโลยี Frontend อื่น ๆ เพิ่มเติม เช่น HTML, CSS, JavaScript Framework/Library (ระบุหากมี เช่น Bootstrap, jQuery, Vue.js, React เป็นต้น)
+    * **การเชื่อมต่อ:** สื่อสารกับ Business Logic Tier (Tier 2) ผ่าน **SOAP XML**
 
-Use the built-in continuous integration in GitLab.
+2.  **Tier ที่ 2: Business Logic Tier (Application/Service Layer)**
+    * **หน้าที่:** ประมวลผลตรรกะทางธุรกิจ (Business Logic) ทั้งหมดของระบบ ทำหน้าที่เป็นตัวกลางในการรับคำร้องจาก Presentation Tier และส่งต่อไปยัง Data Access Tier รวมถึงการจัดการข้อมูลและการตรวจสอบความถูกต้อง
+    * **เทคโนโลยี:** PHP 8, CodeIgniter 4 (ส่วนของ Model, Controller ที่จัดการ Logic, Libraries, Helpers)
+    * **การเชื่อมต่อ:**
+        * รับคำร้องจาก Presentation Tier (Tier 1) ผ่าน **SOAP XML**
+        * เชื่อมต่อและสื่อสารกับ Database Server Tier (Tier 3) เพื่อเข้าถึงและจัดการข้อมูล
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/index.html)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+3.  **Tier ที่ 3: Data Access Tier (Database Server)**
+    * **หน้าที่:** ให้บริการระบบจัดการฐานข้อมูล (Database Management System) สำหรับจัดเก็บ จัดการ และเรียกค้นข้อมูลทั้งหมดของระบบ รวมถึงการรับประกันความถูกต้องและความปลอดภัยของข้อมูล
+    * **เทคโนโลยี:** MS SQL Server 2022
+    * **การเชื่อมต่อ:** อนุญาตให้เชื่อมต่อจาก Business Logic Tier (Tier 2) เท่านั้น โดยมีการกำหนดสิทธิ์การเข้าถึงที่เหมาะสมเพื่อความปลอดภัยของข้อมูล
 
-***
+**หลักการเขียนโค้ด**
 
-# Editing this README
+ทีมพัฒนาจะยึดมั่นและปฏิบัติตามหลักการเขียนโค้ดที่ดี เพื่อให้โค้ดมีคุณภาพสูง ง่ายต่อการอ่าน เข้าใจ ทดสอบ และบำรุงรักษา:
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+* **SOLID Principles:** นำหลักการ Single Responsibility, Open/Closed, Liskov Substitution, Interface Segregation, และ Dependency Inversion มาประยุกต์ใช้ในการออกแบบและพัฒนา เพื่อให้โค้ดมีความยืดหยุ่น ขยายง่าย ลดการพึ่งพาซึ่งกันและกัน และง่ายต่อการเปลี่ยนแปลง
+* **Clean Code:** ให้ความสำคัญกับการเขียนโค้ดที่ชัดเจน สื่อความหมายได้ดี มีชื่อตัวแปรและฟังก์ชันที่สื่อถึงหน้าที่การทำงาน หลีกเลี่ยงความซับซ้อนที่ไม่จำเป็น และเป็นไปตามมาตรฐานการเขียนโค้ดของ PHP และ CodeIgniter
+* **Coding Standards:** ปฏิบัติตามมาตรฐานการเขียนโค้ดของ **[PHP Standards Recommendations - PHP-FIG](https://www.php-fig.org/psr/)** เพื่อให้โค้ดในภาพรวมมีความสอดคล้องกัน
+* **Code Reviews:** มีกระบวนการตรวจสอบโค้ด (Code Review) ก่อนที่จะรวมโค้ดเข้าสู่ Branch หลัก เพื่อให้มั่นใจในคุณภาพของโค้ดและแลกเปลี่ยนความรู้ระหว่างทีมพัฒนา
 
-## Suggestions for a good README
+**แนวทางการทำงานร่วมกันบน GitLab**
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+เพื่อให้การทำงานร่วมกันในทีมเป็นไปอย่างราบรื่น มีประสิทธิภาพ และสามารถติดตามการเปลี่ยนแปลงของโค้ดได้อย่างเป็นระบบ เราจะใช้ Git Flow ร่วมกับ GitLab ดังนี้:
 
-## Name
-Choose a self-explaining name for your project.
+* **Branch หลัก:**
+    * `main` (**หรือ `production`**): สำหรับเก็บโค้ดที่พร้อมสำหรับการนำไปใช้งานจริง (Production-ready) และมีการ Tag Version อย่างเป็นทางการ
+    * `develop`: สำหรับเก็บโค้ดที่อยู่ระหว่างการพัฒนาและทดสอบในภาพรวม ถือเป็น Branch หลักสำหรับการรวมโค้ดจาก Feature Branches ต่าง ๆ
+* **Branch สำหรับพัฒนา (Feature/Task Branches):**
+    * นักพัฒนาแต่ละคนจะสร้าง Branch ใหม่แยกจาก `develop` สำหรับการพัฒนาแต่ละ Function, Feature, การแก้ไข Bug, การปรับปรุง (Enhancement) หรือ Task อื่น ๆ โดยมีชื่อ Branch ที่สื่อถึงวัตถุประสงค์ของการเปลี่ยนแปลงนั้น ๆ (เช่น `feature/user-authentication`, `fix/login-error`, `task/update-documentation`)
+* **Merge Request (MR) / Pull Request (PR):**
+    * เมื่อพัฒนาโค้ดบน Branch ของตนเองเสร็จสิ้นและต้องการรวมโค้ดเข้ากับ `develop` Branch นักพัฒนาจะต้องสร้าง Merge Request (ใน GitLab) หรือ Pull Request (ใน GitHub) เพื่อแจ้งให้ทีมทราบและขออนุมัติการรวมโค้ด
+* **การตรวจสอบ Merge Request:**
+    * จะมีผู้รับผิดชอบ (อาจเป็น Lead Developer หรือผู้ที่ได้รับมอบหมาย) ในการตรวจสอบโค้ดที่ส่งมาใน Merge Request อย่างละเอียด ก่อนที่จะทำการ Merge เพื่อให้มั่นใจว่าโค้ดมีคุณภาพ ตรงตามข้อกำหนด และไม่มีข้อผิดพลาด
+    * นักพัฒนาควรทำการทดสอบการรวมโค้ดกับ `develop` Branch ใน Local Repository ของตนเองก่อน (โดยใช้คำสั่ง `git pull origin develop` แล้ว Merge เข้ากับ Branch ของตนเอง) เพื่อแก้ไข Conflict ที่อาจเกิดขึ้นบน Remote Repository ล่วงหน้า
+* **Hotfix Branches:**
+    * สำหรับกรณีที่มี Bug สำคัญที่ต้องแก้ไขอย่างเร่งด่วนบน Production Branch จะมีการสร้าง Branch แยกจาก `main` (หรือ `production`) โดยมีชื่อนำหน้าด้วย `hotfix/` เมื่อแก้ไขเสร็จแล้วจะ Merge กลับทั้ง `main` (หรือ `production`) และ `develop` เพื่อให้ทั้งสอง Branch มีโค้ดที่แก้ไขล่าสุด
+* **Release Branches (Optional):**
+    * ในบาง Workflow อาจมีการสร้าง Release Branch แยกจาก `develop` ก่อนที่จะ Merge เข้าสู่ `main` (หรือ `production`) เพื่อใช้ในการทดสอบขั้นสุดท้ายและเตรียมการสำหรับการ Deploy
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+**การบริหารจัดการ Issue และ Task ด้วย Issue Board**
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+Project Manager (PM), Business Analyst (BA), และ Application Support (AS) จะใช้ GitLab Issue Board (หรือระบบ Issue Tracking อื่น ๆ ที่ระบุ) ในการบริหารจัดการ Issue และ Task ต่าง ๆ ที่เกี่ยวข้องกับโครงการ เพื่อให้การทำงานมีความชัดเจน สามารถติดตามความคืบหน้า และสื่อสารกันได้อย่างมีประสิทธิภาพ:
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+* **การสร้าง Issue:** PM, BA, และ AS (หรือผู้ที่พบปัญหา/ต้องการเสนอแนะ) จะเป็นผู้สร้าง Issue เมื่อพบปัญหาการใช้งานจากผู้ใช้งาน รายงาน Bug หรือเมื่อต้องการสื่อถึงการพัฒนา Enhancement, การเพิ่มหรือแก้ไข Function/Feature
+* **การมอบหมายงาน:** PM จะเป็นผู้มอบหมาย Issue หรือ Task ให้กับนักพัฒนาที่เหมาะสม
+* **การใช้งานโดยนักพัฒนา:** นักพัฒนาจะใช้ Issue Board เพื่อติดตามงานที่ได้รับมอบหมาย อัปเดตสถานะความคืบหน้า แสดงความคิดเห็น หรือสอบถามข้อมูลเพิ่มเติม เพื่อให้ทุกคนในทีมรับทราบสถานะของงานได้อย่างทั่วถึง
+* **การปิด Issue:** เมื่อ Issue หรือ Task นั้น ๆ เสร็จสิ้นและได้รับการตรวจสอบแล้ว ผู้ที่รับผิดชอบจะทำการปิด Issue
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+**Label บน Issue Board**
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+เราจะใช้ Label เพื่อสื่อถึงสถานะ ประเภท และความสำคัญของแต่ละ Issue/Task เพื่อให้การจัดการและจัดลำดับความสำคัญของงานเป็นไปอย่างมีประสิทธิภาพ:
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+* **สถานะ:**
+    1.  `Open`: สำหรับ Issue ใหม่ที่ยังไม่ได้ถูกนำมาพิจารณาหรือมอบหมายงาน
+    2.  `To Do`: สำหรับ Issue ที่ได้รับการพิจารณาแล้ว แต่ยังไม่ได้เริ่มดำเนินการ
+    3.  `In Progress`: สำหรับ Issue ที่กำลังอยู่ในระหว่างการพัฒนาหรือแก้ไข
+    4.  ~~`Ready for Review`: สำหรับ Issue ที่พัฒนาหรือแก้ไขเสร็จแล้วและพร้อมสำหรับการตรวจสอบโค้ด~~ **(ขั้นตอนนี้ตัดออก)**
+    5.  `Ready for Testing`: สำหรับ Issue ที่ผ่านการตรวจสอบโค้ดแล้วและพร้อมสำหรับการทดสอบโดย QA หรือผู้ที่เกี่ยวข้อง
+    6.  `Ready for Deployment`: สำหรับ Issue ที่ผ่านการทดสอบแล้วและรอการนำไปใช้งานจริง
+    7.  `Closed`: สำหรับ Issue ที่ได้รับการแก้ไข/ดำเนินการเรียบร้อยแล้ว
+    8.  `Cancel`: สำหรับ Issue ที่ไม่ต้องดำเนินการ
+* **ประเภท:**
+    1.  `Bug`: ระบุว่าเป็น Issue ที่เกิดจากข้อผิดพลาดในการทำงานของระบบ
+    2.  `Feature`: ระบุว่าเป็น Issue ที่เกี่ยวข้องกับการเพิ่ม Function/Feature ใหม่ให้กับระบบ
+    3.  `Enhancement`: ระบุว่าเป็น Issue ที่เกี่ยวข้องกับการปรับปรุง Function/Feature ที่มีอยู่ให้ดีขึ้น
+    4.  `Suggestion`: ระบุว่า Issue เป็นข้อเสนอแนะ และยังไม่มีการตัดสินใจว่าจะดำเนินการหรือไม่
+    5.  `Discussion`: ระบุว่าเป็น Issue ที่ต้องการการพูดคุยหรือแลกเปลี่ยนความคิดเห็นเพิ่มเติม
+    6.  `Documentation`: ระบุว่าเป็น Issue ที่เกี่ยวข้องกับการปรับปรุงหรือเพิ่มเติมเอกสาร
+* **ความสำคัญ (Priority):**
+    1.  `Low`: ความสำคัญต่ำ สามารถดำเนินการได้ในลำดับหลัง
+    2.  ~~`Medium`: ความสำคัญปานกลาง ควรดำเนินการตามลำดับ~~ (ตัดออก)
+    3.  `High`: ความสำคัญสูง ควรดำเนินการโดยเร็ว
+    4.  `Critical`: ความสำคัญสูงสุด ต้องได้รับการแก้ไขโดยเร่งด่วนที่สุด
+* **อื่น ๆ (Optional):** อาจมีการเพิ่ม Label อื่น ๆ ตามความจำเป็นของโครงการ เช่น `Frontend`, `Backend`, `API`, `Database` เพื่อระบุส่วนของระบบที่เกี่ยวข้อง
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+**การ Deploy**
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+การ Deploy ระบบจะดำเนินการโดยการ Deploy ทุก Tier ในรูปแบบ Docker Container เพื่อให้การติดตั้งและจัดการเป็นไปอย่างง่ายดาย สม่ำเสมอ และสามารถทำซ้ำได้ โดยจะมีการ **[อธิบายรายละเอียดเพิ่มเติมเกี่ยวกับการ Deploy]** และมีการ Map Volume ในส่วนของ Folder ที่เก็บ Source Code ของ PHP (สำหรับ Tier 1 และ 2) เพื่อให้ง่ายต่อการปรับปรุงและแก้ไขโค้ดในภายหลังโดยไม่ต้อง Rebuild Container ใหม่ทุกครั้ง
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+**การเตรียมเครื่องสำหรับนักพัฒนา (Developer Setup)**
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+เพื่อให้การเริ่มต้นพัฒนาเป็นไปอย่างราบรื่น นักพัฒนาจะต้องติดตั้งและตั้งค่าเครื่องมือและสภาพแวดล้อมที่จำเป็นดังนี้:
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+1.  **ติดตั้ง Docker:** ติดตั้ง Docker Desktop (สำหรับ Windows/macOS) หรือ Docker Engine และ Docker Compose (สำหรับ Linux) ตามระบบปฏิบัติการของคุณ สามารถดาวน์โหลดและติดตั้งได้จาก [https://www.docker.com/](https://www.docker.com/) และ [https://docs.docker.com/compose/install/](https://docs.docker.com/compose/install/)
+2.  **ติดตั้ง VS Code:** ติดตั้ง Visual Studio Code ซึ่งเป็น Editor ที่แนะนำสำหรับการพัฒนาโครงการนี้ พร้อมด้วย Extensions ที่จำเป็นสำหรับ PHP และ Docker เพื่อเพิ่มประสิทธิภาพในการทำงาน สามารถดาวน์โหลดได้จาก [https://code.visualstudio.com/](https://code.visualstudio.com/)
+3.  **ติดตั้ง PHP:** ตรวจสอบให้แน่ใจว่า PHP เวอร์ชั่น **8.1 หรือสูงกว่า** ติดตั้งอยู่ในเครื่องของคุณ (แนะนำให้ใช้เวอร์ชั่นล่าสุดที่ Stable) หากยังไม่มี สามารถดาวน์โหลดและติดตั้งได้จาก [https://www.php.net/downloads.php](https://www.php.net/downloads.php)
+4.  **ติดตั้ง Composer:** Composer เป็น Dependency Manager สำหรับ PHP ติดตั้ง Composer ตามคำแนะนำในเว็บไซต์ [https://getcomposer.org/](https://getcomposer.org/)
+5.  **ติดตั้งส่วนขยาย PHP ที่จำเป็น:** ตรวจสอบให้แน่ใจว่าส่วนขยาย PHP เหล่านี้ถูกเปิดใช้งานอยู่ในไฟล์ `php.ini` ของคุณ:
+    * `intl` (Internationalization)
+    * `mbstring` (Multibyte String)
+    * `json` (JavaScript Object Notation) - โดยปกติจะเปิดใช้งานอยู่แล้ว
+    * `pdo` และ Driver สำหรับ MS SQL Server (`pdo_sqlsrv` หรือ `sqlsrv`) - จำเป็นสำหรับการเชื่อมต่อฐานข้อมูล
+    * `libxml` (libxml2) - อาจจำเป็นสำหรับ SOAP หรือ XML อื่น ๆ
+    * `curl` (Client URL Library) - สำหรับการทำ HTTP Request
+    * `gd` (GD Library) - สำหรับการจัดการรูปภาพ (หากมีการใช้งาน)
+    * ส่วนขยายอื่น ๆ ที่ระบุใน `composer.json`
 
-## License
-For open source projects, say how it is licensed.
+    **คำเตือน:** PHP เวอร์ชั่น 7.4 สิ้นสุดการสนับสนุนเมื่อวันที่ 28 พฤศจิกายน 2565 และ PHP เวอร์ชั่น 8.0 สิ้นสุดการสนับสนุนเมื่อวันที่ 26 พฤศจิกายน 2566 **โปรดอัปเกรดเป็น PHP เวอร์ชั่น 8.1 หรือสูงกว่าทันที** เพื่อความปลอดภัยและการรองรับ Feature ใหม่ ๆ PHP เวอร์ชั่น 8.1 จะสิ้นสุดการสนับสนุนในวันที่ 25 พฤศจิกายน 2526 (ค.ศ. 2026)
+6.  **Clone Repository:** Clone Repository ของโครงการนี้จาก GitLab มายังเครื่องของคุณโดยใช้คำสั่ง:
+    ```bash
+    git clone https://git.nidprotech.com/nid_doeb_phase_3/doeb_p3_backend.git
+    git clone https://git.nidprotech.com/nid_doeb_phase_3/doeb_p3_frontend.git
+    ```
+7.  **ตั้งค่า Environment:**
+    * คัดลอกไฟล์ `.env.example` (หรือ `env`) เป็น `.env`
+    * ปรับตั้งค่าในไฟล์ `.env` ให้เหมาะสมกับการพัฒนาของคุณ โดยเฉพาะ `baseURL`, การตั้งค่าฐานข้อมูล (แม้ว่า Tier 3 จะแยกอยู่ แต่การตั้งค่าใน Tier 1 และ 2 อาจจำเป็นสำหรับการพัฒนาในบางส่วน), และการตั้งค่าอื่น ๆ ที่เกี่ยวข้องกับ Environment
+8.  **ติดตั้ง Dependencies:** ภายใน Root Directory ของ Project ให้รันคำสั่ง Composer เพื่อติดตั้ง Dependencies ที่จำเป็น:
+    ```bash
+    composer install
+    ```
+9.  **การตั้งค่า Web Server (Apache):**
+    * ตรวจสอบให้แน่ใจว่า Apache Web Server ติดตั้งและทำงานบนเครื่องของคุณ
+    * กำหนด Virtual Host ให้ชี้ไปยัง Folder `public` ภายใน Project Directory ของคุณ **สำคัญ:** ต้องชี้ไปที่ `public` Folder เท่านั้น ไม่ใช่ Root ของ Project เนื่องจากไฟล์ `index.php` ถูกย้ายไปอยู่ใน `public` Folder เพื่อความปลอดภัยและการแยกส่วนประกอบที่ดีขึ้น
+    * ตรวจสอบให้แน่ใจว่า Module `mod_rewrite` ถูกเปิดใช้งานใน Apache Configuration (`httpd.conf` หรือไฟล์ Virtual Host) เพื่อให้ CodeIgniter สามารถจัดการ Routing ได้อย่างถูกต้อง
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+    **ตัวอย่าง Virtual Host Configuration (อาจแตกต่างกันไปขึ้นอยู่กับการตั้งค่า Apache ของคุณ):**
+    ```apache
+    <VirtualHost *:80>
+        ServerName your_project.local
+        DocumentRoot "/path/to/your/project/public"
+        <Directory "/path/to/your/project/public">
+            Options Indexes FollowSymLinks
+            AllowOverride All
+            Require all granted
+        </Directory>
+        ErrorLog "<span class="math-inline">\{APACHE\_LOG\_DIR\}/error\.log"
+CustomLog "</span>{APACHE_LOG_DIR}/access.log combined"
+    </VirtualHost>
+    ```
+    อย่าลืมแก้ไข `/etc/hosts` ไฟล์ของคุณเพื่อ Map `your_project.local` ไปยัง `127.0.0.1` (หรือ IP Address ของเครื่องคุณ) และ Restart Apache Server หลังจากตั้งค่า Virtual Host
+
+10. **Docker (Optional แต่แนะนำ):**
+    * สำหรับนักพัฒนาที่ต้องการใช้ Docker ในการพัฒนา สามารถศึกษา `Dockerfile` และ `docker-compose.yml` (ถ้ามี) ที่อยู่ใน Repository เพื่อสร้างและรัน Container สำหรับแต่ละ Tier ได้ ซึ่งจะช่วยให้ Environment ในการพัฒนามีความสอดคล้องกับ Production มากยิ่งขึ้น
+    * ตรวจสอบให้แน่ใจว่า Docker Daemon ทำงานอยู่ก่อนที่จะรัน Container ด้วยคำสั่ง `docker-compose up -d` (หากมีไฟล์ `docker-compose.yml`)
+
+**เอกสารเพิ่มเติม**
+
+* **คู่มือผู้ใช้ CodeIgniter 4:** [https://codeigniter.com/userguide4/](https://codeigniter.com/userguide4/)
+* **เว็บไซต์หลัก CodeIgniter:** [https://codeigniter.com/](https://codeigniter.com/)
+* **เอกสาร Docker:** [https://docs.docker.com/](https://docs.docker.com/)
+* **เอกสาร Docker Compose:** [https://docs.docker
