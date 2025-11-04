@@ -1,4 +1,4 @@
-# โครงการพัฒนาซอฟต์แวร์ DOEB Phase 3
+# โครงการพัฒนาซอฟต์แวร์
 
 [![PHP](https://img.shields.io/badge/PHP-%3E%3D%208.1-blue.svg)](https://www.php.net/)
 [![CodeIgniter](https://img.shields.io/badge/CodeIgniter-4-brightgreen.svg)](https://codeigniter.com/)
@@ -37,7 +37,7 @@ graph LR
 
 **ภาพรวมโครงการ**
 
-โครงการนี้เป็นการพัฒนาซอฟต์แวร์ประเภท **เว็บแอปพลิเคชันสำหรับบริหารจัดการโครงการ DOEB ระยะที่ 3** โดยมีวัตถุประสงค์เพื่อ **[???]** พัฒนาด้วยเทคโนโลยีหลักคือ 
+โครงการนี้เป็นการพัฒนาซอฟต์แวร์ประเภท **เว็บแอปพลิเคชัน** โดยมีวัตถุประสงค์เพื่อ **[???]** พัฒนาด้วยเทคโนโลยีหลักคือ 
 - PHP 8.1.x 
 - บน Framework CodeIgniter 4 
 - ทำงานบน Apache Web Server 
