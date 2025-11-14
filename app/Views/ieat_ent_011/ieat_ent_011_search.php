@@ -2,10 +2,12 @@
 <!-- DataTables -->
 
 <?= $this->section("content"); ?>
+<!--
 <div class="class_header_page_02">
     <button onclick="window.location.href='center_ieat_ent'" style="background-color: #ff0000ff; color:aliceblue;">กลับสู่หน้าหลัก</button>
 </div>
 <hr />
+-->
 <div class="class_header_page_02">
     <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
@@ -85,14 +87,14 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">สำนักงานใหญ่ตั้งอยู่ที่</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                <span><b>เลขที่ 1</b><?php echo $_SESSION['addrno_office_view']; ?></span>
-                                                <span><b>หมู่ที่ 1</b><?php echo $_SESSION['moo_office_view']; ?></span>
+                                                <span><b>เลขที่ 9999</b><?php echo $_SESSION['addrno_office_view']; ?></span>
+                                                <span><b>หมู่ที่ 9999</b><?php echo $_SESSION['moo_office_view']; ?></span>
                                                 <span><b>ซอย -</b><?php echo $_SESSION['lane_office_view']; ?></span>
                                                 <span><b>ถนน -</b><?php echo $_SESSION['street_office_view']; ?></span>
-                                                <span><b>ตำบล ลำปลาทิว</b><?php echo $_SESSION['district_office_view']; ?></span>
-                                                <span><b>อำเภอ ลาดกระบัง</b><?php echo $_SESSION['amphur_office_view']; ?></span>
-                                                <span><b>จังหวัด กรุงเทพมหานคร</b><?php echo $_SESSION['province_office_view']; ?></span>
-                                                <span><b>รหัสไปรษณีย์ 10520</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
+                                                <span><b>ตำบล คลองสวน</b><?php echo $_SESSION['district_office_view']; ?></span>
+                                                <span><b>อำเภอ บางบ่อ</b><?php echo $_SESSION['amphur_office_view']; ?></span>
+                                                <span><b>จังหวัด สมุทรปราการ</b><?php echo $_SESSION['province_office_view']; ?></span>
+                                                <span><b>รหัสไปรษณีย์ 10560</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
                                             </div>
                                         </td>
                                     </tr>
@@ -124,7 +126,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">โรงงานตั้งอยู่ในนิคมอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                บางชัน<?php echo $_SESSION['industrial_name_view']; ?>
+                                                เอเซีย (สุวรรณภูมิ)<?php echo $_SESSION['industrial_name_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -585,7 +587,24 @@
 
                     <div class="card p-4">
                         <div class="row">
-                            <div class="col-6" align="left">
+                            <div class="col-4" align="left">
+                                <div class="table-responsive div_header p-4">
+                                    <div class="card-header">
+                                        <span class="font_header"><b>ข้าพเจ้ามีความประสงค์จะทำธุรกรรมอิเล็กทรอนิกส์กับ</b></span>
+                                    </div>
+                                    <br />
+                                    <div class="row row-form">
+                                        <div class="col-lg-12">
+                                            <div class="col-lg-12">
+                                                <select class="form-control">
+                                                    <option value="0">-- เลือกข้อมูล --</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-4" align="left">
                                 <div class="table-responsive div_header p-4">
                                     <div class="card-header">
                                         <span class="font_header"><b>ข้อมูลที่อยู่สำหรับออกใบกำกับภาษี</b></span>
@@ -602,7 +621,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6" align="left">
+                            <div class="col-4" align="left">
                                 <div class="table-responsive div_header p-4">
                                     <div class="card-header">
                                         <span class="font_header"><b>ข้อมูลผู้ติดต่อ</b></span>
@@ -1850,16 +1869,7 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="table-detail-left radio-header">5. สำเนาหนังสืออนุญาตใช้ที่ดินพร้อมเงื่อนไขแนบท้าย (กรณีใช้ที่ดินเพิ่ม)</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">6. เอกสารอื่นๆที่เกี่ยวข้อง</td>
+                                        <td class="table-detail-left radio-header">5. เอกสารอื่นๆที่เกี่ยวข้อง</td>
                                         <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
