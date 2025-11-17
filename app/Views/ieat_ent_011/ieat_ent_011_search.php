@@ -1386,8 +1386,8 @@
                                 <div class="col-2" align="left">
                                     <span class="font_header"><b>จำนวนหมายเลขโทรศัพท์</b></span>
                                 </div>
-                                <div class="col-2" align="left">
-                                    <input type="text" id="horse_power_estimate" name="horse_power_estimate" class="form-control" style="text-align:right" value="<?php echo $datashow['horse_power_estimate']; ?>" />
+                                <div class="col-1" align="left">
+                                    <span class="font_header"><b>5</b></span>
                                 </div>
                                 <div class="col-8" align="left">
                                     <span class="font_header"><b>เลขหมาย</b></span>
