@@ -44,7 +44,8 @@
         .font_header {
             font-family: 'Kanit', sans-serif !important;
             color: #000000ff;
-            font-size: 22px;
+            font-size: 21px;
+            font-weight: bolder;
         }
 
         .font_header_detail {

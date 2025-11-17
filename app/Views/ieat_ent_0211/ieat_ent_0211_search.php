@@ -257,6 +257,94 @@
                     </div>
 
                     <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ข้อมูลที่ตั้งโรงงานตามโฉนดที่ดิน</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <input type="hidden" name="factory_address_id_view" value="<?php echo $datashow['factory_address_id_view']; ?>" />
+                            <table class="table">
+                                <tr>
+                                    <td>
+                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>เลขที่โฉนดอ้างอิง</b></span></label>
+                                    </td>
+                                    <td colspan="2">
+                                        <input type="text" id="title_deed_view" name="title_deed_view" class="validate[required] col-lg-12 form-control" value="<?php echo $datashow['title_deed_view']; ?>" />
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="bottom">
+                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>จังหวัด</b></span></label>
+                                    </td>
+                                    <td valign="top">
+                                        <span id="province">
+                                            <select class="form-control col-sm-12">
+                                                <option value="0">- เลือกจังหวัด -</option>
+                                            </select>
+                                        </span>
+                                    </td>
+                                    <td valign="bottom">
+                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>อำเภอ/เขต</b></span></label>
+                                    </td>
+                                    <td valign="top">
+                                        <span id="amphur">
+                                            <select class="form-control col-sm-12">
+                                                <option value='0'>- เลือกอำเภอ -</option>
+                                            </select>
+                                        </span>
+                                    </td>
+                                    <td valign="bottom">
+                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>ตำบล/แขวง</b></span></label>
+                                    </td>
+                                    <td valign="top">
+                                        <span id="district">
+                                            <select class="form-control col-sm-12">
+                                                <option value='0'>- เลือกตำบล -</option>
+                                            </select>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan='4'>
+                                        <font color='red'><b>กรณีที่ตั้งโรงงานตามโฉนดที่ดิน มีมากกว่า 1 จังหวัด หรือ 1 อำเภอ หรือ 1 ตำบล</b></font>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td valign="bottom" width='20%'>
+                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>จังหวัด</b></span></label>
+                                    </td>
+                                    <td valign="top">
+                                        <span id="province2">
+                                            <select class="form-control col-sm-12">
+                                                <option value="0">- เลือกจังหวัด -</option>
+                                            </select>
+                                        </span>
+                                    </td>
+                                    <td valign="bottom">
+                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>อำเภอ/เขต</b></span></label>
+                                    </td>
+                                    <td valign="top">
+                                        <span id="amphur2">
+                                            <select class="form-control col-sm-12">
+                                                <option value='0'>- เลือกอำเภอ -</option>
+                                            </select>
+                                        </span>
+                                    </td>
+                                    <td valign="bottom">
+                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>ตำบล/แขวง</b></span></label>
+                                    </td>
+                                    <td valign="top">
+                                        <span id="district2">
+                                            <select class="form-control col-sm-12">
+                                                <option value='0'>- เลือกตำบล -</option>
+                                            </select>
+                                        </span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="card p-4">
                         <div class="row">
                             <div class="col-4" align="left">
                                 <div class="table-responsive div_header p-4">
@@ -315,953 +403,144 @@
                 </div>
 
                 <div class="tab-pane" id="tab2">
+
                     <div class="card p-4">
                         <div class="card-header">
-                            <span class="font_header"><b>ความประสงค์</b></span>
+                            <span class="font_header"><b>รายละเอียดอาคารที่จะขออนุญาต</b></span>
                         </div>
                         <div class="table-responsive div_header p-4">
-                            <div class="panel-heading">
-                                <span class="font_header_detail"><b>
-                                        เลือก
-                                        <?php if ($datashow['operation_type_status_01'] == '1' or $datashow['operation_type_status'] == '1'): ?>
-                                            <?php $style_show_operation_type_status_view_01 = ""; ?>
-                                            <input type="checkbox" id="operation_type_status_01" name="operation_type_status_01" value="1" checked="checked" />
-                                        <?php else: ?>
-                                            <?php $style_show_operation_type_status_view_01 = "style='display: none;'"; ?>
-                                            <input type="checkbox" id="operation_type_status_01" name="operation_type_status_01" value="1" />
-                                        <?php endif; ?>
-                                        เพิ่มหรือเปลี่ยนแปลงประเภทการประกอบกิจการ
-                                    </b></span>
-                            </div>
-                            <input type="hidden" id="old_operation_type_view" name="old_operation_type_view" value="<?php echo $_SESSION['businesstype_view']; ?>" />
                             <br />
-                            <!-- 1.1. เพิ่มหรือเปลี่ยนแปลงประเภทการประกอบกิจการ Hiding -->
-                            <div id="show_001" class="panel-body div_header p-4">
-                                <div class="radio-lists">
-                                    <span class="font_header_detail">
-                                        <?php if ($datashow['operation_type_modify_view'] == '1'): ?>
-                                            <?php $style_show_operation_type_modify_view_01 = ""; ?>
-                                            <input type="radio" id="add_operation_type_view_01" name="operation_type_modify_view" value="1" checked="checked" />
-                                        <?php else: ?>
-                                            <?php $style_show_operation_type_modify_view_01 = "style='display: none;'"; ?>
-                                            <input type="radio" id="add_operation_type_view_01" name="operation_type_modify_view" value="1" />
-                                        <?php endif; ?>
-                                        เพิ่มประเภทการประกอบกิจการตามใบอนุญาตประกอบอุตสาหกรรม <font color="red">(ค่าออกใบอนุญาต 5,000 บาท)</font>
-                                        &nbsp;&nbsp;&nbsp;&nbsp;
-                                        <?php if ($datashow['operation_type_modify_view'] == '2'): ?>
-                                            <?php $style_show_operation_type_modify_view_02 = ""; ?>
-                                            <input type="radio" id="operation_type_modify_view_02" name="operation_type_modify_view" value="2" checked="checked" />
-                                        <?php else: ?>
-                                            <?php $style_show_operation_type_modify_view_02 = "style='display: none;'"; ?>
-                                            <input type="radio" id="operation_type_modify_view_02" name="operation_type_modify_view" value="2" />
-                                        <?php endif; ?>
-                                        เปลี่ยนแปลงประเภทการประกอบกิจการตามใบอนุญาตประกอบอุตสาหกรรม <font color="red">(ค่าออกใบอนุญาต 10,000 บาท)</font>
-                                    </span>
-                                </div>
-                                <!-- 1.1 -->
-                                <div id="show_01" <?php echo $style_show_operation_type_modify_view_01; ?>>
-                                    <!-- Table -->
-                                    <table class="table table-striped table-hover table-bordered table-responsive">
-                                        <thead>
-                                            <tr class="info">
-                                                <th style="text-align: center;">ประเภทการประกอบกิจการ (เดิม)</th>
-                                                <th style="text-align: center;">ประเภทการประกอบกิจการ (เพิ่มเติม)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="table-detail-left" width="60%"><?php echo $_SESSION['businesstype_view']; ?></td>
-                                                <td width="40%">
-                                                    <center>
-                                                        <textarea rows="3" class="form-control" id="add_operation_type_view" name="add_operation_type_view"><?php echo $datashow['add_operation_type_view']; ?></textarea>
-                                                    </center>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- End Table -->
-                                </div>
-                                <!-- End 1.1 -->
-                                <!-- 1.2 -->
-                                <div id="show_02" <?php echo $style_show_operation_type_modify_view_02; ?>>
-                                    <!-- Table -->
-                                    <table class="table table-striped table-hover table-bordered table-responsive">
-                                        <thead>
-                                            <tr class="info">
-                                                <th style="text-align: center;">ประเภทการประกอบกิจการ (เดิม)</th>
-                                                <th style="text-align: center;">ประเภทการประกอบกิจการ (เปลี่ยนแปลง)</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="table-detail-left" width="60%">
-                                                    <?php echo $_SESSION['businesstype_view']; ?>
-                                                </td>
-                                                <td width="40%">
-                                                    <center>
-                                                        <textarea rows="3" class="form-control" id="new_operation_type_view" name="new_operation_type_view"><?php echo $datashow['new_operation_type_view']; ?></textarea>
-                                                    </center>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!-- End Table -->
-                                </div>
-                                <br />
-                                <!-- End 1.2 -->
-                                <!-- Attached Files -->
-                                <!-- Table -->
-                                <table class="table">
-                                    <thead>
-                                        <tr class="info">
-                                            <th colspan="2" style="text-align: center;"><span class="font_header_detail">โปรดแนบเอกสารเพื่อประกอบการพิจารณา : เพิ่มหรือเปลี่ยนแปลงประเภทการประกอบกิจการ</span></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="table-detail-left" width="60%">
-                                                1. เอกสารที่เกี่ยวข้องกับกระบวนการผลิต
-                                                <br />
-                                                <font color="red">
-                                                    หมายเหตุ : ต้องมีการลงนามรับรองเอกสารโดยกรรมการผู้มีอำนาจลงนามพร้อมตราประทับบริษัทฯ ตามหนังสือรับรองฯ หรือผู้รับมอบอำนาจตามหนังสือมอบอำนาจ
-                                                </font>
-                                            </td>
-                                            <td width="40%">
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile">
-                                                    <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="table-detail-left">
-                                                2. เอกสารมาตรการจัดการมลภาวะที่เกิดขึ้นจากการประกอบกิจการ
-                                                <br />
-                                                <font color="red">
-                                                    หมายเหตุ : ต้องมีการลงนามรับรองเอกสารโดยกรรมการผู้มีอำนาจลงนามพร้อมตราประทับบริษัทฯ ตามหนังสือรับรองฯ หรือผู้รับมอบอำนาจตามหนังสือมอบอำนาจ
-                                                </font>
-                                            </td>
-                                            <td>
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile">
-                                                    <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="table-detail-left">
-                                                3. หนังสือเห็นชอบจากสำนักงานนโยบายและแผนทรัพยากรฯ กรณีเข้าข่ายต้องจัดทำรายงานการวิเคราะห์ผลกระทบสิ่งแวดล้อม EIA / EHIA /IEE
-                                            </td>
-                                            <td>
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile">
-                                                    <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="table-detail-left">
-                                                4. บันทึกความเห็นจากกรมโรงงานอุตสาหกรรม กรณีเข้าข่ายประเภทหรือชนิดของโรงงานลำดับที่ 101, 105, 106 ตามพระราชบัญญัติโรงงาน พ.ศ. 2535
-                                            </td>
-                                            <td>
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile">
-                                                    <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="table-detail-left">5. หนังสือยืนยันความสามารถในการรองรับสาธารณูปโภค</td>
-                                            <td>
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile">
-                                                    <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- End Table -->
-                            </div>
-                        </div>
-                        <br />
-                        <div class="table-responsive div_header p-4">
-                            <div class="panel-heading">
-                                <span class="font_header_detail">
-                                    เลือก
-                                    <?php if ($datashow['operation_type_status_04'] == '4' or $datashow['operation_type_status'] == '4'): ?>
-                                        <?php $style_show_operation_type_status_04 = ""; ?>
-                                        <input type="checkbox" id="operation_type_status_04" name="operation_type_status_04" value="4" checked="checked" />
-                                    <?php else: ?>
-                                        <?php $style_show_operation_type_status_04 = "style='display: none;'"; ?>
-                                        <input type="checkbox" id="operation_type_status_04" name="operation_type_status_04" value="4" />
-                                    <?php endif; ?>
-                                    เปลี่ยนชื่อผู้รับใบอนุญาตประกอบอุตสาหกรรม <font color="red">(โดยการจดทะเบียนเปลี่ยนชื่อตามกฎหมาย)</font>
-                                    <font color="red">(ค่าออกใบอนุญาต 1,000 บาท)</font>
-                                </span>
-                            </div>
-                            <br />
-                            <div class="panel-body div_header p-4">
-                                <!-- Attached Files -->
-                                <!-- Table -->
-                                <table class="table">
-                                    <thead>
-                                        <tr class="info">
-                                            <th colspan="2" style="text-align: left;"><span class="font_header_detail">ชื่อผู้รับใบอนุญาตประกอบอุตสาหกรรม <font color="red">(เดิม)</font>
-                                            </th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="table-detail-left" width="20%">
-                                                <span class="font_header_detail">ชื่อบุคคล/นิติบุคคล ภาษาไทย</span>
-                                            </td>
-                                            <td width="80%">
-                                                บริษัท ทดสอบ จำกัด
-                                                <?php echo $_SESSION['companyname_th_view']; ?>
-                                                <input type="hidden" name="old_corporate_name_thai_view" id="old_corporate_name_thai_view" value="<?php echo $_SESSION['companyname_th_view']; ?>" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="table-detail-left" width="20%">
-                                                <span class="font_header_detail">ชื่อบุคคล/นิติบุคคล ภาษาอังกฤษ</span>
-                                            </td>
-                                            <td width="80%">
-                                                Tester Company
-                                                <?php echo $_SESSION['companyname_en_view']; ?>
-                                                <input type="hidden" name="old_corporate_name_eng_view" id="old_corporate_name_eng_view" value="<?php echo $_SESSION['companyname_en_view']; ?>" />
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- End Table -->
-                                <!-- Table -->
-                                <table class="table">
-                                    <thead>
-                                        <tr class="info">
-                                            <th colspan="2" style="text-align: left;"><span class="font_header_detail">ชื่อผู้รับใบอนุญาตประกอบอุตสาหกรรม <font color="red">(ใหม่)</font></span></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="table-detail-left" width="20%">
-                                                <span class="font_header_detail">ชื่อบุคคล/นิติบุคคล ภาษาไทย</span>
-                                            </td>
-                                            <td width="80%">
-                                                <input type="text" class="form-control" id="new_corporate_name_thai_view" name="new_corporate_name_thai_view" value="<?php echo $datashow['new_corporate_name_thai_view']; ?>" />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="table-detail-left" width="20%">
-                                                <span class="font_header_detail">ชื่อบุคคล/นิติบุคคล ภาษาอังกฤษ</span>
-                                            </td>
-                                            <td width="80%">
-                                                <input type="text" class="form-control" id="new_corporate_name_eng_view" name="new_corporate_name_eng_view" value="<?php echo $datashow['new_corporate_name_eng_view']; ?>" />
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <!-- End Table -->
-                            </div>
-                        </div>
-                        <br />
-                        <div class="table-responsive div_header p-4">
-                            <div class="panel-heading">
-                                <span class="font_header_detail">
-                                    เลือก
-                                    <?php if ($datashow['operation_type_status_10'] == '10' or $datashow['operation_type_status'] == '10'): ?>
-                                        <?php $style_show_operation_type_status_10 = ""; ?>
-                                        <input type="checkbox" id="operation_type_status_10" name="operation_type_status_10" value="10" checked="checked" />
-                                    <?php else: ?>
-                                        <?php $style_show_operation_type_status_10 = "style='display: none;'"; ?>
-                                        <input type="checkbox" id="operation_type_status_10" name="operation_type_status_10" value="10" />
-                                    <?php endif; ?>
-                                    การแก้ไขที่อยู่สำนักงานในใบอนุญาตฯ <font color="red">(ค่าออกใบอนุญาต 1,000 บาท)</font>
-                                </span>
-                            </div>
-                            <br />
-                            <div class="panel-body div_header p-4">
-                                <div class="row row-form">
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_location_no_view"> เลขที่</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_location_no_view"
-                                                name="factory_location_no_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_location_no_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_moo_view"> หมู่ที่</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_moo_view"
-                                                name="factory_moo_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_moo_view']; ?>" style="width: 100%;" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_building_name_view"> อาคาร</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_building_name_view"
-                                                name="factory_building_name_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_building_name_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_floor_view"> ชั้น</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_floor_view"
-                                                name="factory_floor_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_floor_view']; ?>" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row row-form">
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_room_view" style="margin-top:5px;"> ห้อง</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_room_view"
-                                                name="factory_room_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_room_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_room_view" style="margin-top:5px;"> ตรอก/ซอย</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_soi_view"
-                                                name="factory_soi_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_soi_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_room_view" style="margin-top:5px;"> ถนน</div>
-                                        <div class="col-sm-12">
-                                            <input type="text" id="factory_street_view"
-                                                name="factory_street_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_street_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        &nbsp;
-                                    </div>
-                                </div>
-                                <div class="row row-form">
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_province_id_view" style="margin-top:5px;">จังหวัด</div>
-                                        <div class="col-lg-12">
-                                            <select class="form-control">
-                                                <option value="0">- เลือกจังหวัด -</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_amphur_id_view" style="margin-top:5px;">เขต/อําเภอ</div>
-                                        <div class="col-lg-12">
-                                            <select class="form-control">
-                                                <option value='0'>- เลือกอำเภอ -</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_sub_district_id_view" style="margin-top:5px;"> ตําบล/แขวง</span></div>
-                                        <div class="col-lg-12">
-                                            <select class="form-control">
-                                                <option value='0'>- เลือกตำบล -</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_zipcode_id_view" style="margin-top:5px;"> รหัสไปรษณีย์</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_zipcode_id_view"
-                                                name="factory_zipcode_id_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_zipcode_id_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row row-form" style="margin-top:40px;">
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no1_view">โทรศัพท์ 1</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_phone_no1_view"
-                                                name="factory_phone_no1_view"
-                                                class="form-control inputMask-phone"
-                                                value="<?php echo $datashow['factory_phone_no1_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no_ext1_view"> เบอร์ต่อ</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_phone_no_ext1_view"
-                                                name="factory_phone_no_ext1_view"
-                                                class="form-control inputMask-numeric"
-                                                value="<?php echo $datashow['factory_phone_no_ext1_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no2_view">โทรศัพท์ 2</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_phone_no2_view"
-                                                name="factory_phone_no2_view"
-                                                class="form-control inputMask-phone"
-                                                value="<?php echo $datashow['factory_phone_no2_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no_ext2_view"> เบอร์ต่อ</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_phone_no_ext2_view"
-                                                name="factory_phone_no_ext2_view"
-                                                class="form-control inputMask-numeric"
-                                                value="<?php echo $datashow['factory_phone_no_ext2_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no3_view">โทรศัพท์ 3</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_phone_no3_view"
-                                                name="factory_phone_no3_view"
-                                                class="form-control inputMask-phone"
-                                                value="<?php echo $datashow['factory_phone_no3_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no_ext3_view"> เบอร์ต่อ</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_phone_no_ext3_view"
-                                                name="factory_phone_no_ext3_view"
-                                                class="col-sm-12 form-control inputMask-numeric"
-                                                value="<?php echo $datashow['factory_phone_no_ext3_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row row-form">
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_fax_no_view"> โทรสาร</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_fax_no_view"
-                                                name="factory_fax_no_view"
-                                                class="form-control inputMask-phone"
-                                                value="<?php echo $datashow['factory_fax_no_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_fax_no_ext_view"> เบอร์ต่อ</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_fax_no_ext_view"
-                                                name="factory_fax_no_ext_view"
-                                                class="form-control inputMask-numeric"
-                                                value="<?php echo $datashow['factory_fax_no_ext_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_email_view"> อีเมล์</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_email_view"
-                                                name="factory_email_view"
-                                                class="validate[custom[email]] form-control"
-                                                value="<?php echo $datashow['factory_email_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6" style="margin-top:10px;">
-                                        ตัวอย่างอีเมล์ <i style="color:blue">sample@email.com</i><br />
-                                        กรณีมีมากกว่า 1 อีเมลล์ให้คั่นด้วยเครื่องหมายจุลภาค ( , ) ตัวอย่าง <i style="color:blue">sample1 @email.com, sample2 @email.com</i>
-                                    </div>
-                                </div>
-
-                                <div class="row row-form" style="margin-top:40px;">
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-12 form-label" for="factory_email_view">พิกัดที่ตั้งอาคารโรงงาน ละติจูด</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_latitude_view"
-                                                name="factory_latitude_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_latitude_view']; ?>" onkeypress="return numbersonly(event)" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-12 form-label" for="factory_email_view">พิกัดที่ตั้งอาคารโรงงาน ลองติจูด</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_longtitude_view"
-                                                name="factory_longtitude_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_longtitude_view']; ?>" onkeypress="return numbersonly(event)" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <br />
-                        <div class="table-responsive div_header p-4">
-                            <div class="panel-heading">
-                                <span class="font_header_detail">
-                                    เลือก
-                                    <?php if ($datashow['operation_type_status_11'] == '11' or $datashow['operation_type_status'] == '11'): ?>
-                                        <?php $style_show_operation_type_status_11 = ""; ?>
-                                        <input type="checkbox" id="operation_type_status_11" name="operation_type_status_11" value="11" checked="checked" />
-                                    <?php else: ?>
-                                        <?php $style_show_operation_type_status_11 = "style='display: none;'"; ?>
-                                        <input type="checkbox" id="operation_type_status_11" name="operation_type_status_11" value="11" />
-                                    <?php endif; ?>
-                                    การแก้ไขที่อยู่โรงงานในใบอนุญาตฯ <font color="red">(ค่าออกใบอนุญาต 1,000 บาท)</font>
-                                </span>
-                            </div>
-                            <br />
-                            <div class="panel-body div_header p-4">
-                                <div class="row row-form">
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_location_no_view"> เลขที่</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_location_no_view"
-                                                name="factory_location_no_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_location_no_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_moo_view"> หมู่ที่</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_moo_view"
-                                                name="factory_moo_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_moo_view']; ?>" style="width: 100%;" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_building_name_view"> อาคาร</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_building_name_view"
-                                                name="factory_building_name_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_building_name_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_floor_view"> ชั้น</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_floor_view"
-                                                name="factory_floor_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_floor_view']; ?>" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row row-form">
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_room_view" style="margin-top:5px;"> ห้อง</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_room_view"
-                                                name="factory_room_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_room_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_room_view" style="margin-top:5px;"> ตรอก/ซอย</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_soi_view"
-                                                name="factory_soi_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_soi_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_room_view" style="margin-top:5px;"> ถนน</div>
-                                        <div class="col-sm-12">
-                                            <input type="text" id="factory_street_view"
-                                                name="factory_street_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_street_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        &nbsp;
-                                    </div>
-                                </div>
-                                <div class="row row-form">
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_province_id_view" style="margin-top:5px;">จังหวัด</div>
-                                        <div class="col-lg-12">
-                                            <select class="form-control">
-                                                <option value="0">- เลือกจังหวัด -</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_amphur_id_view" style="margin-top:5px;">เขต/อําเภอ</div>
-                                        <div class="col-lg-12">
-                                            <select class="form-control">
-                                                <option value='0'>- เลือกอำเภอ -</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_sub_district_id_view" style="margin-top:5px;"> ตําบล/แขวง</span></div>
-                                        <div class="col-lg-12">
-                                            <select class="form-control">
-                                                <option value='0'>- เลือกตำบล -</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="col-lg-6 form-label" for="factory_zipcode_id_view" style="margin-top:5px;"> รหัสไปรษณีย์</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_zipcode_id_view"
-                                                name="factory_zipcode_id_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_zipcode_id_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row row-form" style="margin-top:40px;">
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no1_view">โทรศัพท์ 1</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_phone_no1_view"
-                                                name="factory_phone_no1_view"
-                                                class="form-control inputMask-phone"
-                                                value="<?php echo $datashow['factory_phone_no1_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no_ext1_view"> เบอร์ต่อ</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_phone_no_ext1_view"
-                                                name="factory_phone_no_ext1_view"
-                                                class="form-control inputMask-numeric"
-                                                value="<?php echo $datashow['factory_phone_no_ext1_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no2_view">โทรศัพท์ 2</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_phone_no2_view"
-                                                name="factory_phone_no2_view"
-                                                class="form-control inputMask-phone"
-                                                value="<?php echo $datashow['factory_phone_no2_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no_ext2_view"> เบอร์ต่อ</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_phone_no_ext2_view"
-                                                name="factory_phone_no_ext2_view"
-                                                class="form-control inputMask-numeric"
-                                                value="<?php echo $datashow['factory_phone_no_ext2_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no3_view">โทรศัพท์ 3</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_phone_no3_view"
-                                                name="factory_phone_no3_view"
-                                                class="form-control inputMask-phone"
-                                                value="<?php echo $datashow['factory_phone_no3_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_phone_no_ext3_view"> เบอร์ต่อ</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_phone_no_ext3_view"
-                                                name="factory_phone_no_ext3_view"
-                                                class="col-sm-12 form-control inputMask-numeric"
-                                                value="<?php echo $datashow['factory_phone_no_ext3_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row row-form">
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_fax_no_view"> โทรสาร</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_fax_no_view"
-                                                name="factory_fax_no_view"
-                                                class="form-control inputMask-phone"
-                                                value="<?php echo $datashow['factory_fax_no_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_fax_no_ext_view"> เบอร์ต่อ</div>
-                                        <div class="col-lg-6">
-                                            <input type="text" id="factory_fax_no_ext_view"
-                                                name="factory_fax_no_ext_view"
-                                                class="form-control inputMask-numeric"
-                                                value="<?php echo $datashow['factory_fax_no_ext_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-6 form-label" for="factory_email_view"> อีเมล์</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_email_view"
-                                                name="factory_email_view"
-                                                class="validate[custom[email]] form-control"
-                                                value="<?php echo $datashow['factory_email_view']; ?>" />
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6" style="margin-top:10px;">
-                                        ตัวอย่างอีเมล์ <i style="color:blue">sample@email.com</i><br />
-                                        กรณีมีมากกว่า 1 อีเมลล์ให้คั่นด้วยเครื่องหมายจุลภาค ( , ) ตัวอย่าง <i style="color:blue">sample1 @email.com, sample2 @email.com</i>
-                                    </div>
-                                </div>
-
-                                <div class="row row-form" style="margin-top:40px;">
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-12 form-label" for="factory_email_view">พิกัดที่ตั้งอาคารโรงงาน ละติจูด</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_latitude_view"
-                                                name="factory_latitude_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_latitude_view']; ?>" onkeypress="return numbersonly(event)" />
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-2">
-                                        <div class="col-lg-12 form-label" for="factory_email_view">พิกัดที่ตั้งอาคารโรงงาน ลองติจูด</div>
-                                        <div class="col-lg-12">
-                                            <input type="text" id="factory_longtitude_view"
-                                                name="factory_longtitude_view"
-                                                class="form-control"
-                                                value="<?php echo $datashow['factory_longtitude_view']; ?>" onkeypress="return numbersonly(event)" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <table class="table">
-                                <thead>
-                                    <tr class="info">
-                                        <th colspan="2" style="text-align: center;">โปรดแนบเอกสารเพื่อประกอบการพิจารณา : การแก้ไขที่อยู่โรงงานในใบอนุญาตฯ</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="table-detail-left" width="60%">
-                                            สำเนาทะเบียนบ้านของโรงงาน
-                                            <br />
-                                            <font color="red">
-                                                หมายเหตุ : ต้องมีการลงนามรับรองเอกสารโดยกรรมการผู้มีอำนาจลงนามพร้อมตราประทับบริษัทฯ ตามหนังสือรับรองฯ หรือผู้รับมอบอำนาจตามหนังสือมอบอำนาจ
-                                            </font>
-                                        </td>
-                                        <td width="40%">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                </tbody>
+                            <input class="btn btn-success" type="button" value="เพิ่มข้อมูล" onClick="addRow02('datatable02')" />
+                            <input class="btn btn-danger" type="button" value="ลบข้อมูล" onClick="deleteRow02('datatable02')" />
+                            <br /><br />
+                            <table width="100%" border="0" align="center" cellpadding="5" cellspacing="1" id="datatable02" class="table table-bordered">
+                                <tr>
+                                    <th class="text-center">เลือก</th>
+                                    <th class="text-center">ลักษณะอาคาร</th>
+                                    <th class="text-center">จำนวนชั้น</th>
+                                    <th class="text-center">ลักษณะประกอบอื่นๆ</th>
+                                    <th class="text-center">จำนวนอาคาร</th>
+                                    <th class="text-center">หน่วย</th>
+                                    <th class="text-center">ความกว้าง : เมตร</th>
+                                    <th class="text-center">ความยาว: เมตร</th>
+                                    <th class="text-center">ความสูง : เมตร</th>
+                                    <th class="text-center">พื้นที่ : ตารางเมตร</th>
+                                    <th class="text-center">เพื่อใช้เป็น</th>
+                                </tr>
+                                <tr>
+                                    <td align="left"><input type="checkbox" name="chk2" value="" /></td>
+                                    <td align="left">
+                                        <select name="building_characteristic_id_view[]">
+                                            <option value="0">- เลือกข้อมูล -</option>
+                                        </select>
+                                    </td>
+                                    <td align="left">
+                                        <input name="building_total_floor_view[]" type="text" id="building_total_floor_view" size="5" value="" />
+                                    </td>
+                                    <td align="left">
+                                        <select name="building_characteristic_id_view[]">
+                                            <option value="0">- เลือกข้อมูล -</option>
+                                        </select>
+                                    </td>
+                                    <td align="left">
+                                        <input name="building_amount_view[]" type="text" id="building_amount_view" size="5" value="" />
+                                    </td>
+                                    <td align="left">
+                                        <select name="building_characteristic_id_view[]">
+                                            <option value="0">- เลือกข้อมูล -</option>
+                                        </select>
+                                    </td>
+                                    <td align="left">
+                                        <input name="building_width_view[]" type="text" id="building_width_view" size="5" value="" />
+                                    </td>
+                                    <td align="left">
+                                        <input name="building_length_view[]" type="text" id="building_length_view" size="5" value="" />
+                                    </td>
+                                    <td align="left">
+                                        <input name="building_height_view[]" type="text" id="building_height_view" size="5" value="" />
+                                    </td>
+                                    <td align="left">
+                                        <input name="building_area_view[]" type="text" id="building_area_view" size="5" value="" />
+                                    </td>
+                                    <td align="left">
+                                        <select name="building_characteristic_id_view[]">
+                                            <option value="0">- เลือกข้อมูล -</option>
+                                        </select>
+                                    </td>
+                                </tr>
                             </table>
                         </div>
-                        <br />
-                        <div class="table-responsive div_header p-4">
-                            <div class="panel-heading">
-                                <span class="font_header_detail">
-                                    เลือก
-                                    <?php if ($datashow['operation_type_status_11'] == '11' or $datashow['operation_type_status'] == '11'): ?>
-                                        <?php $style_show_operation_type_status_11 = ""; ?>
-                                        <input type="checkbox" id="operation_type_status_11" name="operation_type_status_11" value="11" checked="checked" />
-                                    <?php else: ?>
-                                        <?php $style_show_operation_type_status_11 = "style='display: none;'"; ?>
-                                        <input type="checkbox" id="operation_type_status_11" name="operation_type_status_11" value="11" />
-                                    <?php endif; ?>
-                                    การแก้ไขที่ดิน <font color="red">(ค่าออกใบอนุญาต 1,000 บาท)</font>
-                                </span>
-                            </div>
-                            <br />
-                            <div class="panel-body div_header p-4">
-                                <div class="botton-add-and-delete-row">
-                                    <input type='button' class="btn btn-success" value="เพิ่มข้อมูล (Add)" onClick="addRow01('datatable_land')" />
-                                    <input type='button' class="btn btn-danger" value="ลบข้อมูล (Delete)" onClick="deleterow01('datatable_land')" />
-                                </div>
-                                <br />
-                                <table id="datatable_land" class="table table-bordered">
-                                    <thead>
-                                        <tr>
-                                            <th class="table-head-tab" style="text-align: center; vertical-align: top;">เลือกลบ</th>
-                                            <th class="table-head-tab" style="text-align: center; vertical-align: top;">เลขที่แปลง</th>
-                                            <th class="table-head-tab" style="text-align: center; vertical-align: top;">ไร่</th>
-                                            <th class="table-head-tab" style="text-align: center; vertical-align: top;">งาน</th>
-                                            <th class="table-head-tab" style="text-align: center; vertical-align: top;">ตารางวา</th>
-                                            <th class="table-head-tab" style="text-align: center; vertical-align: top;">ตารางเมตร</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td align="center"><input type="checkbox" name="chk" value="<?php echo $land_id_view; ?>" /></td>
-                                            <td align="center">
-                                                <input class="form-control" type="text" name="land_no_view[]" id="land_no_view" value="<?php echo $result_data_grid_01['land_no_view']; ?>" />
-                                            </td>
-                                            <td align="center">
-                                                <input class="form-control" name="land_area_rai_view[]" type="text" id="land_area_rai_view" size="5" value="<?php echo $result_data_grid_01['land_area_rai_view']; ?>" onkeyup="sum_land('datatable_land')" />
-                                            </td>
-                                            <td align="center">
-                                                <input class="form-control" name="land_area_ngan_view[]" type="text" id="land_area_ngan_view" size="5" value="<?php echo $result_data_grid_01['land_area_ngan_view']; ?>" onkeyup="sum_land('datatable_land')" />
-                                            </td>
-                                            <td align="center">
-                                                <input class="form-control" name="land_area_square_wah_view[]" type="text" id="land_area_square_wah_view" size="5" value="<?php echo $result_data_grid_01['land_area_square_wah_view']; ?>" onkeyup="sum_land('datatable_land')" />
-                                            </td>
-                                            <td align="center">
-                                                <input class="form-control" name="land_area_square_meter_view[]" type="text" id="land_area_square_meter_view" size="5" value="<?php echo $result_data_grid_01['land_area_square_meter_view']; ?>" onkeyup="sum_land('datatable_land')" />
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table id="datatable01_1" class="table table-bordered">
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <span>รวมพื้นที่ ไร่ งาน วา <b>:</b> </span>
-                                                <span style="margin-left:20px;">
-                                                    <input class="form-control" style="display:inline-block; width:100px;" type="text" name="rai_sum" id="rai_sum" size="5" value="<?php echo $fields; ?>" readonly="readonly" />
-                                                </span>
-                                                <span>ไร่</span>
-                                                <span style="margin-left:20px;">
-                                                    <input class="form-control" style="display:inline-block; width:100px;" type="text" name="ngan_sum" id="ngan_sum" size="5" value="<?php echo $jobs; ?>" readonly="readonly" />
-                                                </span>
-                                                <span>งาน</span>
-                                                <span style="margin-left:20px;">
-                                                    <input class="form-control" style="display:inline-block; width:100px;" type="text" name="wa_sum" id="wa_sum" size="5" value="<?php echo $sqrMeters; ?>" readonly="readonly" />
-                                                </span>
-                                                <span>วา</span>
-                                                <span style="margin-left:30px; margin-right:20px;">|</span>
-                                                <span>รวมพื้นที่ ตารางเมตร (total)</span>
-                                                <span>
-                                                    <input class="form-control" style="display:inline-block; width:100px;" type="text" name="squaremeter_sum" id="squaremeter_sum" size="5" value="<?php echo $sq_meter; ?>" readonly="readonly" />
-                                                </span>
-                                                <span>ตารางเมตร</span>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                    </tr>
-                                </table>
-                                <table class="table">
-                                    <thead>
-                                        <tr class="info">
-                                            <th colspan="2" style="text-align: center;">โปรดแนบเอกสารเพื่อประกอบการพิจารณา : การแก้ไขที่ดิน</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="table-detail-left" width="60%">
-                                                1. โฉนดที่ดิน (สำเนา)
-                                            </td>
-                                            <td width="40%">
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile">
-                                                    <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td class="table-detail-left" width="60%">
-                                                2. ผังแม่บท (กรณีแก้ไขเลขที่กำกับแปลง)
-                                            </td>
-                                            <td width="40%">
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile">
-                                                    <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
+                    </div>
+                    <br />
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ผู้ออกแบบและควบคุมงาน</b></span>
                         </div>
-                        <br />
                         <div class="table-responsive div_header p-4">
-                            <div class="panel-heading">
-                                <span class="font_header_detail">
-                                    เลือก
-                                    <?php if ($datashow['operation_type_status_11'] == '11' or $datashow['operation_type_status'] == '11'): ?>
-                                        <?php $style_show_operation_type_status_11 = ""; ?>
-                                        <input type="checkbox" id="operation_type_status_11" name="operation_type_status_11" value="11" checked="checked" />
-                                    <?php else: ?>
-                                        <?php $style_show_operation_type_status_11 = "style='display: none;'"; ?>
-                                        <input type="checkbox" id="operation_type_status_11" name="operation_type_status_11" value="11" />
-                                    <?php endif; ?>
-                                    แก้ไขเงื่อนไขแนบท้าย <font color="red">(ค่าออกใบอนุญาต 1,000 บาท)</font>
-                                </span>
-                            </div>
-                            <br />
-                            <div class="panel-body div_header p-4">
-                                <table broder="0">
-                                    <thead>
-                                        <tr class="info">
-                                            <th colspan="2" style="text-align: left;"><span class="font_header_detail">ระบุรายละเอียด</span></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td width="100%">
-                                                <textarea name="detail_13" cols="200" rows="5"><?php echo $datashow['detail_13']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <table class="table">
-                                    <thead>
-                                        <tr class="info">
-                                            <th colspan="2" style="text-align: center;"><span class="font_header_detail">โปรดแนบเอกสารเพื่อประกอบการพิจารณา : แก้ไขเงื่อนไขแนบท้าย</span></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="table-detail-left">
-                                                หนังสือเห็นชอบจาก สผ./ กนอ. กรณีเข้าข่ายต้องจัดทำรายงานการวิเคราะห์ผลกระทบสิ่งแวดล้อม EIA /IEE
-                                            </td>
-                                            <td width="40%">
-                                                <div class="custom-file">
-                                                    <input type="file" class="custom-file-input" id="customFile">
-                                                    <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                                </div>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
+                            <input class="btn btn-success" type="button" value="เพิ่มข้อมูล" onClick="addRow04('datatable04')" />
+                            <input class="btn btn-danger" type="button" value="ลบข้อมูล" onClick="deleteRow04('datatable04')" />
+                            <br /><br />
+                            <table width="100%" border="0" align="center" cellpadding="5" cellspacing="1" id="datatable03" name='datatable03' class="table-bordered">
+                                <tr>
+                                    <th class="text-center">เลือก</th>
+                                    <th class="text-center">คำนำหน้าชื่อ</th>
+                                    <th class="text-center">ชื่อ</th>
+                                    <th class="text-center">นามสกุล</th>
+                                    <th class="text-center">ความรับผิดชอบ</th>
+                                    <th class="text-center">ประเภท</th>
+                                    <th class="text-center">สาขา</th>
+                                    <th class="text-center">อักษรย่อ</th>
+                                    <th class="text-center">เลขทะเบียนประกอบวิชาชีพ<br />
+                                        <font color='red'>**กรอกเฉพาะตัวเลข**</font>
+                                    </th>
+                                    <th class="text-center">วันที่ใบอนุญาตหมดอายุ</th>
+                                    <th class="text-center">ประเภทใบทะเบียน</th>
+                                </tr>
+                                <tr>
+                                    <td align="left"><input type="checkbox" name="chk2" value="" /></td>
+                                    <td align="left">
+                                        <select name="title_id_view[]">
+                                            <option value="0">- เลือกข้อมูล -</option>
+                                        </select>
+                                    </td>
+                                    <td align="left">
+                                        <input name="firstname_view[]" type="text" id="firstname_view" />
+                                    </td>
+                                    <td align="left">
+                                        <input name="lastname_view[]" type="text" id="lastname_view" />
+                                    </td>
+                                    <td align="left">
+                                        <select name="construction_job_id_view[]" onchange="fncConstructionChange(this);">
+                                            <option value="0">- เลือกข้อมูล -</option>
+                                        </select>
+                                    </td>
+                                    <td align="left">
+                                        <select name="category_id_view[]" onchange="fncCategoryChange(this);">
+                                            <option value="0">- เลือกข้อมูล -</option>
+                                        </select>
+                                    </td>
+                                    <td align="left">
+                                        <select name="major_id_view[]" onchange="fncMajorChange(this);">
+                                            <option value="0">- เลือกข้อมูล -</option>
+                                        </select>
+                                    </td>
+                                    <td align="left">
+                                        <input name="engineer_license_name[]" type="text" id="engineer_license_name" value="" maxlength='2' size='5' readonly />
+                                    </td>
+                                    <td align="left">
+                                        <input name="engineer_license_type_id_view[]" type="text" id="engineer_license_type_id_view" maxlength='5' OnKeyPress="return chkNumber(this)" />
+                                    </td>
+                                    <td align="left">
+                                        <input name="license_issue_date_view[]" type="text" id="license_issue_date_view" readonly />
+                                    </td>
+                                    <td align="left">
+                                        <select name="license_duration_type_id_view[]">
+                                            <option value="0">- เลือกข้อมูล -</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
                         </div>
-                        <br />
-                        <div class="table-responsive div_header p-4">
-                            <div class="panel-heading">
-                                <span class="font_header_detail">
-                                    เลือก
-                                    <?php if ($datashow['operation_type_status_11'] == '11' or $datashow['operation_type_status'] == '11'): ?>
-                                        <?php $style_show_operation_type_status_11 = ""; ?>
-                                        <input type="checkbox" id="operation_type_status_11" name="operation_type_status_11" value="11" checked="checked" />
-                                    <?php else: ?>
-                                        <?php $style_show_operation_type_status_11 = "style='display: none;'"; ?>
-                                        <input type="checkbox" id="operation_type_status_11" name="operation_type_status_11" value="11" />
-                                    <?php endif; ?>
-                                    แก้ไขหนังสืออนุญาตฯ กรณีสัญญาเช่าหมดอายุ <font color="red">(ค่าออกใบอนุญาต 1,000 บาท)</font>
-                                </span>
-                            </div>
-                            <br />
-                            <div class="panel-body div_header p-4">
-                                <table broder="0">
-                                    <thead>
-                                        <tr class="info">
-                                            <th colspan="2" style="text-align: left;"><span class="font_header_detail">ระบุรายละเอียด</span></th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td width="100%">
-                                                <textarea name="detail_13" cols="200" rows="5"><?php echo $datashow['detail_13']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        </div>
-                        <br />
                     </div>
 
 
@@ -1269,28 +548,20 @@
 
                 <div class="tab-pane" id="tab3">
                     <div class="card p-4">
-                        <div class="card-header">
-                            <span class="font_header"><b>เอกสารประกอบการขออนุญาต</b></span>
-                        </div>
                         <div class="table-responsive div_header p-4">
                             <div class="card-header">
-                                <span class="font_header_detail"><b>รายการแนบเอกสารประกอบคำขอฯ ที่ต้องส่งให้เจ้าหน้าที่พิจารณา <font color="red">* เอกสารทั้งหมดต้องลงนาม พร้อมรับรองสําเนาถูกต้อง โดยผู้มีอํานาจลงนาม</font></b></span>
+                                <span class="font_header"><b>รายการแนบเอกสารประกอบคำขอฯ ที่ต้องส่งให้เจ้าหน้าที่พิจารณา <font color="red">* เอกสารทั้งหมดต้องลงนาม พร้อมรับรองสําเนาถูกต้อง โดยผู้มีอํานาจลงนาม</font></b></span>
                             </div>
-                            <table class="table">
-                                <tbody>
+
+                            <div class="table-responsive div_header p-4">
+                                <div class="card-header">
+                                    <span class="font_header"><b>เอกสารประกอบการ การขออนุญาตดัดแปลงหรือใช้ที่จอดรถ ที่กลับรถ และทางเข้าออกของรถเพื่อการอื่น (ข.3) ที่ต้องนำส่งให้เจ้าหน้าที่พิจารณา</b></span>
+                                </div>
+                                <table width="100%" border="0" align="center" cellpadding="5" cellspacing="1" class="table table-bordered">
                                     <tr>
-                                        <td class="table-detail-left radio-header" width="70%">
-                                            1. หนังสือรับรองการจดทะเบียนจัดตั้งนิติบุคคลและวัตถุประสงค์การจัดตั้ง และ สำเนาบัญชีรายชื่อผู้ถือหุ้น (บอจ.5/บริคณห์สนธิ) (ไม่เกิน 6 เดือน นับตั้งแต่วันที่ออกหนังสือ)
+                                        <td width='70%'>
+                                            <label class="col-lg-12">1. หนังสือรับรองการจดทะเบียนจัดตั้งนิติบุคคลและวัตถุประสงค์การจัดตั้งของผู้ประกอบการ(ไม่เกิน 6 เดือน นับตั้งแต่วันที่ออกหนังสือ)</label>
                                         </td>
-                                        <td width="30%">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">2. หนังสือมอบอำนาจ ปิดอากรแสตมป์</td>
                                         <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -1299,10 +570,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" style="padding-left:50px;">ประกอบด้วย</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.1 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง ผู้มอบอำนาจ</td>
+                                        <td>
+                                            <label class="col-lg-12">2.หนังสือมอบอำนาจ ปิดอากรแสตมป์ ประกอบด้วย</label>
+                                        </td>
                                         <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -1311,7 +581,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.2 สำเนาทะเบียนบ้าน ผู้มอบอำนาจ</td>
+                                        <td>
+                                            <label class="col-lg-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.1 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง (Passport) ผู้มอบอำนาจ</label>
+                                        </td>
                                         <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -1320,7 +592,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.3 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง (Passport) ผู้รับมอบอำนาจ</td>
+                                        <td>
+                                            <label class="col-lg-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2.2 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง (Passport) ผู้รับมอบอำนาจ</label>
+                                        </td>
                                         <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -1329,7 +603,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.4 สำเนาทะเบียนบ้าน ผู้รับมอบอำนาจ</td>
+                                        <td>
+                                            <label class="col-lg-12">3. สำเนาโฉนดที่ดินหน้า-หลัง</label>
+                                        </td>
                                         <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -1338,7 +614,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="table-detail-left radio-header">3. หนังสืออนุญาตใช้ที่ดิน กนอ. 01/2 หรือ กนอ.03/6 ล่าสุด</td>
+                                        <td>
+                                            <label class="col-lg-12">4. ใบอนุญาตใช้ที่ดินฉบับล่าสุดพร้อมเงื่อนไขแนบท้าย</label>
+                                        </td>
                                         <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -1347,7 +625,9 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="table-detail-left radio-header">4. เอกสารอื่นๆที่เกี่ยวข้อง</td>
+                                        <td>
+                                            <label class="col-lg-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.1 สัญญา เช่น สัญญาเช่า หรือ หนังสือสัญญายินยอมให้ใช้ที่ดิน</label>
+                                        </td>
                                         <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -1355,8 +635,252 @@
                                             </div>
                                         </td>
                                     </tr>
-                                </tbody>
-                            </table>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4.2 สำเนาแผนผังแปลงที่ดินแนบท้ายสัญญาใช้ทีดิน</label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">5. ผังบริเวณพร้อมระบุตำแหน่งอาคารในแปลงที่ดินทั้งหมดและอาคารที่ยื่นขออนุญาต <span class="sm-label">(Layout Plan)</span> ประกอบด้วย</label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.1. แบบแปลนอาคาร <span class="sm-label">(Floor Plan) * ทุกชั้น</span></label>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.2. แบบรูปด้านหน้า <span class="sm-label">(Front View)</span></label>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.3. แบบรูปด้านข้าง <span class="sm-label"> (Side View)</span></label>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.4. แบบรูปตัดตามขวาง <span class="sm-label">(Cross Section)</span></label>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5.5. แบบรูปตัดตามยาว <span class="sm-label">(Longitudinal Section)</span></label>
+                                        </td>
+                                        <td>
+                                            &nbsp;
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">6. ใบอนุญาตก่อสร้างเดิม (กรณีดัดแปลงอาคาร, รื้อถอนอาคาร, ก่อสร้างและดัดแปลงอาคาร, เคลื่อนย้ายอาคาร)</label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">7. ปกรายการคำนวณและข้อกำหนดในการออกแบบ</label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">8. การออกแบบอัตราส่วนผสมคอนกรีต (Mix Design)</label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">9. เอกสารอื่นๆ ที่เกี่ยวข้อง</label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <br />
+                            <div class="table-responsive div_header p-4">
+                                <div class="card-header">
+                                    <span class="font_header"><b>หนังสือรับรองของผู้ประกอบวิชาชีพสถาปัตยกรรมควบคุม/วิศวกรรมควบคุม</b></span>
+                                </div>
+                                <table width="100%" border="0" align="center" cellpadding="5" cellspacing="1" class="table table-bordered">
+                                    <tr>
+                                        <td width='70%'>
+                                            <label class="col-lg-12">
+                                                1. หนังสือรับรองพร้อมสําเนาใบอนุญาตให้เป็นผู้ประกอบวิชาชีพสถาปัตยกรรมควบคุม และ
+                                                หนังสือรับรองการได้รับอนุญาตให้เป็นผู้ประกอบวิชาชีพสถาปัตยกรรมควบคุมที่ออกโดยสภาสถาปนิก
+                                                (ผู้ออกแบบ ด้านสถาปัตยกรรม (สถาปัตยกรรมหลัก))
+                                                <a href="02.pdf" target="_blank">แบบฟอร์ม Download</a></label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td width='70%'>
+                                            <label class="col-lg-12">
+                                                2. หนังสือแสดงความยินยอมพร้อมสําเนาใบอนุญาตให้เป็นผู้ประกอบวิชาชีพสถาปัตยกรรมควบคุม และ
+                                                หนังสือรับรองการได้รับอนุญาตให้เป็นผู้ประกอบวิชาชีพสถาปัตยกรรมควบคุมที่ออกโดยสภาสถาปนิก
+                                                (ผู้ควบคุมงาน ด้านสถาปัตยกรรม (สถาปัตยกรรมหลัก))
+                                                <a href="04.pdf" target="_blank">แบบฟอร์ม Download</a></label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">
+                                                3. หนังสือรับรองพร้อมสําเนาใบอนุญาตให้เป็นผู้ประกอบวิชาชีพวิศวกรรมควบคุม และ หนังสือรับรองการได้รับอนุญาตให้เป็นผู้ประกอบวิชาชีพ
+                                                วิศวกรรมควบคุมที่ออกโดยสภาวิศวกร (ผู้ออกแบบ ด้านวิศวกรรม (วิศวกรโยธา))
+                                                <a href="01.pdf" target="_blank">แบบฟอร์ม Download</a></label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">
+                                                4. หนังสือแสดงความยินยอมพร้อมสําเนาใบอนุญาตให้เป็นผู้ประกอบวิชาชีพวิศวกรรมควบคุม และ หนังสือรับรองการได้รับ อนุญาตให้เป็นผู้ประกอบวิชาชีพ
+                                                วิศวกรรมควบคุมที่ออกโดยสภาวิศวกร (ผู้ควบคุมงาน ด้านวิศวกรรม (วิศวกรโยธา))
+                                                <a href="03.pdf" target="_blank">แบบฟอร์ม Download</a></label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">
+                                                5. หนังสือรับรองพร้อมสําเนาใบอนุญาตให้เป็นผู้ประกอบวิชาชีพวิศวกรรมควบคุม และ หนังสือรับรองการได้รับอนุญาตให้เป็นผู้ประกอบวิชาชีพ
+                                                วิศวกรรมควบคุมที่ ออกโดยสภาวิศวกร (ผู้ออกแบบ ด้านวิศวกรรม (วิศวกรไฟฟากําลัง))
+                                                <a href="01.pdf" target="_blank">แบบฟอร์ม Download</a></label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">
+                                                6. หนังสือรับรองพร้อมสําเนาใบอนุญาตให้เป็นผู้ประกอบวิชาชีพวิศวกรรมควบคุม และ หนังสือรับรองการได้รับอนุญาตให้เป็นผู้ประกอบวิชาชีพ
+                                                วิศวกรรมควบคุมที่ออกโดยสภาวิศวกร (ผู้ออกแบบ ด้านวิศวกรรม (วิศวกรเครื่องกล, วิศวกรสิ่งแวดล้อม, วิศวกรอุตสาหการ))
+                                                <a href="01.pdf" target="_blank">แบบฟอร์ม Download</a></label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">
+                                                7. หนังสือแสดงความยินยอมพร้อมสําเนาใบอนุญาตให้เป็นผู้ประกอบวิชาชีพวิศวกรรมควบคุม และ หนังสือรับรองการได้รับอนุญาต
+                                                ให้เป็นผู้ประกอบวิชาชีพวิศวกรรมกรรมควบคุมที่ออกโดยสภาวิศวกร
+                                                (ผู้ควบคุมงาน ด้านวิศวกรรม (วิศวกรโยธา การทาสีกันไฟ ตามกฎกระทรวงกำหนดการออกแบบโครงสร้างอาคารและลักษณะและคุณสมบัติของวัสดุที่ใช้ในงานโครงสร้างอาคาร พ.ศ. 2566))
+                                                <a href="05.pdf" target="_blank">แบบฟอร์ม Download</a></label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">
+                                                8. หนังสือรับรองการตรวจสอบงานออกแบบและคำนวณพร้อมสําเนาใบอนุญาตให้เป็นผู้ประกอบวิชาชีพวิศวกรรมควบคุม
+                                                (ผู้ตรวจสอบงานออกแบบและคํานวณด้านวิศวกรรม (วิศวกรโยธาระดับวุฒิวิศวกร))
+                                                <a href="06.pdf" target="_blank">แบบฟอร์ม Download</a></label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <label class="col-lg-12">
+                                                9. หนังสือรับรองจากสถาบันที่เชื่อถือได้, ระบุชนิดวัสดุทนไฟ, ตารางความหนาของชิ้นส่วนที่ทาสีทนไฟ,
+                                                ชื่ออาคาร, เจ้าของบริษัทฯ พร้อมผู้มีอํานาจและวุฒิวิศวกรสาขาโยธาลงนาม
+                                                (เอกสารประกอบการรับรองการทาสีกันไฟ ตามกฎกระทรวงกำหนดการออกแบบโครงสร้างอาคารและลักษณะและคุณสมบัติของวัสดุที่ใช้ในงานโครงสร้างอาคาร พ.ศ. 2566)
+                                            </label>
+                                        </td>
+                                        <td>
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
