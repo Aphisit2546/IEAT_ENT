@@ -37,6 +37,7 @@
                             <div class="col-12">
                                 <div class="col-6" style="float: left; text-align: left;">
                                     <input class="form-check-input" type="checkbox" value="" id="form1Example3" />
+									&nbsp;&nbsp;&nbsp;
                                     <label class="form-label" for="typeEmailX-2">จดจำฉัน</label>
                                 </div>
                                 <div class="col-6" style=" float: left; text-align: right;">
@@ -45,8 +46,8 @@
                             </div>
 
                             <br /><br />
-                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-lg btn-block" type="submit" style="background-color: #6007b3ff; color:aliceblue;">เข้าสู่ระบบ</button>
-                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="submit" style="background-color: #ffffffff; color:#6007b3ff;">เข้าสู่ระบบด้วย Thai ID</button>
+                            <button onclick="window.location.href='center_ieat_ent';" class="btn btn-lg btn-block" type="button" style="background-color: #6007b3ff; color:aliceblue;">เข้าสู่ระบบ</button>
+                            <button data-mdb-button-init data-mdb-ripple-init class="btn btn-primary btn-lg btn-block" type="button" style="background-color: #ffffffff; color:#6007b3ff;">เข้าสู่ระบบด้วย Thai ID</button>
 
                             <br />
                             <div>

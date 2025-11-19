@@ -20,6 +20,104 @@
     <link rel="stylesheet" href="dist/css/animate.min.css">
 
     <style>
+        .ieat-action-bar {
+            margin-top: 24px;
+            padding: 16px 20px;
+            border-top: 1px solid #e5e7eb;
+            background: #f9fafb;
+        }
+
+        .ieat-action-group {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .ieat-btn {
+            flex: 1;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            padding: 10px 16px;
+            border-radius: 999px;
+            font-size: 14px;
+            font-weight: 600;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: all 0.25s ease-in-out;
+            white-space: nowrap;
+
+            /* เอฟเฟกต์เรืองแสงพื้นฐาน */
+            box-shadow: 0 0 0px rgba(0,0,0,0.0);
+        }
+
+        .ieat-btn:hover {
+            transform: translateY(-2px);
+        }
+
+        .ieat-btn i {
+            font-size: 14px;
+        }
+
+        /* ปุ่มยกเลิก */
+        .ieat-btn--cancel {
+            background: #ffffff;
+            color: #b91c1c;
+            border-color: #fecaca;
+            box-shadow: 0 0 8px rgba(255, 0, 0, 0.15);
+        }
+        .ieat-btn--cancel:hover {
+            background: #fee2e2;
+            box-shadow: 0 0 14px rgba(255, 0, 0, 0.35);
+        }
+
+        /* ปุ่มล้างข้อมูล */
+        .ieat-btn--reset {
+            background: #fff7ed;
+            color: #c05621;
+            border-color: #fed7aa;
+            box-shadow: 0 0 8px rgba(251, 146, 60, 0.20);
+        }
+        .ieat-btn--reset:hover {
+            background: #ffedd5;
+            box-shadow: 0 0 14px rgba(251, 146, 60, 0.45);
+        }
+
+        /* ปุ่มบันทึก */
+        .ieat-btn--save {
+            background: #ecfdf3;
+            color: #15803d;
+            border-color: #bbf7d0;
+            box-shadow: 0 0 8px rgba(52, 211, 153, 0.25);
+        }
+        .ieat-btn--save:hover {
+            background: #dcfce7;
+            box-shadow: 0 0 16px rgba(16, 185, 129, 0.55);
+        }
+
+        /*  ปุ่มส่งคำขอให้ กนอ. */
+        .ieat-btn--submit {
+            background: #1d4ed8;
+            color: #ffffff;
+            border-color: #1d4ed8;
+            box-shadow: 0 0 8px rgba(59, 130, 246, 0.40);
+        }
+        .ieat-btn--submit:hover {
+            background: #1e40af;
+            border-color: #1e40af;
+            box-shadow: 0 0 16px rgba(59, 130, 246, 0.75);
+        }
+
+        /* ปุ่มเรียง 2 แถวบนจอเล็ก */
+        @media (max-width: 768px) {
+            .ieat-btn {
+                flex: 1 1 calc(50% - 12px);
+            }
+        }
+    </style>
+
+    <style>
         body {
             /*background: url("dist/img/DOEB_BG_02.png") no-repeat;*/
             background-image: linear-gradient(#f8f3faff, #f8f3faff);
