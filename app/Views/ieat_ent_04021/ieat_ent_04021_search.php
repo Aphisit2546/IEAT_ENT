@@ -9,11 +9,11 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>คำขออนุมัติให้นำของเข้ามาในราชอาณาจักรและนำเข้าไปในเขตประกอบการเสรี ให้ได้รับยกเว้นกฎหมายควบคุมฯ ตามมาตรา 49 (IEAT-I-03-1)</b></font>
+    <a href="ieat_ent_04021" style="color: #6007b3ff; font-size: 18px;"><b>คำขออนุมัติให้นำของเข้ามาในราชอาณาจักรและนำเข้าไปในเขตประกอบการเสรี ให้ได้รับยกเว้นกฎหมายควบคุมฯ ตามมาตรา 49 (IEAT-I-03-1)</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
 </div>
@@ -303,21 +303,147 @@
                 </div>
 
                 <div class="tab-pane" id="tab2">
-                    <div class="table-responsive div_header p-4">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>ระบุวันที่ทดลองเดินเครื่องจักร</td>
-                                    <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                </tr>
-                                <tr>
-                                    <td>ระบุรายละเอียดในการทดลองเดินเครื่องจักร</td>
-                                    <td><textarea name="detail_extend" cols="100" rows="5"><?php echo $datashow['detail_extend']; ?></textarea></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>อ้างถึงเอกสารใบอนุญาตล่าสุด เลขที่ TEST015 ลงวันที่ 31-01-2554 หมดอายุวันที่ 31-12-2558</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>วัตถุประสงค์ในการยื่นคำขอ<td>
+                                        <table class="table table-lg">
+                                            <div class="row row-form">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12">
+                                                        <select class="form-control">
+                                                            <option value="0">-- เลือก --</option>
+                                                        </select>
+                                                    </div>
+                                                </div>                           
+                                            </div>           
+                                        </table> 
+                                    </tr>
+                                    <tr>
+                                        <td>สินค้านำเข้าโดย<td>
+                                        <table class="table table-lg">
+                                            <div class="row row-form">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12">
+                                                        <select class="form-control">
+                                                            <option value="0">-- เลือก --</option>
+                                                        </select>
+                                                    </div>
+                                                </div>                           
+                                            </div>           
+                                        </table> 
+                                    </tr>
+                                    <tr>
+                                        <td>ข้อมูลเพิ่มเติมอื่นๆ (ถ้ามี)</td>
+                                        <td>
+                                            <textarea rows="6" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-left radio-header" width="40%">
+                                            กรุณาแนบรายการวัตถุดิบที่ต้องการขอใบอนุญาต
+                                        </td>
+                                        <td width="30%">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-left radio-header" width="40%">
+                                            นำเข้าข้อมูลตั้งต้นจากไฟล์ Template ต้นแบบ
+                                            <br/>
+                                            <font color="red">* โปรดระวัง !!! ในการนำเข้าข้อมูลตั้งต้นจากไฟล์ Template ต้นแบบ ข้อมูลบัญชีรายการวัตถุดิบที่นำเข้าข้อมูลไปก่อนหน้า จะถูกล้างทั้งหมด *</font>
+                                        </td>
+                                        <td width="30%">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">นำเข้าข้อมูลตั้งต้นจากไฟล์</label>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>รายการ</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <table class="table" id="datatable01">
+                                <thead>
+                                    <tr>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ที่</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>รายการ</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>พิกัดศุลกากร(12 หลัก)</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>เลขสถิติ(3 หลัก)</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ปริมาณ</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>หน่วย</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>หมายเหตุ</b></span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="center">
+                                            1.
+                                        </td>
+                                        <td align="center">
+                                            A-001
+                                        </td>
+                                        <td align="center">
+                                            111111111111
+                                        </td>
+                                        <td align="center">
+                                            111
+                                        </td>
+                                        <td align="center">
+                                            1
+                                        </td>
+                                        <td align="center">
+                                            ลิตร
+                                        </td>
+                                        <td align="center">
+                                            -
+                                        </td>
+                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            2.
+                                        </td>
+                                        <td align="center">
+                                            A-002
+                                        </td>
+                                        <td align="center">
+                                            222222222222
+                                        </td>
+                                        <td align="center">
+                                            222
+                                        </td>
+                                        <td align="center">
+                                            2
+                                        </td>
+                                        <td align="center">
+                                            ลิตร
+                                        </td>
+                                        <td align="center">
+                                            -
+                                        </td>
+                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tab-pane" id="tab3">

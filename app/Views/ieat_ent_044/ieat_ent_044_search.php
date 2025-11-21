@@ -10,11 +10,11 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>ยื่นคำขอยกเว้นหรือคืนค่าภาษีอากร สำหรับเครื่องจักร วัตถุดิบ นำเข้าจากในประเทศ IEAT-I-06</b></font>
+    <a href="ieat_ent_044" style="color: #6007b3ff; font-size: 18px;"><b>ยื่นคำขอยกเว้นหรือคืนค่าภาษีอากร สำหรับเครื่องจักร วัตถุดิบ นำเข้าจากในประเทศ IEAT-I-06</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
 </div>
@@ -305,7 +305,7 @@
                 <div class="tab-pane" id="tab2">
                     <div class="card p-4">
                         <div class="card-header">
-                            <span class="font_header"><b>อ้างถึงเอกสารใบอนุญาตล่าสุด เลขที่ TEST015 ลงวันที่ 31-01-2554 หมดอายุวันที่ 31-12-2558</b></span>
+                            <span class="font_header"><b>ยื่นคำขอยกเว้นหรือคืนค่าภาษีอากร สำหรับเครื่องจักร วัตถุดิบ นำเข้าจากในประเทศ IEAT-I-06</b></span>
                         </div>
                         <div class="table-responsive div_header p-4">
                             <table class="table">
@@ -400,7 +400,7 @@
                                             <font color="red">* หมายเหตุ เมื่อทำการแนบไฟล์แล้วกรุณากดปุ่ม ประมวลข้อมูลเข้าสู่ระบบ *</font>
                                         </td>
                                         <td width="30%">
-                                            <div class="btn-box btn-submit">
+                                            <div class="btn-box btn-information">
                                                 ประมวลข้อมูลเข้าสู่ระบบ
                                             </div>
                                         </td>

@@ -9,11 +9,11 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>โปรแกรมยกเลิก TAX Incentive</b></font>
+    <a href="ieat_ent_canceltaxincentive" style="color: #6007b3ff; font-size: 18px;"><b>โปรแกรมยกเลิก TAX Incentive</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
 </div>
@@ -307,11 +307,7 @@
                         <table class="table">
                             <tbody>
                                 <tr>
-                                    <td>ระบุวันที่ทดลองเดินเครื่องจักร</td>
-                                    <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                </tr>
-                                <tr>
-                                    <td>ระบุรายละเอียดในการทดลองเดินเครื่องจักร</td>
+                                    <td>ข้อมูลเพิ่มเติมอื่นๆ (ถ้ามี)</td>
                                     <td><textarea name="detail_extend" cols="100" rows="5"><?php echo $datashow['detail_extend']; ?></textarea></td>
                                 </tr>
                             </tbody>
@@ -443,7 +439,6 @@
     </div>
     <!-- /.card -->
 </div>
-
 
 <!-- DataTables -->
 <script src="plugins/datatables/jquery.dataTables.js"></script>

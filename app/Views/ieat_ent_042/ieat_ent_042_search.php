@@ -9,13 +9,13 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>ยื่นคำขออนุมัติใบรับรองขอยกเว้นมาตรฐาน (นำของเข้าโดยมีวัตถุประสงค์เพื่อส่งออก) IEAT-I-03</b></font>
+    <a href="ieat_ent_042" style="color: #6007b3ff; font-size: 18px;"><b>ยื่นคำขออนุมัติใบรับรองขอยกเว้นมาตรฐาน (นำของเข้าโดยมีวัตถุประสงค์เพื่อส่งออก) IEAT-I-03</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
+    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">

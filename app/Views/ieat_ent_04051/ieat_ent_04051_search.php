@@ -9,11 +9,11 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>คำขออนุมัติให้นำของหรือผลิตภัณฑ์ออกจากเขตประกอบการเสรี ให้ได้รับยกเว้นกฎหมายควบคุมฯ ตามมาตรา 49 (IEAT-E-03)</b></font>
+    <a href="ieat_ent_04051" style="color: #6007b3ff; font-size: 18px;"><b>คำขออนุมัติให้นำของหรือผลิตภัณฑ์ออกจากเขตประกอบการเสรี ให้ได้รับยกเว้นกฎหมายควบคุมฯ ตามมาตรา 49 (IEAT-E-03)</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
 </div>
@@ -414,6 +414,29 @@
                     </div>
                 </div>
                 <!-- /.tab-pane -->
+                <div class="ieat-action-bar">
+                    <div class="ieat-action-group">
+                        <button type="button" class="ieat-btn ieat-btn--cancel" id="btnCancel">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>ยกเลิกและกลับสู่หน้าหลัก</span>
+                        </button>
+
+                        <button type="button" class="ieat-btn ieat-btn--reset" id="btnReset">
+                            <i class="fas fa-undo-alt"></i>
+                            <span>ล้างข้อมูล</span>
+                        </button>
+
+                        <button type="button" class="ieat-btn ieat-btn--save" id="btnSaveDraft">
+                            <i class="fas fa-save"></i>
+                            <span>บันทึกการกรอกข้อมูล</span>
+                        </button>
+
+                        <button type="button" class="ieat-btn ieat-btn--submit" id="btnSubmit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>ส่งคำขอให้ กนอ.</span>
+                        </button>
+                    </div>
+                </div>                   
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->

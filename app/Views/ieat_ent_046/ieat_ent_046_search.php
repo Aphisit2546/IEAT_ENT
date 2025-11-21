@@ -9,13 +9,13 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>คำขอยกเลิกสิทธิประโยชน์ด้านภาษีอากร</b></font>
+    <a href="ieat_ent_046" style="color: #6007b3ff; font-size: 18px;"><b>คำขอยกเลิกสิทธิประโยชน์ด้านภาษีอากร</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
+    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">
@@ -303,21 +303,181 @@
                 </div>
 
                 <div class="tab-pane" id="tab2">
-                    <div class="table-responsive div_header p-4">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>ระบุวันที่ทดลองเดินเครื่องจักร</td>
-                                    <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                </tr>
-                                <tr>
-                                    <td>ระบุรายละเอียดในการทดลองเดินเครื่องจักร</td>
-                                    <td><textarea name="detail_extend" cols="100" rows="5"><?php echo $datashow['detail_extend']; ?></textarea></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>คำขอยกเลิกสิทธิประโยชน์ด้านภาษีอากร</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>เลือกแบบคำขอสิทธิประโยชน์ด้านภาษีอากร ที่ต้องการยกเลิก<td>
+                                        <table class="table table-lg">
+                                            <div class="row row-form">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12">
+                                                        <select class="form-control">
+                                                            <option value="0">-- เลือก --</option>
+                                                        </select>
+                                                    </div>
+                                                </div>                           
+                                            </div>
+                                            <td>กรอกเลขที่คำขอ</td> 
+                                            <td>
+                                                <textarea rows="1" cols="40" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                            <td width="30%">
+                                                <div class="btn-box btn-Searchrequestnumber">
+                                                    ค้นหาเลขคำขอ
+                                                </div>
+                                            </td>      
+                                        </table> 
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div class="card p-4">
+                                <div class="card-header">
+                                    <span class="font_header"><b>รายการ</b></span>
+                                </div>
+                                <div class="table-responsive div_header p-4">
+                                    <table class="table" id="datatable01">
+                                        <thead>
+                                            <tr>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ลำดับ</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ประเภทที่นำเข้า</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>พิกัดศุลกากร(12 หลัก)</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>เลขสถิติ(3 หลัก)</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>หมายเลข Invoice</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>วันที่</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ลำดับรายการตาม Invoice</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>รายละเอียด(ภาษาอังกฤษ)</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>รายละเอียด(ภาษาไทย)</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>จำนวน</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>หน่วยนับ</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>น้ำหนัก</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>หน่วยนับ</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ราคา(บาท)</b></span></th>
+                                                <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>วัตถุประสงค์ในการนำของเข้าเขตประกอบการเสรี</b></span></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td align="center">
+                                                    1.
+                                                </td>
+                                                <td align="center">
+                                                    A-001
+                                                </td>
+                                                <td align="center">
+                                                    111111111111
+                                                </td>
+                                                <td align="center">
+                                                    111
+                                                </td>
+                                                <td align="center">
+                                                    1
+                                                </td>
+                                                <td align="center">
+                                                    01/01/2024
+                                                </td>
+                                                <td align="center">
+                                                    1
+                                                </td>
+                                                <td align="center">
+                                                    No
+                                                </td>
+                                                <td align="center">
+                                                    ไม่
+                                                </td>
+                                                <td align="center">
+                                                    1
+                                                </td>
+                                                <td align="center">
+                                                    ชิ้น
+                                                </td>
+                                                <td align="center">
+                                                    10
+                                                </td>
+                                                <td align="center">
+                                                    ลิตร
+                                                </td>
+                                                <td align="center">
+                                                    100
+                                                </td>
+                                                <td align="center">
+                                                    ไม่มี
+                                                </td>
+                                                    <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td align="center">
+                                                    2.
+                                                </td>
+                                                <td align="center">
+                                                    A-002
+                                                </td>
+                                                <td align="center">
+                                                    222222222222
+                                                </td>
+                                                <td align="center">
+                                                    222
+                                                </td>
+                                                <td align="center">
+                                                    2
+                                                </td>
+                                                <td align="center">
+                                                    01/01/2024
+                                                </td>
+                                                <td align="center">
+                                                    2
+                                                </td>
+                                                <td align="center">
+                                                    No
+                                                </td>
+                                                <td align="center">
+                                                    ไม่
+                                                </td>
+                                                <td align="center">
+                                                    2
+                                                </td>
+                                                <td align="center">
+                                                    ชิ้น
+                                                </td>
+                                                <td align="center">
+                                                    20
+                                                </td>
+                                                <td align="center">
+                                                    ลิตร
+                                                </td>
+                                                <td align="center">
+                                                    200
+                                                </td>
+                                                <td align="center">
+                                                    ไม่มี
+                                                </td>
+                                                    <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>                      
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>กรุณากรอกข้อมูลเหตุผลที่ขอยกเลิก</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <table class="table" id="datatable01">
+                                        <td>กรุณากรอกข้อมูลเหตุผลที่ขอยกเลิก</td>
+                                        <td>
+                                            <textarea rows="6" cols="150" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                        </td>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tab-pane" id="tab3">

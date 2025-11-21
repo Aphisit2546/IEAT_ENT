@@ -11,9 +11,9 @@
 <div class="class_header_page_02">
     <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>จัดทำรายงานการนำของเข้า ตามใบอนุญาตนำของเข้า จากภายในประเทศรายครั้ง (IEAT-I-06-R)</b></font>
+    <a href="ieat_ent_r01_005_1" style="color: #6007b3ff; font-size: 18px;"><b>จัดทำรายงานการนำของเข้า ตามใบอนุญาตนำของเข้า จากภายในประเทศรายครั้ง (IEAT-I-06-R)</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
 </div>

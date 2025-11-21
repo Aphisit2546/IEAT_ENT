@@ -10,13 +10,13 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>ยื่นคำขออนุญาตนำของออกไปจากเขตประกอบการเสรี (นำของออก) IEAT-E-01</b></font>
+    <a href="ieat_ent_045" style="color: #6007b3ff; font-size: 18px;"><b>ยื่นคำขออนุญาตนำของออกไปจากเขตประกอบการเสรี (นำของออก) IEAT-E-01</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
+    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">
@@ -306,7 +306,7 @@
                 <div class="tab-pane" id="tab2">
                     <div class="card p-4">
                         <div class="card-header">
-                            <span class="font_header"><b>อ้างถึงเอกสารใบอนุญาตล่าสุด เลขที่ TEST015 ลงวันที่ 31-01-2554 หมดอายุวันที่ 31-12-2558</b></span>
+                            <span class="font_header"><b>ยื่นคำขออนุญาตนำของออกไปจากเขตประกอบการเสรี (นำของออก) IEAT-E-01</b></span>
                         </div>
                         <div class="table-responsive div_header p-4">
                             <table class="table">

@@ -9,13 +9,13 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>คำขอรับรองการเป็นผู้ประกอบการในเขตประกอบการเสรี และขอเลขทะเบียนสิทธิประโยชน์ทางด้านภาษีอากร (TAX Incentive)</b></font>
+    <a href="ieat_ent_taxincentive" style="color: #6007b3ff; font-size: 18px;"><b>คำขอรับรองการเป็นผู้ประกอบการในเขตประกอบการเสรี และขอเลขทะเบียนสิทธิประโยชน์ทางด้านภาษีอากร (TAX Incentive)</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
+    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">
@@ -301,7 +301,7 @@
                 <div class="tab-pane" id="tab2">
                     <div class="card p-4">
                         <div class="card-header">
-                            <span class="font_header"><b>อ้างถึงเอกสารใบอนุญาตล่าสุด เลขที่ TEST015 ลงวันที่ 31-01-2554 หมดอายุวันที่ 31-12-2558</b></span>
+                            <span class="font_header"><b>ข้อมูลเกี่ยวกับการขออนุญาต</b></span>
                         </div>
                         <div class="table-responsive div_header p-4">
                             <table class="table">
@@ -351,93 +351,230 @@
 
                         <div class="card-header">
                             <span class="font_header">
-                                <b>อ้างถึงเอกสารใบอนุญาตล่าสุด เลขที่ TEST015 ลงวันที่ 31-01-2554 หมดอายุวันที่ 31-12-2558</b>
+                                <b>ที่อยู่สถานประกอบการ ภ.พ.20</b>
                             </span>
                         </div>
 
-                        <div class="table-responsive div_header p-4">
+                        <div class="panel-body div_header p-4">
+                            <div class="row row-form">
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_location_no_view"> เลขที่</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_location_no_view"
+                                            name="factory_location_no_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_location_no_view']; ?>" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_moo_view"> หมู่ที่</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_moo_view"
+                                            name="factory_moo_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_moo_view']; ?>" style="width: 100%;" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_building_name_view"> อาคาร</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_building_name_view"
+                                            name="factory_building_name_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_building_name_view']; ?>" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_floor_view"> ชั้น</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_floor_view"
+                                            name="factory_floor_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_floor_view']; ?>" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-form">
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_room_view" style="margin-top:5px;"> ห้อง</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_room_view"
+                                            name="factory_room_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_room_view']; ?>" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_room_view" style="margin-top:5px;"> ตรอก/ซอย</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_soi_view"
+                                            name="factory_soi_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_soi_view']; ?>" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_room_view" style="margin-top:5px;"> ถนน</div>
+                                    <div class="col-sm-12">
+                                        <input type="text" id="factory_street_view"
+                                            name="factory_street_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_street_view']; ?>" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    &nbsp;
+                                </div>
+                            </div>
+                            <div class="row row-form">
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_province_id_view" style="margin-top:5px;">จังหวัด</div>
+                                    <div class="col-lg-12">
+                                        <select class="form-control">
+                                            <option value="0">- เลือกจังหวัด -</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_amphur_id_view" style="margin-top:5px;">เขต/อําเภอ</div>
+                                    <div class="col-lg-12">
+                                        <select class="form-control">
+                                            <option value='0'>- เลือกอำเภอ -</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_sub_district_id_view" style="margin-top:5px;"> ตําบล/แขวง</span></div>
+                                    <div class="col-lg-12">
+                                        <select class="form-control">
+                                            <option value='0'>- เลือกตำบล -</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3">
+                                    <div class="col-lg-6 form-label" for="factory_zipcode_id_view" style="margin-top:5px;"> รหัสไปรษณีย์</div>
+                                    <div class="col-lg-6">
+                                        <input type="text" id="factory_zipcode_id_view"
+                                            name="factory_zipcode_id_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_zipcode_id_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-form" style="margin-top:40px;">
+                                <div class="col-lg-2">
+                                    <div class="col-lg-6 form-label" for="factory_phone_no1_view">โทรศัพท์ 1</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_phone_no1_view"
+                                            name="factory_phone_no1_view"
+                                            class="form-control inputMask-phone"
+                                            value="<?php echo $datashow['factory_phone_no1_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="col-lg-6 form-label" for="factory_phone_no_ext1_view"> เบอร์ต่อ</div>
+                                    <div class="col-lg-6">
+                                        <input type="text" id="factory_phone_no_ext1_view"
+                                            name="factory_phone_no_ext1_view"
+                                            class="form-control inputMask-numeric"
+                                            value="<?php echo $datashow['factory_phone_no_ext1_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="col-lg-6 form-label" for="factory_phone_no2_view">โทรศัพท์ 2</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_phone_no2_view"
+                                            name="factory_phone_no2_view"
+                                            class="form-control inputMask-phone"
+                                            value="<?php echo $datashow['factory_phone_no2_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="col-lg-6 form-label" for="factory_phone_no_ext2_view"> เบอร์ต่อ</div>
+                                    <div class="col-lg-6">
+                                        <input type="text" id="factory_phone_no_ext2_view"
+                                            name="factory_phone_no_ext2_view"
+                                            class="form-control inputMask-numeric"
+                                            value="<?php echo $datashow['factory_phone_no_ext2_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="col-lg-6 form-label" for="factory_phone_no3_view">โทรศัพท์ 3</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_phone_no3_view"
+                                            name="factory_phone_no3_view"
+                                            class="form-control inputMask-phone"
+                                            value="<?php echo $datashow['factory_phone_no3_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="col-lg-6 form-label" for="factory_phone_no_ext3_view"> เบอร์ต่อ</div>
+                                    <div class="col-lg-6">
+                                        <input type="text" id="factory_phone_no_ext3_view"
+                                            name="factory_phone_no_ext3_view"
+                                            class="col-sm-12 form-control inputMask-numeric"
+                                            value="<?php echo $datashow['factory_phone_no_ext3_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row row-form">
+                                <div class="col-lg-2">
+                                    <div class="col-lg-6 form-label" for="factory_fax_no_view"> โทรสาร</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_fax_no_view"
+                                            name="factory_fax_no_view"
+                                            class="form-control inputMask-phone"
+                                            value="<?php echo $datashow['factory_fax_no_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="col-lg-6 form-label" for="factory_fax_no_ext_view"> เบอร์ต่อ</div>
+                                    <div class="col-lg-6">
+                                        <input type="text" id="factory_fax_no_ext_view"
+                                            name="factory_fax_no_ext_view"
+                                            class="form-control inputMask-numeric"
+                                            value="<?php echo $datashow['factory_fax_no_ext_view']; ?>" style="width: 100%" onkeypress="return integeronly(event)" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-2">
+                                    <div class="col-lg-6 form-label" for="factory_email_view"> อีเมล์</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_email_view"
+                                            name="factory_email_view"
+                                            class="validate[custom[email]] form-control"
+                                            value="<?php echo $datashow['factory_email_view']; ?>" />
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" style="margin-top:10px;">
+                                    ตัวอย่างอีเมล์ <i style="color:blue">sample@email.com</i><br />
+                                    กรณีมีมากกว่า 1 อีเมลล์ให้คั่นด้วยเครื่องหมายจุลภาค ( , ) ตัวอย่าง <i style="color:blue">sample1 @email.com, sample2 @email.com</i>
+                                </div>
+                            </div>
 
-                            <table class="table table-bordered">
-                                <tbody>
+                            <div class="row row-form" style="margin-top:40px;">
+                                <div class="col-lg-2">
+                                    <div class="col-lg-12 form-label" for="factory_email_view">พิกัดที่ตั้งอาคารโรงงาน ละติจูด</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_latitude_view"
+                                            name="factory_latitude_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_latitude_view']; ?>" onkeypress="return numbersonly(event)" />
+                                    </div>
+                                </div>
 
-                                    <tr>
-                                        <td>เลขที่</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>หมู่ที่</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>อาคาร</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ชั้น</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ห้อง</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ตรอก/ซอย</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>ถนน</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-                                    <tr>
-                                        <td>จังหวัด</td>
-                                        <td>
-                                            <select class="form-control">
-                                                <option value="0">-- เลือกจังหวัด --</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>เขต/อำเภอ</td>
-                                        <td>
-                                            <select class="form-control">
-                                                <option value="0">-- เลือกเขต/อำเภอ --</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>ตำบล/แขวง</td>
-                                        <td>
-                                            <select class="form-control">
-                                                <option value="0">-- เลือกตำบล/แขวง --</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>รหัสไปรษณีย์</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>โทรศัพท์</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-
-                                    <tr>
-                                        <td>อีเมล์</td>
-                                        <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                                <div class="col-lg-2">
+                                    <div class="col-lg-12 form-label" for="factory_email_view">พิกัดที่ตั้งอาคารโรงงาน ลองติจูด</div>
+                                    <div class="col-lg-12">
+                                        <input type="text" id="factory_longtitude_view"
+                                            name="factory_longtitude_view"
+                                            class="form-control"
+                                            value="<?php echo $datashow['factory_longtitude_view']; ?>" onkeypress="return numbersonly(event)" />
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-
 
                 <div class="tab-pane" id="tab4">
                     <div class="card p-4">

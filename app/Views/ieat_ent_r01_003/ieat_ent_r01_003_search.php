@@ -9,13 +9,13 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>จัดทำรายงานการนำของเข้า ตามใบอนุญาตนำของเข้าตามช่วงเวลา (IEAT-I-02-R)</b></font>
+    <a href="ieat_ent_r01_003" style="color: #6007b3ff; font-size: 18px;"><b>จัดทำรายงานการนำของเข้า ตามใบอนุญาตนำของเข้าตามช่วงเวลา (IEAT-I-02-R)</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
+    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">
@@ -303,21 +303,188 @@
                 </div>
 
                 <div class="tab-pane" id="tab2">
-                    <div class="table-responsive div_header p-4">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>ระบุวันที่ทดลองเดินเครื่องจักร</td>
-                                    <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                </tr>
-                                <tr>
-                                    <td>ระบุรายละเอียดในการทดลองเดินเครื่องจักร</td>
-                                    <td><textarea name="detail_extend" cols="100" rows="5"><?php echo $datashow['detail_extend']; ?></textarea></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header">
+                                <b>
+                                    <span style="color:red;">คลิกเพื่อดาวน์โหลดไฟล์เอกสารต้นแบบ</span>
+                                    หมายเหตุ : ผู้ใช้งานกรุณาตรวจสอบข้อมูล และแบบฟอร์มให้ถูกต้องในการใช้งาน
+                                </b>
+                            </span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <table class="table mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle" style="width:25%;">
+                                            รายงานประจำเดือน
+                                        </td>
+                                        <td style="width:75%;">
+                                            <div class="row row-form">
+                                                <div class="col-md-3 col-sm-4 mb-2">
+                                                    <select class="form-control" name="report_month">
+                                                        <option value="">เลือกเดือน</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-2 col-sm-3 mb-2">
+                                                    <select class="form-control" name="report_year">
+                                                        <option value="">เลือกปี</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-5 col-sm-5 mb-2">
+                                                    <button type="button" class="btn-checkreport">
+                                                        ตรวจสอบการจัดทำรายงานประจำเดือน
+                                                    </button>
+                                                </div>
+
+                                                <div class="col-md-12" style="margin-top:6px;">
+                                                    <span style="color:red;">
+                                                        *** กรุณาคลิกตรวจสอบทุกครั้งก่อนจัดทำรายงาน ***
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle" style="width:25%;">
+                                            ข้าพเจ้ามีความประสงค์จะส่งรายงานให้กับ
+                                        </td>
+                                        <td style="width:75%;">
+                                            <select class="form-control" name="send_to">
+                                                <option value="">เลือกหน่วยงาน</option>
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle" style="width:25%;">
+                                            *** กรุณาระบุจำนวนใบอนุญาต ***
+                                        </td>
+                                        <td style="width:75%;">
+                                            <select class="form-control d-inline-block" name="license_count" style="width:120px;">
+                                                <option value="">เลือก</option>
+                                                <!-- <option value="1">1</option>
+                                                <option value="2">2</option>
+                                                <option value="3">3</option>
+                                                <option value="4">4</option> -->
+                                            </select>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle" style="width:25%;">
+                                            แบบรายการข้อมูลน้ำของออกอากาศรูปแบบจากเอกสารต้นแบบของที่นำเข้า
+                                        </td>
+                                        <td style="width:75%;">
+                                            <div class="custom-file">
+                                                <input type="file" class="custom-file-input" id="customFile">
+                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                            </div>
+                                            <span style="color:red;">
+                                                *** ผู้ประกอบการสามารถแนบใบอนุญาตได้สูงสุด 10 ใบ
+                                                โดยท่านสามารถสร้าง sheet เพิ่มใน excel ต้นแบบ 1 sheet คือ 1 ใบอนุญาต ***
+                                            </span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="align-middle" style="width:50%;"></td>
+                                        <td style="width:75%;">
+                                            <div class="text-right">
+                                                <span style="color:green;">
+                                                    *** สามารถจัดทำรายงานได้ ***
+                                                </span>
+                                                <br>
+                                                <button type="submit" class="btn-confirm">
+                                                    ยืนยันการประมวลผลข้อมูล
+                                                </button>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>แสดงรายการ</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <table class="table" id="datatable01">
+                                <thead>
+                                    <tr>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ลำดับ</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>เลขที่แปลง</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ไร่</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>งาน</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ตารางวา</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ตารางเมตร</b></span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="center">
+                                            1.
+                                        </td>
+                                        <td align="center">
+                                            A-001
+                                        </td>
+                                        <td align="center">
+                                            1
+                                        </td>
+                                        <td align="center">
+                                            2
+                                        </td>
+                                        <td align="center">
+                                            3
+                                        </td>
+                                        <td align="center">
+                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            2.
+                                        </td>
+                                        <td align="center">
+                                            A-002
+                                        </td>
+                                        <td align="center">
+                                            2
+                                        </td>
+                                        <td align="center">
+                                            1
+                                        </td>
+                                        <td align="center">
+                                            3
+                                        </td>
+                                        <td align="center">
+                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2" align="center">
+                                            <span class="font_header_detail"><b>รวม</b></span>
+                                        </td>
+                                        <td align="center">
+                                            <span class="font_header_detail"><b>3</b></span>
+                                        </td>
+                                        <td align="center">
+                                            <span class="font_header_detail"><b>3</b></span>
+                                        </td>
+                                        <td align="center">
+                                            <span class="font_header_detail"><b>6</b></span>
+                                        </td>
+                                        <td align="center">
+                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                 </div>
+
 
                 <div class="tab-pane" id="tab3">
                     <div class="card p-4">

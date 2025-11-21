@@ -20,6 +20,71 @@
     <link rel="stylesheet" href="dist/css/animate.min.css">
 
     <style>
+        .btn-confirm {
+            background-color: #17a2b8;  
+            color: #ffffff;
+            padding: 10px 20px;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .btn-confirm:hover {
+            background-color: #138496; 
+        }
+
+        .btn-confirm:active {
+            background-color: #117a8b;
+        }
+
+        .btn-checkreport {
+            width: 100%;
+            background-color: #0d6efd;   
+            color: #ffffff;
+            padding: 10px 16px;
+            font-size: 14px;
+            font-weight: 600;
+            border: none;
+            border-radius: 6px;
+            transition: 0.2s;
+        }
+
+        .btn-checkreport:hover {
+            background-color: #0b5ed7; 
+        }
+
+        .btn-checkreport:active {
+            background-color: #0a58ca;
+        }
+
+        .btn-information {
+            background-color: #0d6efd;   
+            color: #ffffff;             
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #0b5ed7; 
+            transition: 0.2s;
+        }
+
+        .btn-Searchrequestnumber {
+            background-color: #838383ff;  
+            color: #ffffff;
+            padding: 4px 20px;
+            border-radius: 6px;
+            font-weight: 600;
+            text-align: center;
+            cursor: pointer;
+            border: 1px solid #5a5a5aff;
+            transition: 0.2s;
+        }
+    </style>
+
+    <style>
         .ieat-action-bar {
             margin-top: 24px;
             padding: 16px 20px;
@@ -48,7 +113,7 @@
             transition: all 0.25s ease-in-out;
             white-space: nowrap;
 
-            /* เอฟเฟกต์เรืองแสงพื้นฐาน */
+            /* เรืองแสง */
             box-shadow: 0 0 0px rgba(0,0,0,0.0);
         }
 
@@ -109,7 +174,7 @@
             box-shadow: 0 0 16px rgba(59, 130, 246, 0.75);
         }
 
-        /* ปุ่มเรียง 2 แถวบนจอเล็ก */
+        /* ปุ่มเรียง 2 แถว บนจอเล็ก */
         @media (max-width: 768px) {
             .ieat-btn {
                 flex: 1 1 calc(50% - 12px);

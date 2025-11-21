@@ -9,11 +9,11 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></font>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #6007b3ff; font-size: 18px;"><b>จัดการข้อมูลผู้นำเข้า ส่งออก (นำเข้า - ส่งออกโดยรายอื่น)</b></font>
+    <a href="ieat_ent_t01_009" style="color: #6007b3ff; font-size: 18px;"><b>จัดการข้อมูลผู้นำเข้า ส่งออก (นำเข้า - ส่งออกโดยรายอื่น)</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
 </div>
@@ -303,21 +303,119 @@
                 </div>
 
                 <div class="tab-pane" id="tab2">
-                    <div class="table-responsive div_header p-4">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>ระบุวันที่ทดลองเดินเครื่องจักร</td>
-                                    <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                </tr>
-                                <tr>
-                                    <td>ระบุรายละเอียดในการทดลองเดินเครื่องจักร</td>
-                                    <td><textarea name="detail_extend" cols="100" rows="5"><?php echo $datashow['detail_extend']; ?></textarea></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>อ้างถึงเอกสารใบอนุญาตล่าสุด เลขที่ TEST015 ลงวันที่ 31-01-2554 หมดอายุวันที่ 31-12-2558</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <table class="table">
+                                <tbody>
+                                        <tr>
+                                            <td>ประเภทผู้นำเข้า ส่งออก<td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
+                                                    <div class="col-lg-12">
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>                           
+                                                </div>           
+                                            </table> 
+                                        </tr>
+                                        <tr>
+                                            <td>ชื่อบุคคล นิติบุคคล</td>
+                                            <td>
+                                                <textarea rows="1" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>เลขประจำตัวผู้เสียภาษี 13 หลัก</td>
+                                            <td>
+                                                <textarea rows="1" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                            </table>
+                            <table class="table">
+                                    <tbody>    
+                                        <tr>
+                                            <td>โทรศัพท์ 1 Telephone 1</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                            <td>เบอร์ต่อ Ext.</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>โทรศัพท์ 2 Telephone 2</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                            <td>เบอร์ต่อ Ext.</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>โทรศัพท์ 3 Telephone 3</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                            <td>เบอร์ต่อ Ext.</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>โทรศัพท์ 4 Telephone 4</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                            <td>เบอร์ต่อ Ext.</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>โทรสาร Fax</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                            <td>เบอร์ต่อ Ext.</td>
+                                            <td>
+                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>
+                            <table class="table">
+                                <tbody>
+                                        <tr>
+                                            <td>โทรศัพท์มือถือ Mobile Phone</td>
+                                            <td>
+                                                <textarea rows="1" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>อีเมล์ Email</td>
+                                            <td>
+                                                <textarea rows="1" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>หมายเหตุ</td>
+                                            <td>
+                                                <textarea rows="10" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                            </table>                           
+                        </div>
                     </div>
-
                 </div>
 
                 <div class="tab-pane" id="tab3">
