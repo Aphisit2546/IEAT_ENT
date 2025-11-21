@@ -9,19 +9,19 @@
 <hr />
 -->
 <div class="class_header_page_02">
-    <font style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></font>
+    <a style="color: #6007b3ff; font-size: 18px;"><b>แผงควบคุมหลัก</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></a>
+    <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b>คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <a href="ieat_ent_r01_005" style="color: #6007b3ff; font-size: 18px;"><b>จัดทำรายงานการนำของเข้า ตามใบอนุญาตนำของเข้า จากต่างประเทศรายครั้ง (IEAT-I-05-R)</b></a>
+    <a href="ieat_ent_r01_005_out" style="color: #6007b3ff; font-size: 18px;"><b>จัดทำรายงานการนำของออก ประเภทรายครั้ง (IEAT-E-02-R-02)</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
+    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">
     <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-306-00001-2568</b></font>
     &nbsp;&nbsp;
-    <font style="color: #000000ff; font-size: 18px;"><b>จัดทำรายงานการนำของเข้า ตามใบอนุญาตนำของเข้า จากต่างประเทศรายครั้ง (IEAT-I-05-R)</b></font>
+    <font style="color: #000000ff; font-size: 18px;"><b>จัดทำรายงานการนำของออก ประเภทรายครั้ง (IEAT-E-02-R-02)</b></font>
 </div>
 <br /><br />
 <div class="col-md-12">
@@ -434,6 +434,7 @@
                     </div>
                 </div>
 
+
                 <div class="tab-pane" id="tab3">
                     <div class="card p-4">
                         <div class="card-header">
@@ -528,7 +529,7 @@
                     </div>
                 </div>
                 <!-- /.tab-pane -->
-                 <div class="ieat-action-bar">
+                <div class="ieat-action-bar">
                     <div class="ieat-action-group">
                         <button type="button" class="ieat-btn ieat-btn--cancel" id="btnCancel">
                             <i class="fas fa-arrow-left"></i>
@@ -550,7 +551,7 @@
                             <span>ส่งคำขอให้ กนอ.</span>
                         </button>
                     </div>
-                </div> 
+                </div>                  
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->

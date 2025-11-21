@@ -583,3 +583,33 @@ $routes->group("ieat_ent_r01_005_1", function ($routes) {
     $routes->get("del/(:num)", "ieat_ent_r01_005_1_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_r01_005_1_Controller::view/$1");
 });
+
+$routes->group("ieat_ent_r01_003_out", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_r01_003_out_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_r01_003_out_Controller::add/$1");
+    $routes->post("store", "ieat_ent_r01_003_out_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_r01_003_out_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_r01_003_out_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_r01_003_out_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_r01_003_out_Controller::view/$1");
+});
+
+$routes->group("ieat_ent_r01_005_out", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_r01_005_out_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_r01_005_out_Controller::add/$1");
+    $routes->post("store", "ieat_ent_r01_005_out_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_r01_005_out_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_r01_005_out_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_r01_005_out_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_r01_005_out_Controller::view/$1");
+});
+
+$routes->group("ieat_ent_r01_005_1_out", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_r01_005_1_out_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_r01_005_1_out_Controller::add/$1");
+    $routes->post("store", "ieat_ent_r01_005_1_out_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_r01_005_1_out_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_r01_005_1_out_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_r01_005_1_out_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_r01_005_1_out_Controller::view/$1");
+});

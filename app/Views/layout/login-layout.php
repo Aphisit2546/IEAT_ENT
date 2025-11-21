@@ -19,6 +19,8 @@
     <!-- animate style -->
     <link rel="stylesheet" href="dist/css/animate.min.css">
 
+    
+
     <style>
         .btn-confirm {
             background-color: #17a2b8;  
@@ -69,6 +71,12 @@
             cursor: pointer;
             border: 1px solid #0b5ed7; 
             transition: 0.2s;
+        }
+        .btn-information:hover {
+            background-color: #0b5ed7; 
+        }
+        .btn-information:active {
+            background-color: #0a58ca;
         }
 
         .btn-Searchrequestnumber {

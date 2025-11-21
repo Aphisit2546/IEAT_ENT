@@ -303,21 +303,135 @@
                 </div>
 
                 <div class="tab-pane" id="tab2">
-                    <div class="table-responsive div_header p-4">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>ระบุวันที่ทดลองเดินเครื่องจักร</td>
-                                    <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                </tr>
-                                <tr>
-                                    <td>ระบุรายละเอียดในการทดลองเดินเครื่องจักร</td>
-                                    <td><textarea name="detail_extend" cols="100" rows="5"><?php echo $datashow['detail_extend']; ?></textarea></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <div class="card p-4">
+                        <div class="table-responsive div_header p-4">
+                            <table class="table mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td class="align-middle" style="width:25%;">
+                                            รายงานประจำเดือน
+                                        </td>
+                                        <td style="width:75%;">
+                                            <div class="row row-form">
+                                                <div class="col-md-3 col-sm-4 mb-2">
+                                                    <select class="form-control" name="report_month">
+                                                        <option value="">เลือกเดือน</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-2 col-sm-3 mb-2">
+                                                    <select class="form-control" name="report_year">
+                                                        <option value="">เลือกปี</option>
+                                                    </select>
+                                                </div>
+
+                                                <div class="col-md-5 col-sm-5 mb-2">
+                                                    <button type="button" class="btn-checkreport">
+                                                        คลิกดูรายละเอียดรายงาน
+                                                    </button>
+                                                </div>
+
+                                                <div class="col-md-12" style="margin-top:6px;">
+                                                    <span style="color:red;">
+                                                        *** กรุณาคลิกดูรายละเอียดรายงาน ***
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
 
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>แสดงรายการใบอนุญาตเพื่อจัดทำรายงาน</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <table class="table" id="datatable01">
+                                <thead>
+                                    <tr>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ลำดับ</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>เลขที่ใบอนุญาต</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>วันที่ออกใบอนุญาต</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>จำนวนรายการในใบอนุญาต</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>มูลค่าตามใบอนุญาต(บาท)</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>ใช้ผ่านพิธีการ</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>เลขที่ใบขน</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>วันที่ตามใบขน</b></span></th>
+                                        <th class="table-head-tab" style="text-align: center; vertical-align: top;"><span class="font_header_detail"><b>หมายเหตุ</b></span></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td align="center">
+                                            1.
+                                        </td>
+                                        <td align="center">
+                                            A-001
+                                        </td>
+                                        <td align="center">
+                                            01/11/2025
+                                        </td>
+                                        <td align="center">
+                                            3
+                                        </td>
+                                        <td align="center">
+                                            200
+                                        </td>
+                                        <td align="center">
+                                            -
+                                        </td>
+                                        <td align="center">
+                                            999999
+                                        </td>
+                                        <td align="center">
+                                            01/11/2025
+                                        </td>
+                                        <td align="center">
+                                            -
+                                        </td>
+                                        <td align="center">
+                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td align="center">
+                                            1.
+                                        </td>
+                                        <td align="center">
+                                            A-001
+                                        </td>
+                                        <td align="center">
+                                            01/11/2025
+                                        </td>
+                                        <td align="center">
+                                            3
+                                        </td>
+                                        <td align="center">
+                                            200
+                                        </td>
+                                        <td align="center">
+                                            -
+                                        </td>
+                                        <td align="center">
+                                            999999
+                                        </td>
+                                        <td align="center">
+                                            01/11/2025
+                                        </td>
+                                        <td align="center">
+                                            -
+                                        </td>
+                                        <td align="center">
+                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="tab-pane" id="tab3">
@@ -414,6 +528,29 @@
                     </div>
                 </div>
                 <!-- /.tab-pane -->
+                 <div class="ieat-action-bar">
+                    <div class="ieat-action-group">
+                        <button type="button" class="ieat-btn ieat-btn--cancel" id="btnCancel">
+                            <i class="fas fa-arrow-left"></i>
+                            <span>ยกเลิกและกลับสู่หน้าหลัก</span>
+                        </button>
+
+                        <button type="button" class="ieat-btn ieat-btn--reset" id="btnReset">
+                            <i class="fas fa-undo-alt"></i>
+                            <span>ล้างข้อมูล</span>
+                        </button>
+
+                        <button type="button" class="ieat-btn ieat-btn--save" id="btnSaveDraft">
+                            <i class="fas fa-save"></i>
+                            <span>บันทึกการกรอกข้อมูล</span>
+                        </button>
+
+                        <button type="button" class="ieat-btn ieat-btn--submit" id="btnSubmit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>ส่งคำขอให้ กนอ.</span>
+                        </button>
+                    </div>
+                </div> 
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->
