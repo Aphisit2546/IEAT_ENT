@@ -100,12 +100,12 @@
         }
 
 
-        /* .class_header_page_02 {
+        .class_header_page_02 {
             font-family: 'Kanit', sans-serif;
             font-size: x-large;
             color: #FF4D00;
             opacity: 1;
-        } */
+        }
 
         .class_header_page_03 {
             font-family: 'Kanit', sans-serif;
