@@ -311,7 +311,7 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td>วัตถุประสงค์ในการยื่นคำขอ<td>
+                                        <td>เลือกไฟล์มติที่เกี่ยวข้อง<td>
                                         <table class="table table-lg">
                                             <div class="row row-form">
                                                 <div class="col-lg-12">

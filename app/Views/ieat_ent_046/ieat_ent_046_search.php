@@ -473,7 +473,7 @@
                             <table class="table" id="datatable01">
                                         <td>กรุณากรอกข้อมูลเหตุผลที่ขอยกเลิก</td>
                                         <td>
-                                            <textarea rows="6" cols="150" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                            <textarea rows="6" cols="100" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
                                         </td>
                             </table>
                         </div>

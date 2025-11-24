@@ -303,21 +303,66 @@
                 </div>
 
                 <div class="tab-pane" id="tab2">
-                    <div class="table-responsive div_header p-4">
-                        <table class="table">
-                            <tbody>
-                                <tr>
-                                    <td>ระบุวันที่ทดลองเดินเครื่องจักร</td>
-                                    <td><input type="text" name="date_extend" value="<?php echo $datashow['date_extend']; ?>" autocomplete="off"></td>
-                                </tr>
-                                <tr>
-                                    <td>ระบุรายละเอียดในการทดลองเดินเครื่องจักร</td>
-                                    <td><textarea name="detail_extend" cols="100" rows="5"><?php echo $datashow['detail_extend']; ?></textarea></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ยื่นคำขออนุมัติให้นำของหรือผลิตภัณฑ์ออกจากเขตประกอบการเสรี ให้ได้รับยกเว้นกฎหมายควบคุมฯ ตามมาตรา 49 (IEAT-E-03) เลขที่ TEST015 ลงวันที่ 31-01-2554 หมดอายุวันที่ 31-12-2558</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <table class="table">
+                                <tbody>
+                                    <tr>
+                                        <td>กรุณาเลือกประเภทของที่ต้องการนำออก<td>
+                                        <table class="table table-lg">
+                                            <div class="row row-form">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12">
+                                                        <select class="form-control">
+                                                            <option value="0">-- เลือก --</option>
+                                                        </select>
+                                                    </div>
+                                                </div>                           
+                                            </div>           
+                                        </table> 
+                                    </tr>
+                                    <tr>
+                                        <td>นำของออกโดย<td>
+                                        <table class="table table-lg">
+                                            <div class="row row-form">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12">
+                                                        <select class="form-control">
+                                                            <option value="0">-- เลือก --</option>
+                                                        </select>
+                                                    </div>
+                                                </div>                           
+                                            </div>           
+                                        </table> 
+                                    </tr>
+                                    <tr>
+                                        <td>ข้อมูลเพิ่มเติมอื่นๆ (ถ้ามี)</td>
+                                        <td>
+                                            <textarea rows="6" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>วัตถุประสงค์ในการนำของออก<td>
+                                        <table class="table table-lg">
+                                            <div class="row row-form">
+                                                <div class="col-lg-12">
+                                                    <div class="col-lg-12">
+                                                        <select class="form-control">
+                                                            <option value="0">-- เลือก --</option>
+                                                        </select>
+                                                    </div>
+                                                </div>                           
+                                            </div>           
+                                        </table> 
+                                    </tr>
+                        
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>              
                 </div>
 
                 <div class="tab-pane" id="tab3">
@@ -332,8 +377,8 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td class="table-detail-left radio-header" width="70%">
-                                            1. หนังสือรับรองการจดทะเบียนจัดตั้งนิติบุคคลและวัตถุประสงค์การจัดตั้ง และ สำเนาบัญชีรายชื่อผู้ถือหุ้น (บอจ.5/บริคณห์สนธิ) (ไม่เกิน 6 เดือน นับตั้งแต่วันที่ออกหนังสือ)
+                                        <td class="table-detail-left radio-header" width="40%">
+                                            กรุณาแนบเอกสารที่เกี่ยวข้อง
                                         </td>
                                         <td width="30%">
                                             <div class="custom-file">
@@ -343,69 +388,20 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td class="table-detail-left radio-header">2. หนังสือมอบอำนาจ ปิดอากรแสตมป์</td>
-                                        <td>
+                                        <td class="table-detail-left radio-header" width="40%">
+                                            นำเข้าข้อมูลตั้งต้นจากไฟล์ Template ต้นแบบ
+                                
+                                        </td>
+                                        <td width="30%">
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
+                                                <label class="custom-file-label" for="customFile">นำเข้าข้อมูลตั้งต้นจากไฟล์</label>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td colspan="2" style="padding-left:50px;">ประกอบด้วย</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.1 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง ผู้มอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.2 สำเนาทะเบียนบ้าน ผู้มอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.3 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง (Passport) ผู้รับมอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.4 สำเนาทะเบียนบ้าน ผู้รับมอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">3. หนังสืออนุญาตใช้ที่ดิน กนอ. 01/2 หรือ กนอ.03/6 ล่าสุด</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">4. เอกสารอื่นๆที่เกี่ยวข้อง</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
+                                        <td class="table-detail-left radio-header" width="40%">
+                                            <font color="red">* เมื่อแนบไฟล๋ PDF เสร็จ กรุณากดบันทึกการกรอกข้อมูล แล้วจึงดำเนินการจัดทำรายการข้อมูลตามหลักฐาน Invoice *</font>
                                         </td>
                                     </tr>
                                 </tbody>
