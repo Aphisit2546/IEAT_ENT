@@ -15,11 +15,11 @@
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <a href="ieat_ent_r01_003_out" style="color: #6007b3ff; font-size: 18px;"><b>จัดทำรายงานการนำของออก ประเภทตามช่วงเวลา (IEAT-E-02-R-01)</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
+    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-901-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">
-    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-306-00001-2568</b></font>
+    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-901-00001-2568</b></font>
     &nbsp;&nbsp;
     <font style="color: #000000ff; font-size: 18px;"><b>จัดทำรายงานการนำของออก ประเภทตามช่วงเวลา (IEAT-E-02-R-01)</b></font>
 </div>
@@ -30,7 +30,6 @@
             <ul class="nav nav-pills">
                 <li class="nav-item"><a class="nav-link active" href="#tab1" data-toggle="tab"><span class="font_header_detail"><b>ข้อมูลทั่วไป</b></span></a></li>
                 <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="tab"><span class="font_header_detail"><b>ข้อมูลเกี่ยวกับการขออนุญาต</b></span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#tab3" data-toggle="tab"><span class="font_header_detail"><b>เอกสารประกอบการขออนุญาต</b></span></a></li>
             </ul>
         </div><!-- /.card-header -->
 
@@ -121,7 +120,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">โรงงานตั้งอยู่ในนิคมอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                เอเซีย (สุวรรณภูมิ)<?php echo $_SESSION['industrial_name_view']; ?>
+                                                บางปะอิน<?php echo $_SESSION['industrial_name_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -129,7 +128,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">ในเขตอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                อุตสาหกรรมทั่วไป<?php echo $_SESSION['industrial_zone_view']; ?>
+                                                เขคประกอบการเสรี<?php echo $_SESSION['industrial_zone_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -141,10 +140,10 @@
                                                 <span><b>หมู่ที่ 9999</b><?php echo $_SESSION['moo_office_view']; ?></span>
                                                 <span><b>ซอย -</b><?php echo $_SESSION['lane_office_view']; ?></span>
                                                 <span><b>ถนน -</b><?php echo $_SESSION['street_office_view']; ?></span>
-                                                <span><b>ตำบล คลองสวน</b><?php echo $_SESSION['district_office_view']; ?></span>
-                                                <span><b>อำเภอ บางบ่อ</b><?php echo $_SESSION['amphur_office_view']; ?></span>
-                                                <span><b>จังหวัด สมุทรปราการ</b><?php echo $_SESSION['province_office_view']; ?></span>
-                                                <span><b>รหัสไปรษณีย์ 10560</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
+                                                <span><b>ตำบล คลองจิก</b><?php echo $_SESSION['district_office_view']; ?></span>
+                                                <span><b>อำเภอ บางปะอิน</b><?php echo $_SESSION['amphur_office_view']; ?></span>
+                                                <span><b>จังหวัด พระนครศรีอยุธยา</b><?php echo $_SESSION['province_office_view']; ?></span>
+                                                <span><b>รหัสไปรษณีย์ 13160</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
                                             </div>
                                         </td>
                                     </tr>
@@ -256,11 +255,11 @@
                         </div>
                     </div>
 
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
+                        </div>
                         <div class="card p-4">
-                            <div class="card-header">
-                                <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
-                            </div>
-                            <div class="card p-4">
                             <div class="row">
                                 <div class="col-6" align="left">
                                     <div class="table-responsive div_header p-4">
@@ -304,14 +303,6 @@
 
                 <div class="tab-pane" id="tab2">
                     <div class="card p-4">
-                        <div class="card-header">
-                            <span class="font_header">
-                                <b>
-                                    <span style="color:red;">คลิกเพื่อดาวน์โหลดไฟล์เอกสารต้นแบบ</span>
-                                    หมายเหตุ : ผู้ใช้งานกรุณาตรวจสอบข้อมูล และแบบฟอร์มให้ถูกต้องในการใช้งาน
-                                </b>
-                            </span>
-                        </div>
                         <div class="table-responsive div_header p-4">
                             <table class="table mb-0">
                                 <tbody>
@@ -349,16 +340,6 @@
                                     </tr>
                                     <tr>
                                         <td class="align-middle" style="width:25%;">
-                                            ข้าพเจ้ามีความประสงค์จะส่งรายงานให้กับ
-                                        </td>
-                                        <td style="width:75%;">
-                                            <select class="form-control" name="send_to">
-                                                <option value="">เลือกหน่วยงาน</option>
-                                            </select>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="align-middle" style="width:25%;">
                                             *** กรุณาระบุจำนวนใบอนุญาต ***
                                         </td>
                                         <td style="width:75%;">
@@ -373,7 +354,7 @@
                                     </tr>
                                     <tr>
                                         <td class="align-middle" style="width:25%;">
-                                            แบบรายการข้อมูลน้ำของออกอากาศรูปแบบจากเอกสารต้นแบบของที่นำเข้า
+                                            แบบรายการข้อมูลนำของออกอากาศรูปแบบจากเอกสารต้นแบบของที่นำเข้า
                                         </td>
                                         <td style="width:75%;">
                                             <div class="custom-file">
@@ -602,7 +583,7 @@
                             <span>ส่งคำขอให้ กนอ.</span>
                         </button>
                     </div>
-                </div>                  
+                </div>
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->

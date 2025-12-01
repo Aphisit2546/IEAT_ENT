@@ -16,11 +16,11 @@
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <a href="ieat_ent_045" style="color: #6007b3ff; font-size: 18px;"><b>ยื่นคำขออนุญาตนำของออกไปจากเขตประกอบการเสรี (นำของออก) IEAT-E-01</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
+    <a style="color: #000000ff; font-size: 18px;"><b>1-13-1-45-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">
-    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-306-00001-2568</b></font>
+    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-13-1-45-00001-2568</b></font>
     &nbsp;&nbsp;
     <font style="color: #000000ff; font-size: 18px;"><b>ยื่นคำขออนุญาตนำของออกไปจากเขตประกอบการเสรี (นำของออก) IEAT-E-01</b></font>
 </div>
@@ -122,7 +122,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">โรงงานตั้งอยู่ในนิคมอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                เอเซีย (สุวรรณภูมิ)<?php echo $_SESSION['industrial_name_view']; ?>
+                                                บางปะอิน<?php echo $_SESSION['industrial_name_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -130,7 +130,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">ในเขตอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                อุตสาหกรรมทั่วไป<?php echo $_SESSION['industrial_zone_view']; ?>
+                                                เขคประกอบการเสรี<?php echo $_SESSION['industrial_zone_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -142,10 +142,10 @@
                                                 <span><b>หมู่ที่ 9999</b><?php echo $_SESSION['moo_office_view']; ?></span>
                                                 <span><b>ซอย -</b><?php echo $_SESSION['lane_office_view']; ?></span>
                                                 <span><b>ถนน -</b><?php echo $_SESSION['street_office_view']; ?></span>
-                                                <span><b>ตำบล คลองสวน</b><?php echo $_SESSION['district_office_view']; ?></span>
-                                                <span><b>อำเภอ บางบ่อ</b><?php echo $_SESSION['amphur_office_view']; ?></span>
-                                                <span><b>จังหวัด สมุทรปราการ</b><?php echo $_SESSION['province_office_view']; ?></span>
-                                                <span><b>รหัสไปรษณีย์ 10560</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
+                                                <span><b>ตำบล คลองจิก</b><?php echo $_SESSION['district_office_view']; ?></span>
+                                                <span><b>อำเภอ บางปะอิน</b><?php echo $_SESSION['amphur_office_view']; ?></span>
+                                                <span><b>จังหวัด พระนครศรีอยุธยา</b><?php echo $_SESSION['province_office_view']; ?></span>
+                                                <span><b>รหัสไปรษณีย์ 13160</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
                                             </div>
                                         </td>
                                     </tr>
@@ -257,11 +257,11 @@
                         </div>
                     </div>
 
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
+                        </div>
                         <div class="card p-4">
-                            <div class="card-header">
-                                <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
-                            </div>
-                            <div class="card p-4">
                             <div class="row">
                                 <div class="col-6" align="left">
                                     <div class="table-responsive div_header p-4">
@@ -313,8 +313,8 @@
                                 <tbody>
                                     <tr>
                                         <td class="table-detail-left radio-header" width="40%">
-                                            <font color="red">* บริษัทมีความประสงค์ให้พิจารณาคำขอในวันเสาร์-อาทิตย์ (500 บาท ต่อคำขอและค่าใช้ระบบ 140 บาทต่อคำขอ รวมเป็น 640 บาท)  
-                                            โดยจะต้องเลือกความประสงค์จะทำธุรกรรมอิเล็กทรอนิกส์กับสำนักงานใหญ่การนิคมอุตสาหกรรมแห่งประเทศไทยเท่านั้น *</font>
+                                            <font color="red">* บริษัทมีความประสงค์ให้พิจารณาคำขอในวันเสาร์-อาทิตย์ (500 บาท ต่อคำขอและค่าใช้ระบบ 140 บาทต่อคำขอ รวมเป็น 640 บาท)
+                                                โดยจะต้องเลือกความประสงค์จะทำธุรกรรมอิเล็กทรอนิกส์กับสำนักงานใหญ่การนิคมอุตสาหกรรมแห่งประเทศไทยเท่านั้น *</font>
                                         </td>
                                         <td width="30%">
                                             <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
@@ -324,32 +324,34 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>กรุณาเลือกประเภทของที่ต้องการนำออก<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>กรุณาเลือกประเภทของที่ต้องการนำออก
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
                                     </tr>
                                     <tr>
-                                        <td>นำของออกโดย<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>นำของออกโดย
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
                                     </tr>
                                     <tr>
                                         <td>ข้อมูลเพิ่มเติมอื่นๆ (ถ้ามี)</td>
@@ -358,18 +360,20 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td><font color="blue">วัตถุประสงค์ในการนำของออก</font><td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>
+                                            <font color="blue">วัตถุประสงค์ในการนำของออก</font>
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
                                     </tr>
                                     <tr>
                                         <td class="table-detail-left radio-header" width="40%">
@@ -389,7 +393,9 @@
                         </div>
                         <div class="table-responsive div_header p-4">
                             <div class="card-header">
-                                <span class="font_header_detail"><b><font color="red">* กรุณากรอกข้อมูลและกดบันทึกข้อมูลใน Tab ข้อมูลทั่วไปและกรอกข้อมูลคำขอก่อนค่ะ *</font></b></span>
+                                <span class="font_header_detail"><b>
+                                        <font color="red">* กรุณากรอกข้อมูลและกดบันทึกข้อมูลใน Tab ข้อมูลทั่วไปและกรอกข้อมูลคำขอก่อนค่ะ *</font>
+                                    </b></span>
                             </div>
                         </div>
                     </div>

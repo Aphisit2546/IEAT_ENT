@@ -2629,7 +2629,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- /.tab-pane -->
+<!-- /.tab-pane -->
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->

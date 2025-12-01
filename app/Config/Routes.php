@@ -444,6 +444,297 @@ $routes->group("ieat_ent_036", function ($routes) {
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+$routes->group("center_ieat_ent", function ($routes) {
+    $routes->match(["get", "post"], "/", "center_ieat_ent_Controller::index");
+    $routes->get("page_office", "center_ieat_ent_Controller::page_office");
+});
+
+$routes->group("ieat_office_011", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_011_Controller::index");
+    $routes->get("p1", "ieat_office_011_Controller::p1");
+    $routes->get("p2", "ieat_office_011_Controller::p2");
+    $routes->get("p3", "ieat_office_011_Controller::p3");
+    $routes->get("otp", "ieat_office_011_Controller::otp");
+    $routes->get("final", "ieat_office_011_Controller::final");
+});
+
+$routes->group("ieat_office_011_1", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_011_1_Controller::index");
+    $routes->get("p1", "ieat_office_011_1_Controller::p1");
+    $routes->get("p2", "ieat_office_011_1_Controller::p2");
+    $routes->get("p3", "ieat_office_011_1_Controller::p3");
+    $routes->get("otp", "ieat_office_011_1_Controller::otp");
+    $routes->get("final", "ieat_office_011_1_Controller::final");
+});
+
+$routes->group("ieat_office_013", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_013_Controller::index");
+    $routes->get("p1", "ieat_office_013_Controller::p1");
+    $routes->get("p2", "ieat_office_013_Controller::p2");
+    $routes->get("p3", "ieat_office_013_Controller::p3");
+    $routes->get("otp", "ieat_office_013_Controller::otp");
+    $routes->get("final", "ieat_office_013_Controller::final");
+});
+
+$routes->group("ieat_office_013_1", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_013_1_Controller::index");
+    $routes->get("p1", "ieat_office_013_1_Controller::p1");
+    $routes->get("p2", "ieat_office_013_1_Controller::p2");
+    $routes->get("p3", "ieat_office_013_1_Controller::p3");
+    $routes->get("otp", "ieat_office_013_1_Controller::otp");
+    $routes->get("final", "ieat_office_013_1_Controller::final");
+});
+
+$routes->group("ieat_office_013_2", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_013_2_Controller::index");
+    $routes->get("p1", "ieat_office_013_2_Controller::p1");
+    $routes->get("p2", "ieat_office_013_2_Controller::p2");
+    $routes->get("p3", "ieat_office_013_2_Controller::p3");
+    $routes->get("otp", "ieat_office_013_2_Controller::otp");
+    $routes->get("final", "ieat_office_013_2_Controller::final");
+});
+
+$routes->group("ieat_office_013_3", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_013_3_Controller::index");
+    $routes->get("p1", "ieat_office_013_3_Controller::p1");
+    $routes->get("p2", "ieat_office_013_3_Controller::p2");
+    $routes->get("p3", "ieat_office_013_3_Controller::p3");
+    $routes->get("otp", "ieat_office_013_3_Controller::otp");
+    $routes->get("final", "ieat_office_013_3_Controller::final");
+});
+
+$routes->group("ieat_office_013_4", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_013_4_Controller::index");
+    $routes->get("p1", "ieat_office_013_4_Controller::p1");
+    $routes->get("p2", "ieat_office_013_4_Controller::p2");
+    $routes->get("p3", "ieat_office_013_4_Controller::p3");
+    $routes->get("otp", "ieat_office_013_4_Controller::otp");
+    $routes->get("final", "ieat_office_013_4_Controller::final");
+});
+
+$routes->group("ieat_office_013_9", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_013_9_Controller::index");
+    $routes->get("p1", "ieat_office_013_9_Controller::p1");
+    $routes->get("p2", "ieat_office_013_9_Controller::p2");
+    $routes->get("p3", "ieat_office_013_9_Controller::p3");
+    $routes->get("otp", "ieat_office_013_9_Controller::otp");
+    $routes->get("final", "ieat_office_013_9_Controller::final");
+});
+
+$routes->group("ieat_office_013_10", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_013_10_Controller::index");
+    $routes->get("p1", "ieat_office_013_10_Controller::p1");
+    $routes->get("p2", "ieat_office_013_10_Controller::p2");
+    $routes->get("p3", "ieat_office_013_10_Controller::p3");
+    $routes->get("otp", "ieat_office_013_10_Controller::otp");
+    $routes->get("final", "ieat_office_013_10_Controller::final");
+});
+
+$routes->group("ieat_office_013_p1", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_013_p1_Controller::index");
+    $routes->get("p1", "ieat_office_013_p1_Controller::p1");
+    $routes->get("p2", "ieat_office_013_p1_Controller::p2");
+    $routes->get("p3", "ieat_office_013_p1_Controller::p3");
+    $routes->get("otp", "ieat_office_013_p1_Controller::otp");
+    $routes->get("final", "ieat_office_013_p1_Controller::final");
+});
+
+$routes->group("ieat_office_013_p2", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_013_p2_Controller::index");
+    $routes->get("p1", "ieat_office_013_p2_Controller::p1");
+    $routes->get("p2", "ieat_office_013_p2_Controller::p2");
+    $routes->get("p3", "ieat_office_013_p2_Controller::p3");
+    $routes->get("otp", "ieat_office_013_p2_Controller::otp");
+    $routes->get("final", "ieat_office_013_p2_Controller::final");
+});
+
+$routes->group("ieat_office_021", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_021_Controller::index");
+    $routes->get("p1", "ieat_office_021_Controller::p1");
+    $routes->get("p15", "ieat_office_021_Controller::p15");
+    $routes->get("p2", "ieat_office_021_Controller::p2");
+    $routes->get("p3", "ieat_office_021_Controller::p3");
+    $routes->get("otp", "ieat_office_021_Controller::otp");
+    $routes->get("final", "ieat_office_021_Controller::final");
+});
+
+$routes->group("ieat_office_022", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_022_Controller::index");
+    $routes->get("p1", "ieat_office_022_Controller::p1");
+    $routes->get("p15", "ieat_office_022_Controller::p15");
+    $routes->get("p2", "ieat_office_022_Controller::p2");
+    $routes->get("p3", "ieat_office_022_Controller::p3");
+    $routes->get("otp", "ieat_office_022_Controller::otp");
+    $routes->get("final", "ieat_office_022_Controller::final");
+});
+
+$routes->group("ieat_office_023", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_023_Controller::index");
+    $routes->get("p1", "ieat_office_023_Controller::p1");
+    $routes->get("p15", "ieat_office_023_Controller::p15");
+    $routes->get("p2", "ieat_office_023_Controller::p2");
+    $routes->get("p3", "ieat_office_023_Controller::p3");
+    $routes->get("otp", "ieat_office_023_Controller::otp");
+    $routes->get("final", "ieat_office_023_Controller::final");
+});
+
+$routes->group("ieat_office_024", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_024_Controller::index");
+    $routes->get("p1", "ieat_office_024_Controller::p1");
+    $routes->get("p15", "ieat_office_024_Controller::p15");
+    $routes->get("p2", "ieat_office_024_Controller::p2");
+    $routes->get("p3", "ieat_office_024_Controller::p3");
+    $routes->get("otp", "ieat_office_024_Controller::otp");
+    $routes->get("final", "ieat_office_024_Controller::final");
+});
+
+$routes->group("ieat_office_025", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_025_Controller::index");
+    $routes->get("p1", "ieat_office_025_Controller::p1");
+    $routes->get("p15", "ieat_office_025_Controller::p15");
+    $routes->get("p2", "ieat_office_025_Controller::p2");
+    $routes->get("p3", "ieat_office_025_Controller::p3");
+    $routes->get("otp", "ieat_office_025_Controller::otp");
+    $routes->get("final", "ieat_office_025_Controller::final");
+});
+
+$routes->group("ieat_office_026", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_026_Controller::index");
+    $routes->get("p1", "ieat_office_026_Controller::p1");
+    $routes->get("p15", "ieat_office_026_Controller::p15");
+    $routes->get("p2", "ieat_office_026_Controller::p2");
+    $routes->get("p3", "ieat_office_026_Controller::p3");
+    $routes->get("otp", "ieat_office_026_Controller::otp");
+    $routes->get("final", "ieat_office_026_Controller::final");
+});
+
+$routes->group("ieat_office_027", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_027_Controller::index");
+    $routes->get("p1", "ieat_office_027_Controller::p1");
+    $routes->get("p15", "ieat_office_027_Controller::p15");
+    $routes->get("p2", "ieat_office_027_Controller::p2");
+    $routes->get("p3", "ieat_office_027_Controller::p3");
+    $routes->get("otp", "ieat_office_027_Controller::otp");
+    $routes->get("final", "ieat_office_027_Controller::final");
+});
+
+$routes->group("ieat_office_028", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_028_Controller::index");
+    $routes->get("p1", "ieat_office_028_Controller::p1");
+    $routes->get("p15", "ieat_office_028_Controller::p15");
+    $routes->get("p2", "ieat_office_028_Controller::p2");
+    $routes->get("p3", "ieat_office_028_Controller::p3");
+    $routes->get("otp", "ieat_office_028_Controller::otp");
+    $routes->get("final", "ieat_office_028_Controller::final");
+});
+
+$routes->group("ieat_office_029", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_029_Controller::index");
+    $routes->get("p1", "ieat_office_029_Controller::p1");
+    $routes->get("p15", "ieat_office_029_Controller::p15");
+    $routes->get("p2", "ieat_office_029_Controller::p2");
+    $routes->get("p3", "ieat_office_029_Controller::p3");
+    $routes->get("otp", "ieat_office_029_Controller::otp");
+    $routes->get("final", "ieat_office_029_Controller::final");
+});
+
+$routes->group("ieat_office_0210", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_0210_Controller::index");
+    $routes->get("p1", "ieat_office_0210_Controller::p1");
+    $routes->get("p15", "ieat_office_0210_Controller::p15");
+    $routes->get("p2", "ieat_office_0210_Controller::p2");
+    $routes->get("p3", "ieat_office_0210_Controller::p3");
+    $routes->get("otp", "ieat_office_0210_Controller::otp");
+    $routes->get("final", "ieat_office_0210_Controller::final");
+});
+
+$routes->group("ieat_office_0211", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_0211_Controller::index");
+    $routes->get("p1", "ieat_office_0211_Controller::p1");
+    $routes->get("p15", "ieat_office_0211_Controller::p15");
+    $routes->get("p2", "ieat_office_0211_Controller::p2");
+    $routes->get("p3", "ieat_office_0211_Controller::p3");
+    $routes->get("otp", "ieat_office_0211_Controller::otp");
+    $routes->get("final", "ieat_office_0211_Controller::final");
+});
+
+$routes->group("ieat_office_0212", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_0212_Controller::index");
+    $routes->get("p1", "ieat_office_0212_Controller::p1");
+    $routes->get("p15", "ieat_office_0212_Controller::p15");
+    $routes->get("p2", "ieat_office_0212_Controller::p2");
+    $routes->get("p3", "ieat_office_0212_Controller::p3");
+    $routes->get("otp", "ieat_office_0212_Controller::otp");
+    $routes->get("final", "ieat_office_0212_Controller::final");
+});
+
+$routes->group("ieat_office_0213", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_0213_Controller::index");
+    $routes->get("p1", "ieat_office_0213_Controller::p1");
+    $routes->get("p15", "ieat_office_0213_Controller::p15");
+    $routes->get("p2", "ieat_office_0213_Controller::p2");
+    $routes->get("p3", "ieat_office_0213_Controller::p3");
+    $routes->get("otp", "ieat_office_0213_Controller::otp");
+    $routes->get("final", "ieat_office_0213_Controller::final");
+});
+
+$routes->group("ieat_office_0214", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_0214_Controller::index");
+    $routes->get("p1", "ieat_office_0214_Controller::p1");
+    $routes->get("p15", "ieat_office_0214_Controller::p15");
+    $routes->get("p2", "ieat_office_0214_Controller::p2");
+    $routes->get("p3", "ieat_office_0214_Controller::p3");
+    $routes->get("otp", "ieat_office_0214_Controller::otp");
+    $routes->get("final", "ieat_office_0214_Controller::final");
+});
+
+$routes->group("ieat_office_031", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_031_Controller::index");
+    $routes->get("p1", "ieat_office_031_Controller::p1");
+    $routes->get("p2", "ieat_office_031_Controller::p2");
+    $routes->get("p3", "ieat_office_031_Controller::p3");
+    $routes->get("otp", "ieat_office_031_Controller::otp");
+    $routes->get("final", "ieat_office_031_Controller::final");
+});
+
+$routes->group("ieat_office_032", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_032_Controller::index");
+    $routes->get("p1", "ieat_office_032_Controller::p1");
+    $routes->get("p2", "ieat_office_032_Controller::p2");
+    $routes->get("p3", "ieat_office_032_Controller::p3");
+    $routes->get("otp", "ieat_office_032_Controller::otp");
+    $routes->get("final", "ieat_office_032_Controller::final");
+});
+
+$routes->group("ieat_office_034", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_034_Controller::index");
+    $routes->get("p1", "ieat_office_034_Controller::p1");
+    $routes->get("p2", "ieat_office_034_Controller::p2");
+    $routes->get("p3", "ieat_office_034_Controller::p3");
+    $routes->get("otp", "ieat_office_034_Controller::otp");
+    $routes->get("final", "ieat_office_034_Controller::final");
+});
+
+$routes->group("ieat_office_035", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_035_Controller::index");
+    $routes->get("p1", "ieat_office_035_Controller::p1");
+    $routes->get("p2", "ieat_office_035_Controller::p2");
+    $routes->get("p3", "ieat_office_035_Controller::p3");
+    $routes->get("otp", "ieat_office_035_Controller::otp");
+    $routes->get("final", "ieat_office_035_Controller::final");
+});
+
+$routes->group("ieat_office_036", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_036_Controller::index");
+    $routes->get("p1", "ieat_office_036_Controller::p1");
+    $routes->get("p2", "ieat_office_036_Controller::p2");
+    $routes->get("p3", "ieat_office_036_Controller::p3");
+    $routes->get("otp", "ieat_office_036_Controller::otp");
+    $routes->get("final", "ieat_office_036_Controller::final");
+});
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 $routes->group("ieat_ent_041", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_041_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_041_Controller::add/$1");
@@ -452,6 +743,15 @@ $routes->group("ieat_ent_041", function ($routes) {
     $routes->post("upd", "ieat_ent_041_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_041_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_041_Controller::view/$1");
+});
+
+$routes->group("ieat_office_041", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_041_Controller::index");
+    $routes->get("p1", "ieat_office_041_Controller::p1");
+    $routes->get("p2", "ieat_office_041_Controller::p2");
+    $routes->get("p3", "ieat_office_041_Controller::p3");
+    $routes->get("otp", "ieat_office_041_Controller::otp");
+    $routes->get("final", "ieat_office_041_Controller::final");
 });
 
 $routes->group("ieat_ent_042", function ($routes) {
@@ -464,6 +764,15 @@ $routes->group("ieat_ent_042", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_042_Controller::view/$1");
 });
 
+$routes->group("ieat_office_042", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_042_Controller::index");
+    $routes->get("p1", "ieat_office_042_Controller::p1");
+    $routes->get("p2", "ieat_office_042_Controller::p2");
+    $routes->get("p3", "ieat_office_042_Controller::p3");
+    $routes->get("otp", "ieat_office_042_Controller::otp");
+    $routes->get("final", "ieat_office_042_Controller::final");
+});
+
 $routes->group("ieat_ent_043", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_043_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_043_Controller::add/$1");
@@ -472,6 +781,15 @@ $routes->group("ieat_ent_043", function ($routes) {
     $routes->post("upd", "ieat_ent_043_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_043_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_043_Controller::view/$1");
+});
+
+$routes->group("ieat_office_043", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_043_Controller::index");
+    $routes->get("p1", "ieat_office_043_Controller::p1");
+    $routes->get("p2", "ieat_office_043_Controller::p2");
+    $routes->get("p3", "ieat_office_043_Controller::p3");
+    $routes->get("otp", "ieat_office_043_Controller::otp");
+    $routes->get("final", "ieat_office_043_Controller::final");
 });
 
 $routes->group("ieat_ent_044", function ($routes) {
@@ -484,6 +802,15 @@ $routes->group("ieat_ent_044", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_044_Controller::view/$1");
 });
 
+$routes->group("ieat_office_044", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_044_Controller::index");
+    $routes->get("p1", "ieat_office_044_Controller::p1");
+    $routes->get("p2", "ieat_office_044_Controller::p2");
+    $routes->get("p3", "ieat_office_044_Controller::p3");
+    $routes->get("otp", "ieat_office_044_Controller::otp");
+    $routes->get("final", "ieat_office_044_Controller::final");
+});
+
 $routes->group("ieat_ent_045", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_045_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_045_Controller::add/$1");
@@ -492,6 +819,15 @@ $routes->group("ieat_ent_045", function ($routes) {
     $routes->post("upd", "ieat_ent_045_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_045_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_045_Controller::view/$1");
+});
+
+$routes->group("ieat_office_045", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_045_Controller::index");
+    $routes->get("p1", "ieat_office_045_Controller::p1");
+    $routes->get("p2", "ieat_office_045_Controller::p2");
+    $routes->get("p3", "ieat_office_045_Controller::p3");
+    $routes->get("otp", "ieat_office_045_Controller::otp");
+    $routes->get("final", "ieat_office_045_Controller::final");
 });
 
 $routes->group("ieat_ent_taxincentive", function ($routes) {
@@ -504,6 +840,15 @@ $routes->group("ieat_ent_taxincentive", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_taxincentive_Controller::view/$1");
 });
 
+$routes->group("ieat_office_taxincentive", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_taxincentive_Controller::index");
+    $routes->get("p1", "ieat_office_taxincentive_Controller::p1");
+    $routes->get("p2", "ieat_office_taxincentive_Controller::p2");
+    $routes->get("p3", "ieat_office_taxincentive_Controller::p3");
+    $routes->get("otp", "ieat_office_taxincentive_Controller::otp");
+    $routes->get("final", "ieat_office_taxincentive_Controller::final");
+});
+
 $routes->group("ieat_ent_canceltaxincentive", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_canceltaxincentive_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_canceltaxincentive_Controller::add/$1");
@@ -512,6 +857,15 @@ $routes->group("ieat_ent_canceltaxincentive", function ($routes) {
     $routes->post("upd", "ieat_ent_canceltaxincentive_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_canceltaxincentive_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_canceltaxincentive_Controller::view/$1");
+});
+
+$routes->group("ieat_office_canceltaxincentive", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_canceltaxincentive_Controller::index");
+    $routes->get("p1", "ieat_office_canceltaxincentive_Controller::p1");
+    $routes->get("p2", "ieat_office_canceltaxincentive_Controller::p2");
+    $routes->get("p3", "ieat_office_canceltaxincentive_Controller::p3");
+    $routes->get("otp", "ieat_office_canceltaxincentive_Controller::otp");
+    $routes->get("final", "ieat_office_canceltaxincentive_Controller::final");
 });
 
 $routes->group("ieat_ent_04021", function ($routes) {
@@ -524,6 +878,15 @@ $routes->group("ieat_ent_04021", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_04021_Controller::view/$1");
 });
 
+$routes->group("ieat_office_04021", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_04021_Controller::index");
+    $routes->get("p1", "ieat_office_04021_Controller::p1");
+    $routes->get("p2", "ieat_office_04021_Controller::p2");
+    $routes->get("p3", "ieat_office_04021_Controller::p3");
+    $routes->get("otp", "ieat_office_04021_Controller::otp");
+    $routes->get("final", "ieat_office_04021_Controller::final");
+});
+
 $routes->group("ieat_ent_04051", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_04051_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_04051_Controller::add/$1");
@@ -532,6 +895,15 @@ $routes->group("ieat_ent_04051", function ($routes) {
     $routes->post("upd", "ieat_ent_04051_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_04051_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_04051_Controller::view/$1");
+});
+
+$routes->group("ieat_office_04051", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_04051_Controller::index");
+    $routes->get("p1", "ieat_office_04051_Controller::p1");
+    $routes->get("p2", "ieat_office_04051_Controller::p2");
+    $routes->get("p3", "ieat_office_04051_Controller::p3");
+    $routes->get("otp", "ieat_office_04051_Controller::otp");
+    $routes->get("final", "ieat_office_04051_Controller::final");
 });
 
 $routes->group("ieat_ent_046", function ($routes) {
@@ -564,6 +936,15 @@ $routes->group("ieat_ent_r01_003", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_r01_003_Controller::view/$1");
 });
 
+$routes->group("ieat_office_r01_003", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_r01_003_Controller::index");
+    $routes->get("p1", "ieat_office_r01_003_Controller::p1");
+    $routes->get("p2", "ieat_office_r01_003_Controller::p2");
+    $routes->get("p3", "ieat_office_r01_003_Controller::p3");
+    $routes->get("otp", "ieat_office_r01_003_Controller::otp");
+    $routes->get("final", "ieat_office_r01_003_Controller::final");
+});
+
 $routes->group("ieat_ent_r01_005", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_r01_005_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_r01_005_Controller::add/$1");
@@ -572,6 +953,15 @@ $routes->group("ieat_ent_r01_005", function ($routes) {
     $routes->post("upd", "ieat_ent_r01_005_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_r01_005_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_r01_005_Controller::view/$1");
+});
+
+$routes->group("ieat_office_r01_005", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_r01_005_Controller::index");
+    $routes->get("p1", "ieat_office_r01_005_Controller::p1");
+    $routes->get("p2", "ieat_office_r01_005_Controller::p2");
+    $routes->get("p3", "ieat_office_r01_005_Controller::p3");
+    $routes->get("otp", "ieat_office_r01_005_Controller::otp");
+    $routes->get("final", "ieat_office_r01_005_Controller::final");
 });
 
 $routes->group("ieat_ent_r01_005_1", function ($routes) {
@@ -584,6 +974,15 @@ $routes->group("ieat_ent_r01_005_1", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_r01_005_1_Controller::view/$1");
 });
 
+$routes->group("ieat_office_r01_005_1", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_r01_005_1_Controller::index");
+    $routes->get("p1", "ieat_office_r01_005_1_Controller::p1");
+    $routes->get("p2", "ieat_office_r01_005_1_Controller::p2");
+    $routes->get("p3", "ieat_office_r01_005_1_Controller::p3");
+    $routes->get("otp", "ieat_office_r01_005_1_Controller::otp");
+    $routes->get("final", "ieat_office_r01_005_1_Controller::final");
+});
+
 $routes->group("ieat_ent_r01_003_out", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_r01_003_out_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_r01_003_out_Controller::add/$1");
@@ -592,6 +991,15 @@ $routes->group("ieat_ent_r01_003_out", function ($routes) {
     $routes->post("upd", "ieat_ent_r01_003_out_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_r01_003_out_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_r01_003_out_Controller::view/$1");
+});
+
+$routes->group("ieat_office_r01_003_out", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_r01_003_out_Controller::index");
+    $routes->get("p1", "ieat_office_r01_003_out_Controller::p1");
+    $routes->get("p2", "ieat_office_r01_003_out_Controller::p2");
+    $routes->get("p3", "ieat_office_r01_003_out_Controller::p3");
+    $routes->get("otp", "ieat_office_r01_003_out_Controller::otp");
+    $routes->get("final", "ieat_office_r01_003_out_Controller::final");
 });
 
 $routes->group("ieat_ent_r01_005_out", function ($routes) {
@@ -604,6 +1012,16 @@ $routes->group("ieat_ent_r01_005_out", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_r01_005_out_Controller::view/$1");
 });
 
+$routes->group("ieat_office_r01_005_out", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_r01_005_out_Controller::index");
+    $routes->get("p1", "ieat_office_r01_005_out_Controller::p1");
+    $routes->get("p2", "ieat_office_r01_005_out_Controller::p2");
+    $routes->get("p3", "ieat_office_r01_005_out_Controller::p3");
+    $routes->get("otp", "ieat_office_r01_005_out_Controller::otp");
+    $routes->get("final", "ieat_office_r01_005_out_Controller::final");
+});
+
+
 $routes->group("ieat_ent_r01_005_1_out", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_r01_005_1_out_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_r01_005_1_out_Controller::add/$1");
@@ -614,25 +1032,149 @@ $routes->group("ieat_ent_r01_005_1_out", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_r01_005_1_out_Controller::view/$1");
 });
 
-$routes->group("ieat_ent_selfdecare", function ($routes) {
-    $routes->match(["get", "post"], "/", "ieat_ent_selfdecare_Controller::index");
-    $routes->get("add/(:any)", "ieat_ent_selfdecare_Controller::add/$1");
-    $routes->post("store", "ieat_ent_selfdecare_Controller::store");
-    $routes->get("edt/(:num)", "ieat_ent_selfdecare_Controller::edit/$1");
-    $routes->post("upd", "ieat_ent_selfdecare_Controller::update");
-    $routes->get("del/(:num)", "ieat_ent_selfdecare_Controller::delete/$1");
-    $routes->get("view/(:num)", "ieat_ent_selfdecare_Controller::view/$1");
+$routes->group("ieat_office_r01_005_1_out", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_r01_005_1_out_Controller::index");
+    $routes->get("p1", "ieat_office_r01_005_1_out_Controller::p1");
+    $routes->get("p2", "ieat_office_r01_005_1_out_Controller::p2");
+    $routes->get("p3", "ieat_office_r01_005_1_out_Controller::p3");
+    $routes->get("otp", "ieat_office_r01_005_1_out_Controller::otp");
+    $routes->get("final", "ieat_office_r01_005_1_out_Controller::final");
 });
 
-// $routes->group("ieat_ent_05_0001", function ($routes) {
-//     $routes->match(["get", "post"], "/", "ieat_ent_05_0001_Controller::index");
-//     $routes->get("add/(:any)", "ieat_ent_05_0001_Controller::add/$1");
-//     $routes->post("store", "ieat_ent_05_0001_Controller::store");
-//     $routes->get("edt/(:num)", "ieat_ent_05_0001_Controller::edit/$1");
-//     $routes->post("upd", "ieat_ent_05_0001_Controller::update");
-//     $routes->get("del/(:num)", "ieat_ent_05_0001_Controller::delete/$1");
-//     $routes->get("view/(:num)", "ieat_ent_05_0001_Controller::view/$1");
-// });
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+$routes->group("ieat_ent_05_0001", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_05_0001_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_05_0001_Controller::add/$1");
+    $routes->post("store", "ieat_ent_05_0001_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_05_0001_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_05_0001_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_05_0001_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_05_0001_Controller::view/$1");
+});
+
+$routes->group("ieat_office_05_0001", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_05_0001_Controller::index");
+    $routes->get("p1", "ieat_office_05_0001_Controller::p1");
+    $routes->get("p2", "ieat_office_05_0001_Controller::p2");
+    $routes->get("p3", "ieat_office_05_0001_Controller::p3");
+    $routes->get("otp", "ieat_office_05_0001_Controller::otp");
+    $routes->get("final", "ieat_office_05_0001_Controller::final");
+});
+
+$routes->group("ieat_ent_05_005", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_05_005_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_05_005_Controller::add/$1");
+    $routes->post("store", "ieat_ent_05_005_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_05_005_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_05_005_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_05_005_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_05_005_Controller::view/$1");
+});
+
+$routes->group("ieat_office_05_005", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_05_005_Controller::index");
+    $routes->get("p1", "ieat_office_05_005_Controller::p1");
+    $routes->get("p2", "ieat_office_05_005_Controller::p2");
+    $routes->get("p3", "ieat_office_05_005_Controller::p3");
+    $routes->get("otp", "ieat_office_05_005_Controller::otp");
+    $routes->get("final", "ieat_office_05_005_Controller::final");
+});
+
+$routes->group("ieat_ent_05_005_1", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_05_005_1_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_05_005_1_Controller::add/$1");
+    $routes->post("store", "ieat_ent_05_005_1_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_05_005_1_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_05_005_1_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_05_005_1_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_05_005_1_Controller::view/$1");
+});
+
+$routes->group("ieat_office_05_005_1", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_05_005_1_Controller::index");
+    $routes->get("p1", "ieat_office_05_005_1_Controller::p1");
+    $routes->get("p2", "ieat_office_05_005_1_Controller::p2");
+    $routes->get("p3", "ieat_office_05_005_1_Controller::p3");
+    $routes->get("otp", "ieat_office_05_005_1_Controller::otp");
+    $routes->get("final", "ieat_office_05_005_1_Controller::final");
+});
+
+$routes->group("ieat_ent_05_006", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_05_006_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_05_006_Controller::add/$1");
+    $routes->post("store", "ieat_ent_05_006_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_05_006_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_05_006_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_05_006_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_05_006_Controller::view/$1");
+});
+
+$routes->group("ieat_office_05_006", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_05_006_Controller::index");
+    $routes->get("p1", "ieat_office_05_006_Controller::p1");
+    $routes->get("p2", "ieat_office_05_006_Controller::p2");
+    $routes->get("p3", "ieat_office_05_006_Controller::p3");
+    $routes->get("otp", "ieat_office_05_006_Controller::otp");
+    $routes->get("final", "ieat_office_05_006_Controller::final");
+});
+
+$routes->group("ieat_ent_05_007", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_05_007_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_05_007_Controller::add/$1");
+    $routes->post("store", "ieat_ent_05_007_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_05_007_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_05_007_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_05_007_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_05_007_Controller::view/$1");
+});
+
+$routes->group("ieat_office_05_007", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_05_007_Controller::index");
+    $routes->get("p1", "ieat_office_05_007_Controller::p1");
+    $routes->get("p2", "ieat_office_05_007_Controller::p2");
+    $routes->get("p3", "ieat_office_05_007_Controller::p3");
+    $routes->get("otp", "ieat_office_05_007_Controller::otp");
+    $routes->get("final", "ieat_office_05_007_Controller::final");
+});
+
+$routes->group("ieat_ent_05_001_p3", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_05_001_p3_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_05_001_p3_Controller::add/$1");
+    $routes->post("store", "ieat_ent_05_001_p3_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_05_001_p3_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_05_001_p3_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_05_001_p3_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_05_001_p3_Controller::view/$1");
+});
+
+$routes->group("ieat_office_05_001_p3", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_05_001_p3_Controller::index");
+    $routes->get("p1", "ieat_office_05_001_p3_Controller::p1");
+    $routes->get("p2", "ieat_office_05_001_p3_Controller::p2");
+    $routes->get("p3", "ieat_office_05_001_p3_Controller::p3");
+    $routes->get("otp", "ieat_office_05_001_p3_Controller::otp");
+    $routes->get("final", "ieat_office_05_001_p3_Controller::final");
+});
+
+$routes->group("ieat_ent_05_0001", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_05_0001_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_05_0001_Controller::add/$1");
+    $routes->post("store", "ieat_ent_05_0001_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_05_0001_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_05_0001_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_05_0001_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_05_0001_Controller::view/$1");
+});
+
+$routes->group("ieat_office_05_0001", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_05_0001_Controller::index");
+    $routes->get("p1", "ieat_office_05_0001_Controller::p1");
+    $routes->get("p2", "ieat_office_05_0001_Controller::p2");
+    $routes->get("p3", "ieat_office_05_0001_Controller::p3");
+    $routes->get("otp", "ieat_office_05_0001_Controller::otp");
+    $routes->get("final", "ieat_office_05_0001_Controller::final");
+});
 
 $routes->group("ieat_ent_051", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_051_Controller::index");
@@ -642,6 +1184,15 @@ $routes->group("ieat_ent_051", function ($routes) {
     $routes->post("upd", "ieat_ent_051_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_051_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_051_Controller::view/$1");
+});
+
+$routes->group("ieat_office_051", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_051_Controller::index");
+    $routes->get("p1", "ieat_office_051_Controller::p1");
+    $routes->get("p2", "ieat_office_051_Controller::p2");
+    $routes->get("p3", "ieat_office_051_Controller::p3");
+    $routes->get("otp", "ieat_office_051_Controller::otp");
+    $routes->get("final", "ieat_office_051_Controller::final");
 });
 
 $routes->group("ieat_ent_051_p2", function ($routes) {
@@ -654,14 +1205,22 @@ $routes->group("ieat_ent_051_p2", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_051_p2_Controller::view/$1");
 });
 
-$routes->group("ieat_ent_053", function ($routes) {
-    $routes->match(["get", "post"], "/", "ieat_ent_053_Controller::index");
-    $routes->get("add/(:any)", "ieat_ent_053_Controller::add/$1");
-    $routes->post("store", "ieat_ent_053_Controller::store");
-    $routes->get("edt/(:num)", "ieat_ent_053_Controller::edit/$1");
-    $routes->post("upd", "ieat_ent_053_Controller::update");
-    $routes->get("del/(:num)", "ieat_ent_053_Controller::delete/$1");
-    $routes->get("view/(:num)", "ieat_ent_053_Controller::view/$1");
+$routes->group("ieat_office_051_p2", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_051_p2_Controller::index");
+    $routes->get("p1", "ieat_office_051_p2_Controller::p1");
+    $routes->get("p2", "ieat_office_051_p2_Controller::p2");
+    $routes->get("p3", "ieat_office_051_p2_Controller::p3");
+    $routes->get("otp", "ieat_office_051_p2_Controller::otp");
+    $routes->get("final", "ieat_office_051_p2_Controller::final");
+});
+
+$routes->group("ieat_office_053", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_053_Controller::index");
+    $routes->get("p1", "ieat_office_053_Controller::p1");
+    $routes->get("p2", "ieat_office_053_Controller::p2");
+    $routes->get("p3", "ieat_office_053_Controller::p3");
+    $routes->get("otp", "ieat_office_053_Controller::otp");
+    $routes->get("final", "ieat_office_053_Controller::final");
 });
 
 $routes->group("ieat_ent_053_1", function ($routes) {
@@ -674,6 +1233,15 @@ $routes->group("ieat_ent_053_1", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_053_1_Controller::view/$1");
 });
 
+$routes->group("ieat_office_053_1", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_053_1_Controller::index");
+    $routes->get("p1", "ieat_office_053_1_Controller::p1");
+    $routes->get("p2", "ieat_office_053_1_Controller::p2");
+    $routes->get("p3", "ieat_office_053_1_Controller::p3");
+    $routes->get("otp", "ieat_office_053_1_Controller::otp");
+    $routes->get("final", "ieat_office_053_1_Controller::final");
+});
+
 $routes->group("ieat_ent_053_2", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_053_2_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_053_2_Controller::add/$1");
@@ -682,6 +1250,15 @@ $routes->group("ieat_ent_053_2", function ($routes) {
     $routes->post("upd", "ieat_ent_053_2_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_053_2_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_053_2_Controller::view/$1");
+});
+
+$routes->group("ieat_office_053_2", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_053_2_Controller::index");
+    $routes->get("p1", "ieat_office_053_2_Controller::p1");
+    $routes->get("p2", "ieat_office_053_2_Controller::p2");
+    $routes->get("p3", "ieat_office_053_2_Controller::p3");
+    $routes->get("otp", "ieat_office_053_2_Controller::otp");
+    $routes->get("final", "ieat_office_053_2_Controller::final");
 });
 
 $routes->group("ieat_ent_053_3", function ($routes) {
@@ -694,6 +1271,15 @@ $routes->group("ieat_ent_053_3", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_053_3_Controller::view/$1");
 });
 
+$routes->group("ieat_office_053_3", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_053_3_Controller::index");
+    $routes->get("p1", "ieat_office_053_3_Controller::p1");
+    $routes->get("p2", "ieat_office_053_3_Controller::p2");
+    $routes->get("p3", "ieat_office_053_3_Controller::p3");
+    $routes->get("otp", "ieat_office_053_3_Controller::otp");
+    $routes->get("final", "ieat_office_053_3_Controller::final");
+});
+
 $routes->group("ieat_ent_053_4", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_053_4_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_053_4_Controller::add/$1");
@@ -702,6 +1288,15 @@ $routes->group("ieat_ent_053_4", function ($routes) {
     $routes->post("upd", "ieat_ent_053_4_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_053_4_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_053_4_Controller::view/$1");
+});
+
+$routes->group("ieat_office_053_4", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_053_4_Controller::index");
+    $routes->get("p1", "ieat_office_053_4_Controller::p1");
+    $routes->get("p2", "ieat_office_053_4_Controller::p2");
+    $routes->get("p3", "ieat_office_053_4_Controller::p3");
+    $routes->get("otp", "ieat_office_053_4_Controller::otp");
+    $routes->get("final", "ieat_office_053_4_Controller::final");
 });
 
 $routes->group("ieat_ent_053_5", function ($routes) {
@@ -714,6 +1309,15 @@ $routes->group("ieat_ent_053_5", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_053_5_Controller::view/$1");
 });
 
+$routes->group("ieat_office_053_5", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_053_5_Controller::index");
+    $routes->get("p1", "ieat_office_053_5_Controller::p1");
+    $routes->get("p2", "ieat_office_053_5_Controller::p2");
+    $routes->get("p3", "ieat_office_053_5_Controller::p3");
+    $routes->get("otp", "ieat_office_053_5_Controller::otp");
+    $routes->get("final", "ieat_office_053_5_Controller::final");
+});
+
 $routes->group("ieat_ent_053_6", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_053_6_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_053_6_Controller::add/$1");
@@ -722,6 +1326,15 @@ $routes->group("ieat_ent_053_6", function ($routes) {
     $routes->post("upd", "ieat_ent_053_6_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_053_6_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_053_6_Controller::view/$1");
+});
+
+$routes->group("ieat_office_053_6", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_053_6_Controller::index");
+    $routes->get("p1", "ieat_office_053_6_Controller::p1");
+    $routes->get("p2", "ieat_office_053_6_Controller::p2");
+    $routes->get("p3", "ieat_office_053_6_Controller::p3");
+    $routes->get("otp", "ieat_office_053_6_Controller::otp");
+    $routes->get("final", "ieat_office_053_6_Controller::final");
 });
 
 $routes->group("ieat_ent_053_7", function ($routes) {
@@ -734,6 +1347,15 @@ $routes->group("ieat_ent_053_7", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_053_7_Controller::view/$1");
 });
 
+$routes->group("ieat_office_053_7", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_053_7_Controller::index");
+    $routes->get("p1", "ieat_office_053_7_Controller::p1");
+    $routes->get("p2", "ieat_office_053_7_Controller::p2");
+    $routes->get("p3", "ieat_office_053_7_Controller::p3");
+    $routes->get("otp", "ieat_office_053_7_Controller::otp");
+    $routes->get("final", "ieat_office_053_7_Controller::final");
+});
+
 $routes->group("ieat_ent_053_9", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_053_9_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_053_9_Controller::add/$1");
@@ -742,6 +1364,15 @@ $routes->group("ieat_ent_053_9", function ($routes) {
     $routes->post("upd", "ieat_ent_053_9_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_053_9_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_053_9_Controller::view/$1");
+});
+
+$routes->group("ieat_office_053_9", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_053_9_Controller::index");
+    $routes->get("p1", "ieat_office_053_9_Controller::p1");
+    $routes->get("p2", "ieat_office_053_9_Controller::p2");
+    $routes->get("p3", "ieat_office_053_9_Controller::p3");
+    $routes->get("otp", "ieat_office_053_9_Controller::otp");
+    $routes->get("final", "ieat_office_053_9_Controller::final");
 });
 
 $routes->group("ieat_ent_05_changename", function ($routes) {
@@ -754,6 +1385,15 @@ $routes->group("ieat_ent_05_changename", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_05_changename_Controller::view/$1");
 });
 
+$routes->group("ieat_office_05_changename", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_05_changename_Controller::index");
+    $routes->get("p1", "ieat_office_05_changename_Controller::p1");
+    $routes->get("p2", "ieat_office_05_changename_Controller::p2");
+    $routes->get("p3", "ieat_office_05_changename_Controller::p3");
+    $routes->get("otp", "ieat_office_05_changename_Controller::otp");
+    $routes->get("final", "ieat_office_05_changename_Controller::final");
+});
+
 $routes->group("ieat_ent_05_cancel_nontax", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_05_cancel_nontax_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_05_cancel_nontax_Controller::add/$1");
@@ -764,6 +1404,17 @@ $routes->group("ieat_ent_05_cancel_nontax", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_05_cancel_nontax_Controller::view/$1");
 });
 
+$routes->group("ieat_office_05_cancel_nontax", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_05_cancel_nontax_Controller::index");
+    $routes->get("p1", "ieat_office_05_cancel_nontax_Controller::p1");
+    $routes->get("p2", "ieat_office_05_cancel_nontax_Controller::p2");
+    $routes->get("p3", "ieat_office_05_cancel_nontax_Controller::p3");
+    $routes->get("otp", "ieat_office_05_cancel_nontax_Controller::otp");
+    $routes->get("final", "ieat_office_05_cancel_nontax_Controller::final");
+});
+
+//////////////////////////////////////////////////////////////////////////////////////////
+
 $routes->group("ieat_ent_077", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_077_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_077_Controller::add/$1");
@@ -772,6 +1423,15 @@ $routes->group("ieat_ent_077", function ($routes) {
     $routes->post("upd", "ieat_ent_077_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_077_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_077_Controller::view/$1");
+});
+
+$routes->group("ieat_office_077", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_077_Controller::index");
+    $routes->get("p1", "ieat_office_077_Controller::p1");
+    $routes->get("p2", "ieat_office_077_Controller::p2");
+    $routes->get("p3", "ieat_office_077_Controller::p3");
+    $routes->get("otp", "ieat_office_077_Controller::otp");
+    $routes->get("final", "ieat_office_077_Controller::final");
 });
 
 $routes->group("ieat_ent_079", function ($routes) {
@@ -784,6 +1444,15 @@ $routes->group("ieat_ent_079", function ($routes) {
     $routes->get("view/(:num)", "ieat_ent_079_Controller::view/$1");
 });
 
+$routes->group("ieat_office_079", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_079_Controller::index");
+    $routes->get("p1", "ieat_office_079_Controller::p1");
+    $routes->get("p2", "ieat_office_079_Controller::p2");
+    $routes->get("p3", "ieat_office_079_Controller::p3");
+    $routes->get("otp", "ieat_office_079_Controller::otp");
+    $routes->get("final", "ieat_office_079_Controller::final");
+});
+
 $routes->group("ieat_ent_0710", function ($routes) {
     $routes->match(["get", "post"], "/", "ieat_ent_0710_Controller::index");
     $routes->get("add/(:any)", "ieat_ent_0710_Controller::add/$1");
@@ -792,4 +1461,24 @@ $routes->group("ieat_ent_0710", function ($routes) {
     $routes->post("upd", "ieat_ent_0710_Controller::update");
     $routes->get("del/(:num)", "ieat_ent_0710_Controller::delete/$1");
     $routes->get("view/(:num)", "ieat_ent_0710_Controller::view/$1");
+});
+
+$routes->group("ieat_office_0710", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_office_0710_Controller::index");
+    $routes->get("p1", "ieat_office_0710_Controller::p1");
+    $routes->get("p2", "ieat_office_0710_Controller::p2");
+    $routes->get("p3", "ieat_office_0710_Controller::p3");
+    $routes->get("otp", "ieat_office_0710_Controller::otp");
+    $routes->get("final", "ieat_office_0710_Controller::final");
+});
+
+//////////////////////////////////////////////////////////////////////////////////////////
+$routes->group("ieat_ent_selfdecare", function ($routes) {
+    $routes->match(["get", "post"], "/", "ieat_ent_selfdecare_Controller::index");
+    $routes->get("add/(:any)", "ieat_ent_selfdecare_Controller::add/$1");
+    $routes->post("store", "ieat_ent_selfdecare_Controller::store");
+    $routes->get("edt/(:num)", "ieat_ent_selfdecare_Controller::edit/$1");
+    $routes->post("upd", "ieat_ent_selfdecare_Controller::update");
+    $routes->get("del/(:num)", "ieat_ent_selfdecare_Controller::delete/$1");
+    $routes->get("view/(:num)", "ieat_ent_selfdecare_Controller::view/$1");
 });

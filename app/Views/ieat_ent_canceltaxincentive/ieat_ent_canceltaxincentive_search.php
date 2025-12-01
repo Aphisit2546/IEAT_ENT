@@ -15,11 +15,11 @@
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <a href="ieat_ent_canceltaxincentive" style="color: #6007b3ff; font-size: 18px;"><b>โปรแกรมยกเลิก TAX Incentive</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
+    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-13-00001-2568</b></font>
 </div>
 <br />
 <div class="class_header_page_02">
-    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-306-00001-2568</b></font>
+    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-13-00001-2568</b></font>
     &nbsp;&nbsp;
     <font style="color: #000000ff; font-size: 18px;"><b>โปรแกรมยกเลิก TAX Incentive</b></font>
 </div>
@@ -121,7 +121,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">โรงงานตั้งอยู่ในนิคมอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                เอเซีย (สุวรรณภูมิ)<?php echo $_SESSION['industrial_name_view']; ?>
+                                                บางปะอิน<?php echo $_SESSION['industrial_name_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -129,7 +129,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">ในเขตอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                อุตสาหกรรมทั่วไป<?php echo $_SESSION['industrial_zone_view']; ?>
+                                                เขคประกอบการเสรี<?php echo $_SESSION['industrial_zone_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -141,10 +141,10 @@
                                                 <span><b>หมู่ที่ 9999</b><?php echo $_SESSION['moo_office_view']; ?></span>
                                                 <span><b>ซอย -</b><?php echo $_SESSION['lane_office_view']; ?></span>
                                                 <span><b>ถนน -</b><?php echo $_SESSION['street_office_view']; ?></span>
-                                                <span><b>ตำบล คลองสวน</b><?php echo $_SESSION['district_office_view']; ?></span>
-                                                <span><b>อำเภอ บางบ่อ</b><?php echo $_SESSION['amphur_office_view']; ?></span>
-                                                <span><b>จังหวัด สมุทรปราการ</b><?php echo $_SESSION['province_office_view']; ?></span>
-                                                <span><b>รหัสไปรษณีย์ 10560</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
+                                                <span><b>ตำบล คลองจิก</b><?php echo $_SESSION['district_office_view']; ?></span>
+                                                <span><b>อำเภอ บางปะอิน</b><?php echo $_SESSION['amphur_office_view']; ?></span>
+                                                <span><b>จังหวัด พระนครศรีอยุธยา</b><?php echo $_SESSION['province_office_view']; ?></span>
+                                                <span><b>รหัสไปรษณีย์ 13160</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
                                             </div>
                                         </td>
                                     </tr>
@@ -256,11 +256,11 @@
                         </div>
                     </div>
 
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
+                        </div>
                         <div class="card p-4">
-                            <div class="card-header">
-                                <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
-                            </div>
-                            <div class="card p-4">
                             <div class="row">
                                 <div class="col-6" align="left">
                                     <div class="table-responsive div_header p-4">
@@ -307,6 +307,14 @@
                         <table class="table">
                             <tbody>
                                 <tr>
+                                    <td>วัตถุประสงค์ในการขอยกเลิกเลข TAX Incentive</td>
+                                    <td>
+                                        <select class="form-control">
+                                            <option value="0">-- เลือกข้อมูล --</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
                                     <td>ข้อมูลเพิ่มเติมอื่นๆ (ถ้ามี)</td>
                                     <td><textarea name="detail_extend" cols="100" rows="5"><?php echo $datashow['detail_extend']; ?></textarea></td>
                                 </tr>
@@ -328,75 +336,7 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td class="table-detail-left radio-header" width="70%">
-                                            1. หนังสือรับรองการจดทะเบียนจัดตั้งนิติบุคคลและวัตถุประสงค์การจัดตั้ง และ สำเนาบัญชีรายชื่อผู้ถือหุ้น (บอจ.5/บริคณห์สนธิ) (ไม่เกิน 6 เดือน นับตั้งแต่วันที่ออกหนังสือ)
-                                        </td>
-                                        <td width="30%">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">2. หนังสือมอบอำนาจ ปิดอากรแสตมป์</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" style="padding-left:50px;">ประกอบด้วย</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.1 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง ผู้มอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.2 สำเนาทะเบียนบ้าน ผู้มอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.3 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง (Passport) ผู้รับมอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.4 สำเนาทะเบียนบ้าน ผู้รับมอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">3. หนังสืออนุญาตใช้ที่ดิน กนอ. 01/2 หรือ กนอ.03/6 ล่าสุด</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">4. เอกสารอื่นๆที่เกี่ยวข้อง</td>
+                                        <td class="table-detail-left radio-header">เอกสารอื่นๆที่เกี่ยวข้อง</td>
                                         <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -432,7 +372,7 @@
                             <span>ส่งคำขอให้ กนอ.</span>
                         </button>
                     </div>
-                </div>                 
+                </div>
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->

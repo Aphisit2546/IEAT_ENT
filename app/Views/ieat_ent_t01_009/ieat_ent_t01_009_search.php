@@ -14,13 +14,9 @@
     <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b> คำขอ TAX</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <a href="ieat_ent_t01_009" style="color: #6007b3ff; font-size: 18px;"><b>จัดการข้อมูลผู้นำเข้า ส่งออก (นำเข้า - ส่งออกโดยรายอื่น)</b></a>
-    <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
 </div>
 <br />
 <div class="class_header_page_02">
-    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-306-00001-2568</b></font>
-    &nbsp;&nbsp;
     <font style="color: #000000ff; font-size: 18px;"><b>จัดการข้อมูลผู้นำเข้า ส่งออก (นำเข้า - ส่งออกโดยรายอื่น)</b></font>
 </div>
 <br /><br />
@@ -28,30 +24,13 @@
     <div class="card">
         <div class="card-header p-4" style="text-align: center;">
             <ul class="nav nav-pills">
-                <li class="nav-item"><a class="nav-link active" href="#tab1" data-toggle="tab"><span class="font_header_detail"><b>ข้อมูลทั่วไป</b></span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="tab"><span class="font_header_detail"><b>ข้อมูลเกี่ยวกับการขออนุญาต</b></span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#tab3" data-toggle="tab"><span class="font_header_detail"><b>เอกสารประกอบการขออนุญาต</b></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="tab"><span class="font_header_detail"><b>ข้อมูลผู้นำเข้า ส่งออก (นำเข้า - ส่งออกโดยรายอื่น)</b></span></a></li>
             </ul>
         </div><!-- /.card-header -->
 
         <div class="card-body">
-            <div class="row">
-                <div class="col-2" align="center">
-                    <font style="color: #000000ff; font-size: 18px;"><b>ความคืบหน้าโดยรวม</b></font>
-                </div>
-                <div class="col-9">
-                    <div class="progress">
-                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%;"></div>
-                    </div>
-                </div>
-                <div class="col-1" align="center">
-                    <font style="color: #000000ff; font-size: 18px;"><b>90%</b></font>
-                </div>
-            </div>
-        </div>
-        <div class="card-body">
             <div class="tab-content">
-                <div class="active tab-pane" id="tab1">
+                <div class="tab-pane" id="tab1">
                     <!-- Table -->
                     <div class="card p-4">
                         <div class="card-header">
@@ -121,7 +100,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">โรงงานตั้งอยู่ในนิคมอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                เอเซีย (สุวรรณภูมิ)<?php echo $_SESSION['industrial_name_view']; ?>
+                                                บางปะอิน<?php echo $_SESSION['industrial_name_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -129,7 +108,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">ในเขตอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                อุตสาหกรรมทั่วไป<?php echo $_SESSION['industrial_zone_view']; ?>
+                                                เขคประกอบการเสรี<?php echo $_SESSION['industrial_zone_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -141,10 +120,10 @@
                                                 <span><b>หมู่ที่ 9999</b><?php echo $_SESSION['moo_office_view']; ?></span>
                                                 <span><b>ซอย -</b><?php echo $_SESSION['lane_office_view']; ?></span>
                                                 <span><b>ถนน -</b><?php echo $_SESSION['street_office_view']; ?></span>
-                                                <span><b>ตำบล คลองสวน</b><?php echo $_SESSION['district_office_view']; ?></span>
-                                                <span><b>อำเภอ บางบ่อ</b><?php echo $_SESSION['amphur_office_view']; ?></span>
-                                                <span><b>จังหวัด สมุทรปราการ</b><?php echo $_SESSION['province_office_view']; ?></span>
-                                                <span><b>รหัสไปรษณีย์ 10560</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
+                                                <span><b>ตำบล คลองจิก</b><?php echo $_SESSION['district_office_view']; ?></span>
+                                                <span><b>อำเภอ บางปะอิน</b><?php echo $_SESSION['amphur_office_view']; ?></span>
+                                                <span><b>จังหวัด พระนครศรีอยุธยา</b><?php echo $_SESSION['province_office_view']; ?></span>
+                                                <span><b>รหัสไปรษณีย์ 13160</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
                                             </div>
                                         </td>
                                     </tr>
@@ -256,11 +235,11 @@
                         </div>
                     </div>
 
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
+                        </div>
                         <div class="card p-4">
-                            <div class="card-header">
-                                <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
-                            </div>
-                            <div class="card p-4">
                             <div class="row">
                                 <div class="col-6" align="left">
                                     <div class="table-responsive div_header p-4">
@@ -302,118 +281,153 @@
                     </div>
                 </div>
 
-                <div class="tab-pane" id="tab2">
+                <div class="active tab-pane" id="tab2">
                     <div class="card p-4">
-                        <div class="card-header">
-                            <span class="font_header"><b>อ้างถึงเอกสารใบอนุญาตล่าสุด เลขที่ TEST015 ลงวันที่ 31-01-2554 หมดอายุวันที่ 31-12-2558</b></span>
-                        </div>
                         <div class="table-responsive div_header p-4">
                             <table class="table">
                                 <tbody>
-                                        <tr>
-                                            <td>ประเภทผู้นำเข้า ส่งออก<td>
-                                            <table class="table table-lg">
-                                                <div class="row row-form">
-                                                    <div class="col-lg-12">
-                                                        <div class="col-lg-12">
-                                                            <select class="form-control">
-                                                                <option value="0">-- เลือก --</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>                           
-                                                </div>           
-                                            </table> 
-                                        </tr>
-                                        <tr>
-                                            <td>ชื่อบุคคล นิติบุคคล</td>
-                                            <td>
-                                                <textarea rows="1" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>เลขประจำตัวผู้เสียภาษี 13 หลัก</td>
-                                            <td>
-                                                <textarea rows="1" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                            </table>
-                            <table class="table">
-                                    <tbody>    
-                                        <tr>
-                                            <td>โทรศัพท์ 1 Telephone 1</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                            <td>เบอร์ต่อ Ext.</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>โทรศัพท์ 2 Telephone 2</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                            <td>เบอร์ต่อ Ext.</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>โทรศัพท์ 3 Telephone 3</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                            <td>เบอร์ต่อ Ext.</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>โทรศัพท์ 4 Telephone 4</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                            <td>เบอร์ต่อ Ext.</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>โทรสาร Fax</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                            <td>เบอร์ต่อ Ext.</td>
-                                            <td>
-                                                <textarea rows="1" cols="50" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-4">ประเภทผู้นำเข้า ส่งออก :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-7" style="border-right:none;" colspan="3">
+                                            <select name="d001" class="form-control">
+                                                <option value='0' selected>-- เลือก --</option>
+                                                <option value='1'>นำเข้า</option>
+                                                <option value='2'>ส่งออก</option>
+                                                <option value='3'>นำเข้าและส่งออก</option>
+                                            </select>
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <span class="remark-label-lg" style="padding:0;">*</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-4">ชื่อบุคคล นิติบุคคล :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-7" style="border-right:none;" colspan="3">
+                                            <input name="d002" type="text" class='form-control' id="d002" value="" size="70" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <span class="remark-label-lg" style="padding:0;">*</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-4">เลขประจำตัวผู้เสียภาษี 13 หลัก :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-7" style="border-right:none;" colspan="3">
+                                            <input type="text" class='form-control' name="d003" id="d003" value="" size="70" maxlength="13" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <span class="remark-label-lg" style="padding:0;">*</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-4">แนบเอกสารที่เกี่ยวข้อง :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-7" style="border-right:none;" colspan="3">
+                                            <input type="file" name="doc01" id="doc01" size="30" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <!--<span class="remark-label-lg" style="padding:0;">*</span>-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">โทรศัพท์ 1 Telephone 1 :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d004" id="d004" value="" size="30" />
+                                        </td>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                                            เบอร์ต่อ Ext.
+                                        </td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d005" id="d005" value="" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <span class="remark-label-lg" style="padding:0;">*</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">โทรศัพท์ 2 Telephone 2 :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d006" id="d006" value="" size="30" />
+                                        </td>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                                            เบอร์ต่อ Ext.
+                                        </td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d007" id="d007" value="" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <!--<span class="remark-label-lg" style="padding:0;">*</span>-->
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">โทรศัพท์ 3 Telephone 3 :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d008" id="d008" value="" size="30" />
+                                        </td>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                                            เบอร์ต่อ Ext.
+                                        </td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d009" id="d009" value="" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <span class="remark-label-lg" style="padding:0;">*</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">โทรศัพท์ 4 Telephone 4 :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d010" id="d010" value="" size="30" />
+                                        </td>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                                            เบอร์ต่อ Ext.
+                                        </td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d011" id="d011" value="" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <span class="remark-label-lg" style="padding:0;">*</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">โทรสาร Fax :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d012" id="d012" value="" size="30" />
+                                        </td>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-2">
+                                            เบอร์ต่อ Ext.
+                                        </td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-4" style="border-right:none;">
+                                            <input type="text" class='form-control' name="d013" id="d013" value="" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <span class="remark-label-lg" style="padding:0;">*</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-4">โทรศัพท์มือถือ Mobile Phone :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-7" style="border-right:none;" colspan="3">
+                                            <input type="text" class='form-control' name="d014" id="d014" value="" size="70" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <span class="remark-label-lg" style="padding:0;">*</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-4">อีเมล์ Email :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-7" style="border-right:none;" colspan="3">
+                                            <input type="text" class='form-control' name="d015" id="d015" value="" size="70" />
+                                        </td>
+                                        <td style="border-left:none;">
+                                            <span class="remark-label-lg" style="padding:0;">*</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="table-detail-right col-xs-4 col-sm-4 col-md-4 col-lg-4">หมายเหตุ :</td>
+                                        <td class="col-xs-8 col-sm-8 col-md-8 col-lg-7" style="border-right:none;" colspan="3">
+                                            <textarea class='form-control' name="d016" id="d016" cols="45" rows="5"></textarea>
+                                        </td>
+                                    </tr>
                                 </tbody>
                             </table>
-                            <table class="table">
-                                <tbody>
-                                        <tr>
-                                            <td>โทรศัพท์มือถือ Mobile Phone</td>
-                                            <td>
-                                                <textarea rows="1" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>อีเมล์ Email</td>
-                                            <td>
-                                                <textarea rows="1" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>หมายเหตุ</td>
-                                            <td>
-                                                <textarea rows="10" cols="80" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                        </tr>
-                                </tbody>
-                            </table>                           
                         </div>
                     </div>
                 </div>
@@ -528,13 +542,8 @@
                             <i class="fas fa-save"></i>
                             <span>บันทึกการกรอกข้อมูล</span>
                         </button>
-
-                        <button type="button" class="ieat-btn ieat-btn--submit" id="btnSubmit">
-                            <i class="fas fa-paper-plane"></i>
-                            <span>ส่งคำขอให้ กนอ.</span>
-                        </button>
                     </div>
-                </div>                  
+                </div>
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->

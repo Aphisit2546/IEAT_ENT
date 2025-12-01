@@ -18,79 +18,7 @@
     <link rel="stylesheet" href="dist/css/adminlte.min.css">
     <!-- animate style -->
     <link rel="stylesheet" href="dist/css/animate.min.css">
-
-    
-
-    <style>
-        .btn-confirm {
-            background-color: #17a2b8;  
-            color: #ffffff;
-            padding: 10px 20px;
-            font-size: 14px;
-            font-weight: 600;
-            border: none;
-            border-radius: 6px;
-            transition: 0.2s;
-        }
-
-        .btn-confirm:hover {
-            background-color: #138496; 
-        }
-
-        .btn-confirm:active {
-            background-color: #117a8b;
-        }
-
-        .btn-checkreport {
-            width: 100%;
-            background-color: #0d6efd;   
-            color: #ffffff;
-            padding: 10px 16px;
-            font-size: 14px;
-            font-weight: 600;
-            border: none;
-            border-radius: 6px;
-            transition: 0.2s;
-        }
-
-        .btn-checkreport:hover {
-            background-color: #0b5ed7; 
-        }
-
-        .btn-checkreport:active {
-            background-color: #0a58ca;
-        }
-
-        .btn-information {
-            background-color: #0d6efd;   
-            color: #ffffff;             
-            padding: 10px 20px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid #0b5ed7; 
-            transition: 0.2s;
-        }
-        .btn-information:hover {
-            background-color: #0b5ed7; 
-        }
-        .btn-information:active {
-            background-color: #0a58ca;
-        }
-
-        .btn-Searchrequestnumber {
-            background-color: #838383ff;  
-            color: #ffffff;
-            padding: 4px 20px;
-            border-radius: 6px;
-            font-weight: 600;
-            text-align: center;
-            cursor: pointer;
-            border: 1px solid #5a5a5aff;
-            transition: 0.2s;
-        }
-    </style>
+    <link rel="icon" type="image/jpg" sizes="16x16" href="dist/img/logo_new_v2.jpg" />
 
     <style>
         .ieat-action-bar {
@@ -122,7 +50,7 @@
             white-space: nowrap;
 
             /* เรืองแสง */
-            box-shadow: 0 0 0px rgba(0,0,0,0.0);
+            box-shadow: 0 0 0px rgba(0, 0, 0, 0.0);
         }
 
         .ieat-btn:hover {
@@ -140,6 +68,7 @@
             border-color: #fecaca;
             box-shadow: 0 0 8px rgba(255, 0, 0, 0.15);
         }
+
         .ieat-btn--cancel:hover {
             background: #fee2e2;
             box-shadow: 0 0 14px rgba(255, 0, 0, 0.35);
@@ -152,6 +81,7 @@
             border-color: #fed7aa;
             box-shadow: 0 0 8px rgba(251, 146, 60, 0.20);
         }
+
         .ieat-btn--reset:hover {
             background: #ffedd5;
             box-shadow: 0 0 14px rgba(251, 146, 60, 0.45);
@@ -164,6 +94,7 @@
             border-color: #bbf7d0;
             box-shadow: 0 0 8px rgba(52, 211, 153, 0.25);
         }
+
         .ieat-btn--save:hover {
             background: #dcfce7;
             box-shadow: 0 0 16px rgba(16, 185, 129, 0.55);
@@ -176,20 +107,20 @@
             border-color: #1d4ed8;
             box-shadow: 0 0 8px rgba(59, 130, 246, 0.40);
         }
+
         .ieat-btn--submit:hover {
             background: #1e40af;
             border-color: #1e40af;
             box-shadow: 0 0 16px rgba(59, 130, 246, 0.75);
         }
 
-        /* ปุ่มเรียง 2 แถว บนจอเล็ก */
+        /* ปุ่มเรียง 2 แถวบนจอเล็ก */
         @media (max-width: 768px) {
             .ieat-btn {
                 flex: 1 1 calc(50% - 12px);
             }
         }
     </style>
-
     <style>
         body {
             /*background: url("dist/img/DOEB_BG_02.png") no-repeat;*/
@@ -204,6 +135,16 @@
             font-size: medium;
         }
 
+        .head_detail {
+            font-weight: bold;
+            font-size: medium;
+        }
+
+        .font_header_detail {
+            font-weight: bold;
+            font-size: medium;
+        }
+
         .div_header {
             border: 1px solid #6007b3ff;
             /* Sets width, style, and color in shorthand */
@@ -212,10 +153,48 @@
             border-radius: 15px 15px 15px 15px;
         }
 
+        .div_header_doc {
+            border: 1px solid #1a0230ff;
+            /* Sets width, style, and color in shorthand */
+            border-color: #220241ff;
+            /* Overrides the color set in shorthand */
+            border-radius: 15px 15px 15px 15px;
+        }
+
+        .div_header_focus {
+            border: 1px solid #6007b3ff;
+            /* Sets width, style, and color in shorthand */
+            border-color: #6007b3ff;
+            /* Overrides the color set in shorthand */
+            border-radius: 15px 15px 15px 15px;
+            background-color: #6007b3ff;
+        }
+
         .font_header {
             font-family: 'Kanit', sans-serif !important;
             color: #000000ff;
             font-size: 21px;
+            font-weight: bolder;
+        }
+
+        .font_header_office {
+            font-family: 'Kanit', sans-serif !important;
+            color: #000000ff;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+
+        .font_header_office_focus {
+            font-family: 'Kanit', sans-serif !important;
+            color: #ffffffff;
+            font-size: 24px;
+            font-weight: bolder;
+        }
+
+        .font_header_office_alert {
+            font-family: 'Kanit', sans-serif !important;
+            color: #6007b3ff;
+            font-size: 18px;
             font-weight: bolder;
         }
 
@@ -229,6 +208,13 @@
             font-family: 'Kanit', sans-serif !important;
             color: #ff0000ff;
             font-size: 18px;
+        }
+
+        .table_main_page2 {
+            border: 0px solid black;
+            border-collapse: collapse;
+            vertical-align: top;
+            line-height: 2.2;
         }
     </style>
     <style type="text/css">
@@ -379,7 +365,35 @@
             box-shadow: none;
             background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E %3Cpath d='M15.88 8.29L10 14.17l-1.88-1.88a.996.996 0 1 0-1.41 1.41l2.59 2.59c.39.39 1.02.39 1.41 0L17.3 9.7a.996.996 0 0 0 0-1.41c-.39-.39-1.03-.39-1.42 0z' fill='%23fff'/%3E %3C/svg%3E");
         }
+
+        .otp-field {
+            flex-direction: row;
+            column-gap: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .otp-field input {
+            height: 45px;
+            width: 42px;
+            border-radius: 6px;
+            outline: none;
+            font-size: 1.125rem;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .otp-field input:focus {
+            box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+        }
+
+        .otp-field input::-webkit-inner-spin-button,
+        .otp-field input::-webkit-outer-spin-button {
+            display: none;
+        }
     </style>
+
 </head>
 
 <body class="" style="font-family: Kanit;">

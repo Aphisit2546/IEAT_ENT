@@ -16,11 +16,11 @@
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <a href="ieat_ent_044" style="color: #6007b3ff; font-size: 18px;"><b>ยื่นคำขอยกเว้นหรือคืนค่าภาษีอากร สำหรับเครื่องจักร วัตถุดิบ นำเข้าจากในประเทศ IEAT-I-06</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
+    <font style="color: #000000ff; font-size: 18px;"><b>1-13-1-49-00001-2568</b></font>
 </div>
 <br />
 <div class="class_header_page_02">
-    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-306-00001-2568</b></font>
+    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-13-1-49-00001-2568</b></font>
     &nbsp;&nbsp;
     <font style="color: #000000ff; font-size: 18px;"><b>ยื่นคำขอยกเว้นหรือคืนค่าภาษีอากร สำหรับเครื่องจักร วัตถุดิบ นำเข้าจากในประเทศ IEAT-I-06</b></font>
 </div>
@@ -121,7 +121,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">โรงงานตั้งอยู่ในนิคมอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                เอเซีย (สุวรรณภูมิ)<?php echo $_SESSION['industrial_name_view']; ?>
+                                                บางปะอิน<?php echo $_SESSION['industrial_name_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -129,7 +129,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">ในเขตอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                อุตสาหกรรมทั่วไป<?php echo $_SESSION['industrial_zone_view']; ?>
+                                                เขคประกอบการเสรี<?php echo $_SESSION['industrial_zone_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -141,10 +141,10 @@
                                                 <span><b>หมู่ที่ 9999</b><?php echo $_SESSION['moo_office_view']; ?></span>
                                                 <span><b>ซอย -</b><?php echo $_SESSION['lane_office_view']; ?></span>
                                                 <span><b>ถนน -</b><?php echo $_SESSION['street_office_view']; ?></span>
-                                                <span><b>ตำบล คลองสวน</b><?php echo $_SESSION['district_office_view']; ?></span>
-                                                <span><b>อำเภอ บางบ่อ</b><?php echo $_SESSION['amphur_office_view']; ?></span>
-                                                <span><b>จังหวัด สมุทรปราการ</b><?php echo $_SESSION['province_office_view']; ?></span>
-                                                <span><b>รหัสไปรษณีย์ 10560</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
+                                                <span><b>ตำบล คลองจิก</b><?php echo $_SESSION['district_office_view']; ?></span>
+                                                <span><b>อำเภอ บางปะอิน</b><?php echo $_SESSION['amphur_office_view']; ?></span>
+                                                <span><b>จังหวัด พระนครศรีอยุธยา</b><?php echo $_SESSION['province_office_view']; ?></span>
+                                                <span><b>รหัสไปรษณีย์ 13160</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
                                             </div>
                                         </td>
                                     </tr>
@@ -256,11 +256,11 @@
                         </div>
                     </div>
 
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
+                        </div>
                         <div class="card p-4">
-                            <div class="card-header">
-                                <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
-                            </div>
-                            <div class="card p-4">
                             <div class="row">
                                 <div class="col-6" align="left">
                                     <div class="table-responsive div_header p-4">
@@ -312,8 +312,8 @@
                                 <tbody>
                                     <tr>
                                         <td class="table-detail-left radio-header" width="40%">
-                                            <font color="red">* บริษัทมีความประสงค์ให้พิจารณาคำขอในวันเสาร์-อาทิตย์ (500 บาท ต่อคำขอและค่าใช้ระบบ 140 บาทต่อคำขอ รวมเป็น 640 บาท)  
-                                            โดยจะต้องเลือกความประสงค์จะทำธุรกรรมอิเล็กทรอนิกส์กับสำนักงานใหญ่การนิคมอุตสาหกรรมแห่งประเทศไทยเท่านั้น *</font>
+                                            <font color="red">* บริษัทมีความประสงค์ให้พิจารณาคำขอในวันเสาร์-อาทิตย์ (500 บาท ต่อคำขอและค่าใช้ระบบ 140 บาทต่อคำขอ รวมเป็น 640 บาท)
+                                                โดยจะต้องเลือกความประสงค์จะทำธุรกรรมอิเล็กทรอนิกส์กับสำนักงานใหญ่การนิคมอุตสาหกรรมแห่งประเทศไทยเท่านั้น *</font>
                                         </td>
                                         <td width="30%">
                                             <label style="display: flex; align-items: center; gap: 10px; cursor: pointer;">
@@ -323,60 +323,64 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>วัตถุประสงค์ในการยื่นคำขอ<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>วัตถุประสงค์ในการยื่นคำขอ
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
                                     </tr>
                                     <tr>
-                                        <td>กรณีขอยกเว้นภาษีอากร ตามสิทธิ์ BOI หรือ กรมศุลกากรโปรดแนบเอกสารอ้างอิง<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>กรณีขอยกเว้นภาษีอากร ตามสิทธิ์ BOI หรือ กรมศุลกากรโปรดแนบเอกสารอ้างอิง
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
                                     </tr>
                                     <tr>
-                                        <td>สินค้านำเข้าโดย<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>สินค้านำเข้าโดย
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
                                     </tr>
                                     <tr>
-                                        <td>ประเภทที่นำเข้าส่วนใหญ่เป็น<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>ประเภทที่นำเข้าส่วนใหญ่เป็น
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
                                     </tr>
                                     <tr>
                                         <td>ข้อมูลเพิ่มเติมอื่นๆ (ถ้ามี)</td>
@@ -400,9 +404,10 @@
                                             <font color="red">* หมายเหตุ เมื่อทำการแนบไฟล์แล้วกรุณากดปุ่ม ประมวลข้อมูลเข้าสู่ระบบ *</font>
                                         </td>
                                         <td width="30%">
-                                            <div class="btn-box btn-information">
-                                                ประมวลข้อมูลเข้าสู่ระบบ
-                                            </div>
+                                            <button type="button" class="ieat-btn ieat-btn--save" id="btnSaveDraft">
+                                                <i class="fas fa-save"></i>
+                                                <span>ประมวลข้อมูลเข้าสู่ระบบ</span>
+                                            </button>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -481,7 +486,7 @@
                                         <td align="center">
                                             ไม่มี
                                         </td>
-                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        <?php echo $data_result_land['LANDAMOUNT_M']; ?>
                                         </td>
                                     </tr>
                                     <tr>
@@ -530,12 +535,12 @@
                                         <td align="center">
                                             ไม่มี
                                         </td>
-                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        <?php echo $data_result_land['LANDAMOUNT_M']; ?>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
-                            
+
                         </div>
                     </div>
                 </div>

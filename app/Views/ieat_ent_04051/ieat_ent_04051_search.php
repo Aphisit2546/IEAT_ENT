@@ -15,11 +15,11 @@
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <a href="ieat_ent_04051" style="color: #6007b3ff; font-size: 18px;"><b>คำขออนุมัติให้นำของหรือผลิตภัณฑ์ออกจากเขตประกอบการเสรี ให้ได้รับยกเว้นกฎหมายควบคุมฯ ตามมาตรา 49 (IEAT-E-03)</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></font>
+    <font style="color: #000000ff; font-size: 18px;"><b>1-01-1-83-00001-2568</b></font>
 </div>
 <br />
 <div class="class_header_page_02">
-    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-306-00001-2568</b></font>
+    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-83-00001-2568</b></font>
     &nbsp;&nbsp;
     <font style="color: #000000ff; font-size: 18px;"><b>คำขออนุมัติให้นำของหรือผลิตภัณฑ์ออกจากเขตประกอบการเสรี ให้ได้รับยกเว้นกฎหมายควบคุมฯ ตามมาตรา 49 (IEAT-E-03)</b></font>
 </div>
@@ -31,6 +31,7 @@
                 <li class="nav-item"><a class="nav-link active" href="#tab1" data-toggle="tab"><span class="font_header_detail"><b>ข้อมูลทั่วไป</b></span></a></li>
                 <li class="nav-item"><a class="nav-link" href="#tab2" data-toggle="tab"><span class="font_header_detail"><b>ข้อมูลเกี่ยวกับการขออนุญาต</b></span></a></li>
                 <li class="nav-item"><a class="nav-link" href="#tab3" data-toggle="tab"><span class="font_header_detail"><b>เอกสารประกอบการขออนุญาต</b></span></a></li>
+                <li class="nav-item"><a class="nav-link" href="#tab4" data-toggle="tab"><span class="font_header_detail"><b>จัดทำรายการข้อมูลตามหลักฐาน Invoice</b></span></a></li>
             </ul>
         </div><!-- /.card-header -->
 
@@ -121,7 +122,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">โรงงานตั้งอยู่ในนิคมอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                เอเซีย (สุวรรณภูมิ)<?php echo $_SESSION['industrial_name_view']; ?>
+                                                บางปะอิน<?php echo $_SESSION['industrial_name_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -129,7 +130,7 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">ในเขตอุตสาหกรรม</td>
                                         <td class="table-detail-right col-xs-8 col-sm-8 col-md-8 col-lg-8">
                                             <div class="initial-form">
-                                                อุตสาหกรรมทั่วไป<?php echo $_SESSION['industrial_zone_view']; ?>
+                                                เขคประกอบการเสรี<?php echo $_SESSION['industrial_zone_view']; ?>
                                             </div>
                                         </td>
                                     </tr>
@@ -141,10 +142,10 @@
                                                 <span><b>หมู่ที่ 9999</b><?php echo $_SESSION['moo_office_view']; ?></span>
                                                 <span><b>ซอย -</b><?php echo $_SESSION['lane_office_view']; ?></span>
                                                 <span><b>ถนน -</b><?php echo $_SESSION['street_office_view']; ?></span>
-                                                <span><b>ตำบล คลองสวน</b><?php echo $_SESSION['district_office_view']; ?></span>
-                                                <span><b>อำเภอ บางบ่อ</b><?php echo $_SESSION['amphur_office_view']; ?></span>
-                                                <span><b>จังหวัด สมุทรปราการ</b><?php echo $_SESSION['province_office_view']; ?></span>
-                                                <span><b>รหัสไปรษณีย์ 10560</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
+                                                <span><b>ตำบล คลองจิก</b><?php echo $_SESSION['district_office_view']; ?></span>
+                                                <span><b>อำเภอ บางปะอิน</b><?php echo $_SESSION['amphur_office_view']; ?></span>
+                                                <span><b>จังหวัด พระนครศรีอยุธยา</b><?php echo $_SESSION['province_office_view']; ?></span>
+                                                <span><b>รหัสไปรษณีย์ 13160</b><?php echo $_SESSION['zipcode_office_view']; ?></span>
                                             </div>
                                         </td>
                                     </tr>
@@ -256,11 +257,11 @@
                         </div>
                     </div>
 
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
+                        </div>
                         <div class="card p-4">
-                            <div class="card-header">
-                                <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
-                            </div>
-                            <div class="card p-4">
                             <div class="row">
                                 <div class="col-6" align="left">
                                     <div class="table-responsive div_header p-4">
@@ -311,32 +312,35 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td>กรุณาเลือกประเภทของที่ต้องการนำออก<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>กรุณาเลือกประเภทของที่ต้องการนำออก
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
+                                        </td>
                                     </tr>
                                     <tr>
-                                        <td>นำของออกโดย<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>นำของออกโดย
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
                                     </tr>
                                     <tr>
                                         <td>ข้อมูลเพิ่มเติมอื่นๆ (ถ้ามี)</td>
@@ -345,24 +349,23 @@
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>วัตถุประสงค์ในการนำของออก<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>วัตถุประสงค์ในการนำของออก
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            เพื่อส่งออกไปนอกราชอาณาจักร
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table> 
+                                                </div>
+                                            </table>
+                                        </td>
                                     </tr>
-                        
                                 </tbody>
                             </table>
                         </div>
-                    </div>              
+                    </div>
                 </div>
 
                 <div class="tab-pane" id="tab3">
@@ -378,7 +381,7 @@
                                 <tbody>
                                     <tr>
                                         <td class="table-detail-left radio-header" width="40%">
-                                            กรุณาแนบเอกสารที่เกี่ยวข้อง
+                                            1. INVOICE (ไฟล์ PDF ไม่เกิน 5 MB)
                                         </td>
                                         <td width="30%">
                                             <div class="custom-file">
@@ -389,8 +392,7 @@
                                     </tr>
                                     <tr>
                                         <td class="table-detail-left radio-header" width="40%">
-                                            นำเข้าข้อมูลตั้งต้นจากไฟล์ Template ต้นแบบ
-                                
+                                            2. หลักฐานอื่นที่เกี่ยวเนื่องเพื่อการนั้น (ไฟล์ PDF ไม่เกิน 5 MB)
                                         </td>
                                         <td width="30%">
                                             <div class="custom-file">
@@ -409,6 +411,22 @@
                         </div>
                     </div>
                 </div>
+
+                <div class="tab-pane" id="tab4">
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>แนบเอกสารที่เกี่ยวข้อง</b></span>
+                        </div>
+                        <div class="table-responsive div_header p-4">
+                            <div class="card-header">
+                                <span class="font_header_detail"><b>
+                                        <font color="red">* กรุณากรอกข้อมูลและกดบันทึกข้อมูลใน Tab ข้อมูลทั่วไปและกรอกข้อมูลคำขอก่อนค่ะ *</font>
+                                    </b></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- /.tab-pane -->
                 <div class="ieat-action-bar">
                     <div class="ieat-action-group">
@@ -432,7 +450,7 @@
                             <span>ส่งคำขอให้ กนอ.</span>
                         </button>
                     </div>
-                </div>                   
+                </div>
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->

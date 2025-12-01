@@ -26,6 +26,7 @@ class center_ieat_ent_Controller extends BaseController
 			"menuName" => "หน้ากลาง"
 		];
 	}
+
 	public function index()
 	{
 		error_reporting(0);
@@ -46,5 +47,27 @@ class center_ieat_ent_Controller extends BaseController
 		$this->pageData["data_search3"] = $input['data_search3'];
 		*/
 		return view($this->routeGroup . "/" . $this->routeGroup . "_search", $this->pageData);
+	}
+
+	public function page_office()
+	{
+		error_reporting(0);
+		helper("form");
+		/*
+		$client = new Client();
+		$input = $this->request->getRawInput();
+		$res = $client->request('GET', Env("app.RestBaseURL") . '/api/center_ieat_ent', [
+			"body" => json_encode($input)
+		]);
+
+		$data = $res->getBody()->getContents('json');
+		$data = json_decode($data, true);
+		$this->pageData["lstData"] = $data['data'];
+
+		$this->pageData["data_search1"] = $input['data_search1'];
+		$this->pageData["data_search2"] = $input['data_search2'];
+		$this->pageData["data_search3"] = $input['data_search3'];
+		*/
+		return view($this->routeGroup . "/" . $this->routeGroup . "_office_search", $this->pageData);
 	}
 }

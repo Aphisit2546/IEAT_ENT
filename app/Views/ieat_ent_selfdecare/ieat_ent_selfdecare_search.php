@@ -14,13 +14,9 @@
     <a href="center_ieat_ent" style="color: #6007b3ff; font-size: 18px;"><b>ตรวจประเมินรับรองตัวเอง</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <a href="ieat_ent_selfdecare" style="color: #6007b3ff; font-size: 18px;"><b>โปรแกรมตรวจประเมินรับรองด้วยตนเอง</b></a>
-    <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">
-    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-306-00001-2568</b></font>
-    &nbsp;&nbsp;
     <font style="color: #000000ff; font-size: 18px;"><b>โปรแกรมตรวจประเมินรับรองด้วยตนเอง</b></font>
 </div>
 <br /><br />
@@ -211,7 +207,7 @@
                                             </div>
                                         </td>
                                     </tr>
-                                     <tr>
+                                    <tr>
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">พิกัดตำแหน่งที่ตั้งโรงงาน</td>
                                         <td></td>
                                     </tr>
@@ -243,16 +239,16 @@
                                         <td class="table-detail-left col-xs-4 col-sm-4 col-md-4 col-lg-4">ชื่อเจ้าหน้าที่ผู้นำส่งข้อมูล</td>
                                         <td>
                                             <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>           
-                                        </table>
+                                                </div>
+                                            </table>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -296,7 +292,7 @@
                                         <td align="center">
                                             12
                                         </td>
-                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        <?php echo $data_result_land['LANDAMOUNT_M']; ?>
                                         </td>
                                     </tr>
                                     <tr>
@@ -318,7 +314,7 @@
                                         <td align="center">
                                             12
                                         </td>
-                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        <?php echo $data_result_land['LANDAMOUNT_M']; ?>
                                         </td>
                                     </tr>
                                     <tr>
@@ -337,7 +333,7 @@
                                         <td align="center">
                                             <span class="font_header_detail"><b>24</b></span>
                                         </td>
-                                            <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                        <?php echo $data_result_land['LANDAMOUNT_M']; ?>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -345,11 +341,11 @@
                         </div>
                     </div>
 
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
+                        </div>
                         <div class="card p-4">
-                            <div class="card-header">
-                                <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
-                            </div>
-                            <div class="card p-4">
                             <div class="row">
                                 <div class="col-6" align="left">
                                     <div class="table-responsive div_header p-4">
@@ -401,40 +397,40 @@
                             <table class="table" id="datatable01">
                                 <thead>
                                     <tr>
-                                        <th class="table-head-tab" rowspan="2" style="text-align:center; vertical-align:middle; background:#a3d49a;">
+                                        <th class="table-head-tab" rowspan="2" style="text-align:center; vertical-align:top;">
                                             <span class="font_header_detail"><b>ชื่อเครื่องจักร<br>Name of manufacturing machine</b></span>
                                         </th>
-                                        <th class="table-head-tab" rowspan="2" style="text-align:center; vertical-align:middle; background:#a3d49a;">
+                                        <th class="table-head-tab" rowspan="2" style="text-align:center; vertical-align:top;">
                                             <span class="font_header_detail"><b>บริษัท และประเทศผู้ผลิต<br>Corporation and country</b></span>
                                         </th>
-                                         <th class="table-head-tab" rowspan="2" style="text-align:center; vertical-align:middle; background:#a3d49a;">
+                                        <th class="table-head-tab" rowspan="2" style="text-align:center; vertical-align:top;">
                                             <span class="font_header_detail"><b>งานที่ใช้<br>Application</b></span>
                                         </th>
-                                        <th class="table-head-tab" colspan="3" 
-                                            style="text-align:center; vertical-align:middle; background:#a3d49a;">
+                                        <th class="table-head-tab" colspan="3"
+                                            style="text-align:center; vertical-align:top;">
                                             <span class="font_header_detail"><b>กำลังเครื่องจักร ต่อเครื่อง<br>Machinery power per unit</b></span>
                                         </th>
-                                        <th class="table-head-tab" rowspan="2" 
-                                            style="text-align:center; vertical-align:middle; background:#a3d49a;">
+                                        <th class="table-head-tab" rowspan="2"
+                                            style="text-align:center; vertical-align:top;">
                                             <span class="font_header_detail"><b>จำนวน<br>No. of machines</b></span>
                                         </th>
-                                        <th class="table-head-tab" rowspan="2" 
-                                            style="text-align:center; vertical-align:middle; background:#a3d49a;">
+                                        <th class="table-head-tab" rowspan="2"
+                                            style="text-align:center; vertical-align:top;">
                                             <span class="font_header_detail"><b>รวมกำลังเครื่องจักร<br>Total Hp</b></span>
                                         </th>
-                                        <th class="table-head-tab" rowspan="2" 
-                                            style="text-align:center; vertical-align:middle; background:#a3d49a;">
+                                        <th class="table-head-tab" rowspan="2"
+                                            style="text-align:center; vertical-align:top;">
                                             <span class="font_header_detail"><b>หมายเหตุ</b></span>
                                         </th>
                                     </tr>
                                     <tr>
-                                        <th class="table-head-tab" style="text-align:center; background:#a3d49a;">
+                                        <th class="table-head-tab" style="text-align:center;">
                                             <span class="font_header_detail"><b>แรงม้า (HP)</b></span>
                                         </th>
-                                        <th class="table-head-tab" style="text-align:center; background:#a3d49a;">
+                                        <th class="table-head-tab" style="text-align:center;">
                                             <span class="font_header_detail"><b>แรงม้าเปรียบเทียบ<br>Compare HP</b></span>
                                         </th>
-                                        <th class="table-head-tab" style="text-align:center; background:#a3d49a;">
+                                        <th class="table-head-tab" style="text-align:center;">
                                             <span class="font_header_detail"><b>หน่วยแรงม้าเปรียบเทียบ</b></span>
                                         </th>
                                     </tr>
@@ -677,7 +673,7 @@
                     <div class="card p-4">
                         <div class="card-header">
                             <span class="font_header">
-                                <b>                               
+                                <b>
                                     4. การจัดทำรายงานการตรวจประเมินความปลอดภัยกระบวนการผลิต (Process Safety Management: PSM)
                                 </b>
                             </span>
@@ -775,7 +771,7 @@
                     <div class="card p-4">
                         <div class="card-header">
                             <span class="font_header">
-                                <b>                               
+                                <b>
                                     5. ผู้ประกอบกิจการโรงงานมีการชำระค่าธรรมเนียมรายปีครบถ้วน
                                 </b>
                             </span>
@@ -789,13 +785,13 @@
                                 <br>
                                 <label class="clean-radio">
                                     <input type="radio" name="factory_operators" value="1">
-                                    <span>ไม่ครบถ้วน  </span>
+                                    <span>ไม่ครบถ้วน </span>
                                 </label>
                             </div>
                         </div>
                     </div>
                 </div>
-            
+
                 <div class="tab-pane" id="tab3">
                     <div class="card p-4">
                         <div class="card-header">
@@ -1234,7 +1230,7 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered mb-0" id="tblChemHighRisk">
                                                     <thead>
-                                                        <tr style="background-color:#e3f5ff;">
+                                                        <tr>
                                                             <th style="width:5%; text-align:center;">เลือก</th>
                                                             <th style="width:15%; text-align:center;">ชื่อสารเคมี</th>
                                                             <th style="width:15%; text-align:center;">วัตถุอันตราย</th>
@@ -1310,7 +1306,7 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered mb-0" id="tblChemHighRisk">
                                                     <thead>
-                                                        <tr style="background-color:#e3f5ff;">
+                                                        <tr>
                                                             <th style="width:5%; text-align:center;">เลือก</th>
                                                             <th style="width:15%; text-align:center;">ชื่อสารเคมี</th>
                                                             <th style="width:13%; text-align:center;">ขนาดและปริมาณ</th>
@@ -1370,7 +1366,7 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered mb-0" id="tblChemHighRisk">
                                                     <thead>
-                                                        <tr style="background-color:#e3f5ff;">
+                                                        <tr>
                                                             <th style="width:5%; text-align:center;">เลือก</th>
                                                             <th style="width:15%; text-align:center;">คำนำหน้า</th>
                                                             <th style="width:13%; text-align:center;">ชื่อ</th>
@@ -1385,19 +1381,19 @@
                                                                 <input type="checkbox" name="chem_select[]">
                                                             </td>
                                                             <td>
-                                                                <input type="text" name="chem_name[]" class="form-control form-control-sm">
+                                                                <input type="text" name="chem_name[]">
                                                             </td>
                                                             <td>
-                                                                <input type="text" name="hazard_type[]" class="form-control form-control-sm">
+                                                                <input type="text" name="hazard_type[]">
                                                             </td>
                                                             <td>
-                                                                <input type="text" name="cas_un_no[]" class="form-control form-control-sm">
+                                                                <input type="text" name="cas_un_no[]">
                                                             </td>
                                                             <td>
-                                                                <input type="text" name="cas_un_no[]" class="form-control form-control-sm">
+                                                                <input type="text" name="cas_un_no[]">
                                                             </td>
                                                             <td>
-                                                                <input type="text" name="cas_un_no[]" class="form-control form-control-sm">
+                                                                <input type="text" name="cas_un_no[]">
                                                             </td>
                                                         </tr>
                                                     </tbody>
@@ -1563,7 +1559,7 @@
                                             </div>
                                             <div class="mb-2">
                                                 2. เลขที่ใบอนุญาต&nbsp;&nbsp;
-                                                    <input type="text" class="form-control d-inline-block"style="width: 120px;; display:inline-block;" />
+                                                <input type="text" class="form-control d-inline-block" style="width: 120px;; display:inline-block;" />
                                             </div>
                                             <div class="mb-2">
                                                 3. มีการจัดส่งรายงานข้อมูลประจำปีและมีบุคลากรควบคุมการใช้สารกัมมันตรังสี
@@ -1615,10 +1611,10 @@
                                             <div class="mb-2">
                                                 1. รายการหม้อน้ำล่าสุดในระบบ
                                             </div>
-                                            <div class="table-responsive mb-3">
+                                            <div class="table table-responsive mb-3">
                                                 <table class="table table-bordered mb-0">
                                                     <thead>
-                                                        <tr style="background-color:#d9edf7;">
+                                                        <tr>
                                                             <th rowspan="2" class="text-center align-middle">หม้อน้ำหมายเลข<br>Boiler No</th>
                                                             <th rowspan="2" class="text-center align-middle">ชนิด<br>Type</th>
                                                             <th rowspan="2" class="text-center align-middle">อัตราการผลิตไอน้ำ<br>(Ton/Hr)</th>
@@ -1629,7 +1625,7 @@
                                                             <th colspan="6" class="text-center align-middle">ผู้ตรวจสอบ</th>
                                                             <th colspan="4" class="text-center align-middle">ผู้ควบคุมประจำ</th>
                                                         </tr>
-                                                        <tr style="background-color:#d9edf7;">
+                                                        <tr>
                                                             <th class="text-center">ชื่อ</th>
                                                             <th class="text-center">นามสกุล</th>
                                                             <th class="text-center">ทะเบียนวิศวกรรม</th>
@@ -1672,7 +1668,7 @@
                                             <div class="table-responsive mb-3">
                                                 <table class="table table-bordered mb-0">
                                                     <thead>
-                                                        <tr style="background-color:#d9edf7;">
+                                                        <tr>
                                                             <th rowspan="2" class="text-center align-middle">หม้อต้มฯ หมายเลข<br>No</th>
                                                             <th rowspan="2" class="text-center align-middle">ชนิดของเหลวที่เป็นสื่อนำความร้อน</th>
                                                             <th rowspan="2" class="text-center align-middle">วันที่ตรวจสอบ</th>
@@ -1680,7 +1676,7 @@
                                                             <th colspan="6" class="text-center align-middle">ผู้ตรวจสอบ</th>
                                                             <th colspan="4" class="text-center align-middle">ผู้ควบคุมประจำ</th>
                                                         </tr>
-                                                        <tr style="background-color:#d9edf7;">
+                                                        <tr>
                                                             <th class="text-center">ชื่อ</th>
                                                             <th class="text-center">นามสกุล</th>
                                                             <th class="text-center">ทะเบียนวิศวกรรม</th>
@@ -1974,7 +1970,7 @@
                                         </td>
                                         <td>
                                             <div class="mb-2">
-                                                การขึ้นทะเบียนคนงานควบคุมก๊าซ คนงานส่งก๊าซ และคนงานบรรจุก๊าซ  
+                                                การขึ้นทะเบียนคนงานควบคุมก๊าซ คนงานส่งก๊าซ และคนงานบรรจุก๊าซ
                                             </div>
                                             <div class="mb-1">
                                                 <label class="form-check form-check-inline">
@@ -1989,7 +1985,7 @@
                                                 </label>
                                             </div>
                                             <div class="mb-2">
-                                                 การตรวจสอบท่อบรรจุก๊าซและภาชนะบรรจุก๊าซ    
+                                                การตรวจสอบท่อบรรจุก๊าซและภาชนะบรรจุก๊าซ
                                             </div>
                                             <div class="mb-1">
                                                 <label class="form-check form-check-inline">
@@ -2042,10 +2038,10 @@
                                                 &nbsp;คัน
                                             </div>
                                             <div class="mb-2">
-                                                 ตรวจสอบแล้ว
-                                                 <input type="text" class="form-control d-inline-block"
+                                                ตรวจสอบแล้ว
+                                                <input type="text" class="form-control d-inline-block"
                                                     style="width:80px; display:inline-block;" />
-                                                &nbsp;คัน   
+                                                &nbsp;คัน
                                             </div>
                                         </td>
                                         <td>
@@ -2087,7 +2083,7 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered mb-0" id="tblChemHighRisk">
                                                     <thead>
-                                                        <tr style="background-color:#e3f5ff;">
+                                                        <tr>
                                                             <th style="width:5%; text-align:center;">เลือก</th>
                                                             <th style="width:15%; text-align:center;">รายชื่อสาร</th>
                                                             <th style="width:15%; text-align:center;">สถานะ</th>
@@ -2112,7 +2108,7 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <br/>
+                                            <br />
                                             <div class="custom-file" style="max-width: 80%;">
                                                 <input type="file" class="custom-file-input" id="customFile">
                                                 <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
@@ -2157,7 +2153,7 @@
                                             <div class="table-responsive">
                                                 <table class="table table-bordered mb-0" id="tblChemHighRisk">
                                                     <thead>
-                                                        <tr style="background-color:#e3f5ff;">
+                                                        <tr>
                                                             <th style="width:5%; text-align:center;">เลือก</th>
                                                             <th style="width:15%; text-align:center;">ชนิด</th>
 
@@ -2205,7 +2201,7 @@
                                         </td>
                                         <td>
                                             <div class="mb-2">
-                                                มีการติดตั้งอุปกรณ์ป้องกัน 
+                                                มีการติดตั้งอุปกรณ์ป้องกัน
                                             </div>
                                             <div class="mb-1">
                                                 <label class="form-check form-check-inline">
@@ -2249,7 +2245,7 @@
                                         </td>
                                         <td>
                                             <div class="mb-2">
-                                                มีการติดตั้งขอบหรือราวกั้นที่แข็งแรงสูงไม่น้อยกว่า 1 เมตร จากระดับพื้น   
+                                                มีการติดตั้งขอบหรือราวกั้นที่แข็งแรงสูงไม่น้อยกว่า 1 เมตร จากระดับพื้น
                                             </div>
                                             <div class="mb-1">
                                                 <label class="form-check form-check-inline">
@@ -2293,7 +2289,7 @@
                                         </td>
                                         <td>
                                             <div class="mb-2">
-                                                มีการตรวจสอบความปลอดภัยและคิดคั้งป้ายระบุน้ำหนักปลอดภัยสูงสุดที่ยกได้   
+                                                มีการตรวจสอบความปลอดภัยและคิดคั้งป้ายระบุน้ำหนักปลอดภัยสูงสุดที่ยกได้
                                             </div>
                                             <div class="mb-1">
                                                 <label class="form-check form-check-inline">
@@ -2308,7 +2304,7 @@
                                                 </label>
                                             </div>
                                             <div class="mb-2">
-                                                ถ้ามี ตรวจสอบเมื่อวันที่   
+                                                ถ้ามี ตรวจสอบเมื่อวันที่
                                             </div>
                                             <div class="custom-file" style="max-width: 80%;">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -2344,7 +2340,7 @@
                                         </td>
                                         <td>
                                             <div class="mb-2">
-                                                มีการติดตั้งเครื่องป้องกันขณะยกตลอดใต้สายลำเลียงและมีการติดตั้งเครื่องบังคับให้หยุดการทำงานได้     
+                                                มีการติดตั้งเครื่องป้องกันขณะยกตลอดใต้สายลำเลียงและมีการติดตั้งเครื่องบังคับให้หยุดการทำงานได้
                                             </div>
                                             <div class="mb-1">
                                                 <label class="form-check form-check-inline">
@@ -2388,7 +2384,7 @@
                                         </td>
                                         <td>
                                             <div class="mb-2">
-                                                ไฟล์ประกอบเรื่องความเสี่ยงด้านแสงสว่าง    
+                                                ไฟล์ประกอบเรื่องความเสี่ยงด้านแสงสว่าง
                                             </div>
                                             <div class="custom-file" style="max-width: 80%;">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -2424,7 +2420,7 @@
                                         </td>
                                         <td>
                                             <div class="mb-2">
-                                                ไฟล์ประกอบเรื่องความเสี่ยงด้านความร้อน    
+                                                ไฟล์ประกอบเรื่องความเสี่ยงด้านความร้อน
                                             </div>
                                             <div class="custom-file" style="max-width: 80%;">
                                                 <input type="file" class="custom-file-input" id="customFile">
@@ -2448,7 +2444,7 @@
                                         <td></td>
                                         <td>
                                             <div class="mb-2">
-                                                1. รายงานข้อมูลสารเคมีอันตรายที่มีการเก็บหรือการใช้ในการประกอบกิจการโรงงาน 
+                                                1. รายงานข้อมูลสารเคมีอันตรายที่มีการเก็บหรือการใช้ในการประกอบกิจการโรงงาน
                                                 ในปริมาณตั้งแต่ 1 ตันต่อปี ต่อหนึ่งสารเคมีอันตราย 1 ชนิดขึ้นไป ส่งให้กรมโรงงานอุตสาหกรรมปีละ 1 ครั้ง
                                             </div>
                                             <div class="mb-1">
@@ -2464,7 +2460,7 @@
                                                 </label>
                                             </div>
                                             <div class="mb-2">
-                                                2. บรรจุภัณฑ์สารเคมีอันตรายต้องติดฉลากที่เป็นภาษาไทย และมีสภาพแข็งแรง ทนทาน ไม่ชำรุด เสียหาย 
+                                                2. บรรจุภัณฑ์สารเคมีอันตรายต้องติดฉลากที่เป็นภาษาไทย และมีสภาพแข็งแรง ทนทาน ไม่ชำรุด เสียหาย
                                                 ปลอดภัยในการจัดเก็บ และใช้งาน สามารถขนย้ายได้ ด้วยความปลอดภัย รวมทั้งปิดบรรจุภัณฑ์สนิทมิดชิดเมื่อไม่ใช้งาน
                                             </div>
                                             <div class="mb-1">
@@ -2495,7 +2491,7 @@
                                                 </label>
                                             </div>
                                             <div class="mb-2">
-                                                4. มีป้ายห้าม ป้ายให้ปฏิบัติ ป้ายเตือน ป้ายข้อมูล หรือสัญลักษณ์ ในการทำงานเกี่ยวกับสารเคมีอันตราย 
+                                                4. มีป้ายห้าม ป้ายให้ปฏิบัติ ป้ายเตือน ป้ายข้อมูล หรือสัญลักษณ์ ในการทำงานเกี่ยวกับสารเคมีอันตราย
                                                 รวมถึงป้ายเครื่องหมายสัญลักษณ์ตามมาตรฐานสากลหรือข้อความ ที่เห็นได้ชัดเจนในบริเวณที่มีการปฏิบัติงาน การเก็บหรือการใช้สารเคมี
                                             </div>
                                             <div class="mb-1">
@@ -2538,7 +2534,7 @@
                                                 </label>
                                             </div>
                                             <div class="mb-2">
-                                                6. มีอุปกรณ์คุ้มครองความปลอดภัยส่วนบุคคลตามความเหมาะสมต่อการปฏิบัติงานที่เกี่ยวข้องกับสารเคมีอันตรายและมีมาตรการให้คนงานที่เกี่ยวข้องสวมใส่อุปกรณ์คุ้มครองความปลอดภัยส่วนบุคคลทุกครั้งเมื่อมีการปฏิบัติงาน 
+                                                6. มีอุปกรณ์คุ้มครองความปลอดภัยส่วนบุคคลตามความเหมาะสมต่อการปฏิบัติงานที่เกี่ยวข้องกับสารเคมีอันตรายและมีมาตรการให้คนงานที่เกี่ยวข้องสวมใส่อุปกรณ์คุ้มครองความปลอดภัยส่วนบุคคลทุกครั้งเมื่อมีการปฏิบัติงาน
                                                 รวมทั้งดูแลรักษาให้มีสภาพพร้อมใช้งานได้อย่างปลอดภัย
                                             </div>
                                             <div class="mb-1">
@@ -2569,7 +2565,7 @@
                                                 </label>
                                             </div>
                                             <div class="mb-2">
-                                                8. มีการตรวจสอบ ทดสอบและบำรุงรักษาอุปกรณ์และเครื่องจักรที่เกี่ยวข้องกับ สารเคมีอันตรายเพื่อป้องกันไม่ให้เกิดการรั่วไหลของสารเคมี 
+                                                8. มีการตรวจสอบ ทดสอบและบำรุงรักษาอุปกรณ์และเครื่องจักรที่เกี่ยวข้องกับ สารเคมีอันตรายเพื่อป้องกันไม่ให้เกิดการรั่วไหลของสารเคมี
                                                 ตามระยะเวลาที่กำหนดหรือเป็นไปตามแผนการบำรุงรักษาหรือตามคำแนะนำของผู้ผลิตอุปกรณ์และเครื่องจักร
                                             </div>
                                             <div class="mb-1">
@@ -2664,7 +2660,7 @@
                                                 </label>
                                             </div>
                                             <div class="mb-2">
-                                                3. มีการจัดวางเรียงภาชนะบรรจุสารเคมีอันตรายซึ่งความจุสูงสุดไม่เกิน 450 ลิตรมวลสุทธิสูงสุดไม่เกิน 400 กิโลกรัม 
+                                                3. มีการจัดวางเรียงภาชนะบรรจุสารเคมีอันตรายซึ่งความจุสูงสุดไม่เกิน 450 ลิตรมวลสุทธิสูงสุดไม่เกิน 400 กิโลกรัม
                                                 โดยต้องมีความสูงไม่เกิน 3 เมตร หรือหากวางบนแผ่นรองสินค้า (Pallet) ต้องวางเรียงกันไม่เกิน 3 ชั้น ยกเว้นกรณีที่จัดเก็บสารเคมีบนชั้นวางที่มีความมั่นคงแข็งแรงเพียงพอ
                                             </div>
                                             <div class="mb-1">
@@ -2755,7 +2751,7 @@
                                         </td>
                                         <td>
                                             <a href="https://epp-ent-dev.nidprotech.com/new_epp_entrepreneur_tester_67/application/view/self_decare/doc4selfdeclare/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%20%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%81%E0%B9%8D%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%8A%E0%B8%99%E0%B8%B4%E0%B8%94%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%82%E0%B8%99%E0%B8%B2%E0%B8%94%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%20%E0%B8%81%E0%B9%8D%E0%B8%B2%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%A7%E0%B8%B4%E0%B8%98%E0%B8%B5%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%A2%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%20%E0%B8%A1%E0%B8%A5%E0%B8%9E%E0%B8%B4%E0%B8%A9%202545(2558).pdf" target="_blank">
-                                                 ประกาศ การกําหนดชนิดและขนาดของโรงงาน กําหนดวิธีการควบคุมการปล่อยของเสีย มลพิษ 2545(2558)
+                                                ประกาศ การกําหนดชนิดและขนาดของโรงงาน กําหนดวิธีการควบคุมการปล่อยของเสีย มลพิษ 2545(2558)
                                             </a>
 
                                         </td>
@@ -2765,7 +2761,7 @@
                                         <td>
                                             1.1 ข้อมูลน้ำเสีย
                                             <a href="https://epp-ent-dev.nidprotech.com/new_epp_entrepreneur_tester_67/application/view/self_decare/doc4selfdeclare/%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%A1%E0%B8%B2%E0%B8%95%E0%B8%A3%E0%B8%90%E0%B8%B2%E0%B8%99%E0%B8%97%E0%B8%B1%E0%B9%88%E0%B8%A7%E0%B9%84%E0%B8%9B%E0%B9%83%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A22560.pdf" target="_blank">
-                                                 ประกาศกำหนดมาตรฐานทั่วไปในการระบายน้ำเสีย 2560
+                                                ประกาศกำหนดมาตรฐานทั่วไปในการระบายน้ำเสีย 2560
                                             </a>
                                             <div class="mb-1">
                                                 <label class="form-check form-check-inline">
@@ -2783,17 +2779,29 @@
                                         <td>
                                             <div class="table-responsive mt-3">
                                                 <table class="table table-bordered">
-                                                    <thead style="background-color:#e3f5ff;">
+                                                    <thead>
                                                         <tr>
                                                             <th>รายการน้ำเสียที่เกิดขึ้นที่ระบายออกจากโรงงาน</th>
                                                             <th>ปริมาณน้ำเสียที่เกิดขึ้นที่ระบายออกจากโรงงาน</th>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
-                                                        <tr><td>1. กระบวนการผลิต</td>      <td>10 ลบ.ม./วัน</td></tr>
-                                                        <tr><td>2. อุปโภค–บริโภค</td>      <td>10 ลบ.ม./วัน</td></tr>
-                                                        <tr><td>3. กิจกรรมสนับสนุนการผลิต</td><td>10 ลบ.ม./วัน</td></tr>
-                                                        <tr><td><b>รวมทั้งสิ้น</b></td>       <td><b>30 ลบ.ม./วัน</b></td></tr>
+                                                        <tr>
+                                                            <td>1. กระบวนการผลิต</td>
+                                                            <td>10 ลบ.ม./วัน</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>2. อุปโภค–บริโภค</td>
+                                                            <td>10 ลบ.ม./วัน</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td>3. กิจกรรมสนับสนุนการผลิต</td>
+                                                            <td>10 ลบ.ม./วัน</td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><b>รวมทั้งสิ้น</b></td>
+                                                            <td><b>30 ลบ.ม./วัน</b></td>
+                                                        </tr>
                                                     </tbody>
                                                 </table>
                                             </div>
@@ -2809,7 +2817,7 @@
                                         <td>
                                             <div class="table-responsive mt-3">
                                                 <table class="table table-bordered">
-                                                    <thead style="background-color:#e3f5ff;">
+                                                    <thead>
                                                         <tr>
                                                             <th rowspan="2" class="text-center align-middle">ลำดับที่</th>
                                                             <th rowspan="2" class="text-center align-middle">ระบบบำบัดน้ำเสียที่ใช้เป็นระบบ</th>
@@ -2847,7 +2855,7 @@
                                                 </table>
                                             </div>
                                             <div class="mt-2">
-                                                น้ำที่ระบายออกจากโรงงานเป็นไปตามมาตรฐานน้ำทิ้ง (แนบผลการวิเคราะห์ทุกจุดที่มีการระบายน้ำทิ้ง)  
+                                                น้ำที่ระบายออกจากโรงงานเป็นไปตามมาตรฐานน้ำทิ้ง (แนบผลการวิเคราะห์ทุกจุดที่มีการระบายน้ำทิ้ง)
                                                 <br>
                                                 <div class="custom-file mt-1" style="max-width:280px;">
                                                     <input type="file" class="custom-file-input" id="file_outflow">
@@ -2866,8 +2874,8 @@
                                         <td>
                                             <div class="mb-2">
                                                 1. จำนวนจุดระบายน้ำออกนอกโรงงาน&nbsp;&nbsp;
-                                                    <input type="text" class="form-control d-inline-block"style="width: 120px;; display:inline-block;" />
-                                                    &nbsp;จุด
+                                                <input type="text" class="form-control d-inline-block" style="width: 120px;; display:inline-block;" />
+                                                &nbsp;จุด
                                             </div>
                                             <div class="mb-2">
                                                 2. แผนผังจุดระบายน้ำออกนอกโรงงาน
@@ -2912,7 +2920,7 @@
                                         </td>
                                         <td>
                                             <a href="https://epp-ent-dev.nidprotech.com/new_epp_entrepreneur_tester_67/application/view/self_decare/doc4selfdeclare/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%AD%E0%B8%B8%E0%B8%95%E0%B8%AA%E0%B8%B2%E0%B8%AB%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B8%9B%E0%B8%A3%E0%B8%B4%E0%B8%A1%E0%B8%B2%E0%B8%93%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%AA%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%88%E0%B8%B7%E0%B8%AD%E0%B8%9B%E0%B8%99%E0%B9%83%E0%B8%99%E0%B8%AD%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%A3%E0%B8%B0%E0%B8%9A%E0%B8%B2%E0%B8%A2%E0%B8%AD%E0%B8%AD%E0%B8%81%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%20%E0%B8%9E.%E0%B8%A8.%202549.pdf" target="_blank">
-                                                 ประกาศกระทรวงอุตสาหกรรม เรื่อง กำหนดค่าปริมาณของสารเจือปนในอากาศที่ระบายออกจากโรงงาน พ.ศ. 2549
+                                                ประกาศกระทรวงอุตสาหกรรม เรื่อง กำหนดค่าปริมาณของสารเจือปนในอากาศที่ระบายออกจากโรงงาน พ.ศ. 2549
                                             </a>
                                         </td>
                                         <td></td>
@@ -2924,7 +2932,7 @@
                                         <td>
                                             <div class="table-responsive mt-3">
                                                 <table class="table table-bordered">
-                                                    <thead style="background-color:#e3f5ff;">
+                                                    <thead>
                                                         <tr>
                                                             <th rowspan="2" class="text-center align-middle">ลำดับที่</th>
                                                             <th rowspan="2" class="text-center align-middle">ระบบบำบัดมลพิษทางอากาศที่ใช้เป็นระบบ</th>
@@ -2972,7 +2980,7 @@
                                         <td>
                                             2.2 การติดเครื่องมือหรือเครื่องอุปกรณ์พิเศษเพื่อตรวจสอบคุณภาพอากาศจากปล่องแบบอัตโนมัติ
                                             <a href="https://epp-ent-dev.nidprotech.com/new_epp_entrepreneur_tester_67/application/view/self_decare/doc4selfdeclare/%E0%B8%82%E0%B9%89%E0%B8%AD%E0%B8%9A%E0%B8%B1%E0%B8%87%E0%B8%84%E0%B8%B1%E0%B8%9A%E0%B8%AF%20%E0%B8%95%E0%B8%B4%E0%B8%94%E0%B8%95%E0%B8%B1%E0%B9%89%E0%B8%87%E0%B9%80%E0%B8%84%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%A1%E0%B8%B7%E0%B8%AD%E0%B8%AF%20%E0%B8%95%E0%B8%A3%E0%B8%A7%E0%B8%88%E0%B8%AA%E0%B8%AD%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%AD%E0%B8%B2%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%9B%E0%B8%A5%E0%B9%88%E0%B8%AD%E0%B8%87%E0%B8%AD%E0%B8%B1%E0%B8%95%E0%B9%82%E0%B8%99%E0%B8%A1%E0%B8%B1%E0%B8%95%E0%B8%B42544.pdf" target="_blank">
-                                                 ประกาศ ข้อบังคับฯ ติดตั้งเครื่องมือฯตรวจสอบคุณภาพอากาศจากปล่องอัตโนมัติ พ.ศ.2544
+                                                ประกาศ ข้อบังคับฯ ติดตั้งเครื่องมือฯตรวจสอบคุณภาพอากาศจากปล่องอัตโนมัติ พ.ศ.2544
                                             </a>
                                         </td>
                                         <td>
@@ -3054,7 +3062,7 @@
                                                 </label>
                                             </div>
                                             <div class="mb-2">
-                                                2. มีการส่งรายงานปริมาณการใช้สารเคมี ลักษณะการผลิต และลักษณะการก่อให้เกิดมลพิษ 
+                                                2. มีการส่งรายงานปริมาณการใช้สารเคมี ลักษณะการผลิต และลักษณะการก่อให้เกิดมลพิษ
                                                 (กรณี โรงงานที่ไม่มีการใช้ ผลิต ครอบครอง หรือปล่อยสารเคมีหรือสารมลพิษตามบัญชีสารเคมีหรือสารมลพิษเป้าหมาย ให้แจ้งการไม่ถือครองสารเคมีและไม่ปลดปล่อยมลพิษ)&nbsp;&nbsp;
                                                 <br>
                                                 <label class="form-check form-check-inline">
@@ -3080,8 +3088,8 @@
                                         </td>
                                         <td>
                                             <a href="https://epp-ent-dev.nidprotech.com/new_epp_entrepreneur_tester_67/application/view/self_decare/doc4selfdeclare/%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%B2%E0%B8%A8%E0%B8%81%E0%B8%A3%E0%B8%B0%E0%B8%97%E0%B8%A3%E0%B8%A7%E0%B8%87%E0%B8%AD%E0%B8%B8%E0%B8%95%E0%B8%AA%E0%B8%B2%E0%B8%AB%E0%B8%81%E0%B8%A3%E0%B8%A3%E0%B8%A1%20%E0%B9%80%E0%B8%A3%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B8%87%20%E0%B8%81%E0%B8%B3%E0%B8%AB%E0%B8%99%E0%B8%94%E0%B8%84%E0%B9%88%E0%B8%B2%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%A3%E0%B8%9A%E0%B8%81%E0%B8%A7%E0%B8%99%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%A3%E0%B8%B0%E0%B8%94%E0%B8%B1%E0%B8%9A%E0%B9%80%E0%B8%AA%E0%B8%B5%E0%B8%A2%E0%B8%87%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%80%E0%B8%81%E0%B8%B4%E0%B8%94%E0%B8%88%E0%B8%B2%E0%B8%81%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%9B%E0%B8%A3%E0%B8%B0%E0%B8%81%E0%B8%AD%E0%B8%9A%E0%B8%81%E0%B8%B4%E0%B8%88%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%82%E0%B8%A3%E0%B8%87%E0%B8%87%E0%B8%B2%E0%B8%99%20%E0%B8%9E.%E0%B8%A8.%202548.pdf" target="_blank">
-                                                  ประกาศกระทรวงอุตสาหกรรม เรื่อง กำหนดค่าระดับเสียงการรบกวนและระดับเสียงที่เกิดจากการประกอบกิจการโรงงาน พ.ศ. 2548
-                                            </a>                                      
+                                                ประกาศกระทรวงอุตสาหกรรม เรื่อง กำหนดค่าระดับเสียงการรบกวนและระดับเสียงที่เกิดจากการประกอบกิจการโรงงาน พ.ศ. 2548
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -3146,7 +3154,7 @@
                                                 </label>
                                             </div>
                                             <div class="mb-2">
-                                                เอกสารผลการตรวจวัดค่าระดับเสียง&nbsp;&nbsp; 
+                                                เอกสารผลการตรวจวัดค่าระดับเสียง&nbsp;&nbsp;
                                             </div>
                                             <div class="custom-file mt-1" style="max-width:280px;">
                                                 <input type="file" class="custom-file-input" id="file_outflow">
@@ -3166,8 +3174,8 @@
                                         </td>
                                         <td>
                                             <a href="https://epp-ent-dev.nidprotech.com/new_epp_entrepreneur_tester_67/application/view/self_decare/doc4selfdeclare/%E0%B8%84%E0%B8%A7%E0%B8%9A%E0%B8%84%E0%B8%B8%E0%B8%A1%E0%B8%99%E0%B9%89%E0%B8%B3%E0%B9%83%E0%B8%95%E0%B9%89%E0%B8%94%E0%B8%B4%E0%B8%992559.pdf" target="_blank">
-                                                  ประกาศควบคุมการปนเปื้อนในดินและน้ำใต้ดินภายในบริเวณโรงงาน
-                                            </a>                                      
+                                                ประกาศควบคุมการปนเปื้อนในดินและน้ำใต้ดินภายในบริเวณโรงงาน
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -3303,14 +3311,14 @@
                                         <td>
                                             <div class="mb-2">
                                                 การจัดส่งรายงานผลการวิเคราะห์ปริมาณสารมลพิษ
-                                            </div>                                     
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td></td>                         
+                                        <td></td>
                                         <td>
                                             <table class="table table-bordered">
-                                                <thead style="background-color:#e3f5ff;">
+                                                <thead>
                                                     <tr>
                                                         <th>ประเภทการรายงานที่ต้องรายงาน</th>
                                                         <th class="text-center">ไม่เข้าข่าย</th>
@@ -3360,10 +3368,10 @@
                                         <td>
                                             <b>6. บุคลากรด้านสิ่งแวดล้อม</b>
                                         </td>
-                                        <td></td>                                 
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <td></td>                         
+                                        <td></td>
                                         <td>
                                             <div class="mb-2">
                                                 1. เข้าข่ายต้องมีบุคลากรด้านสิ่งแวดล้อมหรือไม่&nbsp;&nbsp;
@@ -3421,8 +3429,8 @@
                                         </td>
                                         <td>
                                             <a href="https://epp-ent-dev.nidprotech.com/new_epp_entrepreneur_tester_67/application/view/self_decare/doc4selfdeclare/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B8%81%E0%B8%B3%E0%B8%88%E0%B8%B1%E0%B8%94%E0%B8%AA%E0%B8%B4%E0%B9%88%E0%B8%87%E0%B8%9B%E0%B8%8F%E0%B8%B4%E0%B8%81%E0%B8%B9%E0%B8%A5%E0%B8%AB%E0%B8%A3%E0%B8%B7%E0%B8%AD%E0%B8%A7%E0%B8%B1%E0%B8%AA%E0%B8%94%E0%B8%B8%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B9%84%E0%B8%A1%E0%B9%88%E0%B9%83%E0%B8%8A%E0%B9%89%E0%B9%81%E0%B8%A5%E0%B9%89%E0%B8%A7%20%E0%B8%9E.%E0%B8%A8.%202548.pdf" target="_blank">
-                                                  ประกาศ การกำจัดสิ่งปฏิกูลหรือวัสดุที่ไม่ใช้แล้ว
-                                            </a>                                      
+                                                ประกาศ การกำจัดสิ่งปฏิกูลหรือวัสดุที่ไม่ใช้แล้ว
+                                            </a>
                                         </td>
                                     </tr>
                                     <tr>
@@ -3524,10 +3532,10 @@
                                         <td>
                                             <b>8. การรายงานข้อมูลการประกอบกิจการโรงงาน</b>
                                         </td>
-                                        <td></td>                                 
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <td></td>                         
+                                        <td></td>
                                         <td>
                                             <div class="mb-2">
                                                 1. มีการแจ้งข้อมูลการประกอบกิจการโรงงาน รง. 8 (รายเดือน)&nbsp;&nbsp;
@@ -3589,7 +3597,7 @@
                             <span>ส่งคำขอให้ กนอ.</span>
                         </button>
                     </div>
-                </div>                 
+                </div>
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->

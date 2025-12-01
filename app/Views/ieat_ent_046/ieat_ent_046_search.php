@@ -15,11 +15,11 @@
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
     <a href="ieat_ent_046" style="color: #6007b3ff; font-size: 18px;"><b>คำขอยกเลิกสิทธิประโยชน์ด้านภาษีอากร</b></a>
     <b>&nbsp;&nbsp;/&nbsp;&nbsp;</b>
-    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-306-00001-2568</b></a>
+    <a style="color: #000000ff; font-size: 18px;"><b>1-01-1-888-00001-2568</b></a>
 </div>
 <br />
 <div class="class_header_page_02">
-    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-306-00001-2568</b></font>
+    <font style="color: #000000ff; font-size: 25px;"><b>คำขอ 1-01-1-888-00001-2568</b></font>
     &nbsp;&nbsp;
     <font style="color: #000000ff; font-size: 18px;"><b>คำขอยกเลิกสิทธิประโยชน์ด้านภาษีอากร</b></font>
 </div>
@@ -256,11 +256,11 @@
                         </div>
                     </div>
 
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
+                        </div>
                         <div class="card p-4">
-                            <div class="card-header">
-                                <span class="font_header"><b>ข้อมูลบุคคลติดต่อประสานงาน ด้านสิทธิประโยชน์ด้านภาษีอากร</b></span>
-                            </div>
-                            <div class="card p-4">
                             <div class="row">
                                 <div class="col-6" align="left">
                                     <div class="table-responsive div_header p-4">
@@ -311,27 +311,34 @@
                             <table class="table">
                                 <tbody>
                                     <tr>
-                                        <td>เลือกแบบคำขอสิทธิประโยชน์ด้านภาษีอากร ที่ต้องการยกเลิก<td>
-                                        <table class="table table-lg">
-                                            <div class="row row-form">
-                                                <div class="col-lg-12">
+                                        <td>เลือกแบบคำขอสิทธิประโยชน์ด้านภาษีอากร ที่ต้องการยกเลิก
+                                        <td>
+                                            <table class="table table-lg">
+                                                <div class="row row-form">
                                                     <div class="col-lg-12">
-                                                        <select class="form-control">
-                                                            <option value="0">-- เลือก --</option>
-                                                        </select>
+                                                        <div class="col-lg-12">
+                                                            <select class="form-control">
+                                                                <option value="0">-- เลือก --</option>
+                                                            </select>
+                                                        </div>
                                                     </div>
-                                                </div>                           
-                                            </div>
-                                            <td>กรอกเลขที่คำขอ</td> 
-                                            <td>
-                                                <textarea rows="1" cols="40" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                            </td>
-                                            <td width="30%">
-                                                <div class="btn-box btn-Searchrequestnumber">
-                                                    ค้นหาเลขคำขอ
                                                 </div>
-                                            </td>      
-                                        </table> 
+                                                <td>กรอกเลขที่คำขอ</td>
+                                                <td>
+                                                    <div class="row row-form">
+                                                        <div class="col-lg-8">
+                                                            <input type="text" name="#" class="form form-control">
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <button type="button" class="ieat-btn ieat-btn--primary" id="btnCancel">
+                                                                <i class="fas fa-arrow-left"></i>
+                                                                <span>ค้นหาคำขอ</span>
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </table>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -407,7 +414,7 @@
                                                 <td align="center">
                                                     ไม่มี
                                                 </td>
-                                                    <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                                <?php echo $data_result_land['LANDAMOUNT_M']; ?>
                                                 </td>
                                             </tr>
                                             <tr>
@@ -456,11 +463,11 @@
                                                 <td align="center">
                                                     ไม่มี
                                                 </td>
-                                                    <?php echo $data_result_land['LANDAMOUNT_M']; ?>
+                                                <?php echo $data_result_land['LANDAMOUNT_M']; ?>
                                                 </td>
                                             </tr>
                                         </tbody>
-                                    </table>                      
+                                    </table>
                                 </div>
                             </div>
                         </div>
@@ -471,10 +478,10 @@
                         </div>
                         <div class="table-responsive div_header p-4">
                             <table class="table" id="datatable01">
-                                        <td>กรุณากรอกข้อมูลเหตุผลที่ขอยกเลิก</td>
-                                        <td>
-                                            <textarea rows="6" cols="100" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
-                                        </td>
+                                <td>กรุณากรอกข้อมูลเหตุผลที่ขอยกเลิก</td>
+                                <td>
+                                    <textarea rows="6" cols="100" name="other_detail" class="textarea-box"><?php echo $datashow['other_detail']; ?></textarea>
+                                </td>
                             </table>
                         </div>
                     </div>
@@ -493,75 +500,9 @@
                                 <tbody>
                                     <tr>
                                         <td class="table-detail-left radio-header" width="70%">
-                                            1. หนังสือรับรองการจดทะเบียนจัดตั้งนิติบุคคลและวัตถุประสงค์การจัดตั้ง และ สำเนาบัญชีรายชื่อผู้ถือหุ้น (บอจ.5/บริคณห์สนธิ) (ไม่เกิน 6 เดือน นับตั้งแต่วันที่ออกหนังสือ)
+                                            หนังสือ/จดหมายยืนยันการยกเลิกสิทธิประโยชน์ด้านภาษีอากร
                                         </td>
                                         <td width="30%">
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">2. หนังสือมอบอำนาจ ปิดอากรแสตมป์</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td colspan="2" style="padding-left:50px;">ประกอบด้วย</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.1 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง ผู้มอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.2 สำเนาทะเบียนบ้าน ผู้มอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.3 สำเนาบัตรประจำตัวประชาชน หรือ สำเนาหนังสือเดินทาง (Passport) ผู้รับมอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-lists" style="padding-left:70px;">2.4 สำเนาทะเบียนบ้าน ผู้รับมอบอำนาจ</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">3. หนังสืออนุญาตใช้ที่ดิน กนอ. 01/2 หรือ กนอ.03/6 ล่าสุด</td>
-                                        <td>
-                                            <div class="custom-file">
-                                                <input type="file" class="custom-file-input" id="customFile">
-                                                <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td class="table-detail-left radio-header">4. เอกสารอื่นๆที่เกี่ยวข้อง</td>
-                                        <td>
                                             <div class="custom-file">
                                                 <input type="file" class="custom-file-input" id="customFile">
                                                 <label class="custom-file-label" for="customFile">อัพโหลดไฟล์ข้อมูล</label>
@@ -596,7 +537,7 @@
                             <span>ส่งคำขอให้ กนอ.</span>
                         </button>
                     </div>
-                </div>                 
+                </div>
             </div>
             <!-- /.tab-content -->
         </div><!-- /.card-body -->

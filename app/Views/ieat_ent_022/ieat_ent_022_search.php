@@ -268,7 +268,7 @@
                                         <label class="control-label col-lg-12"><span class="font_header_detail"><b>เลขที่โฉนดอ้างอิง</b></span></label>
                                     </td>
                                     <td colspan="2">
-                                        <input type="text" id="title_deed_view" name="title_deed_view" class="validate[required] col-lg-12 form-control" value="<?php echo $datashow['title_deed_view']; ?>" />
+                                        99999
                                     </td>
                                 </tr>
                                 <tr>
@@ -276,68 +276,19 @@
                                         <label class="control-label col-lg-12"><span class="font_header_detail"><b>จังหวัด</b></span></label>
                                     </td>
                                     <td valign="top">
-                                        <span id="province">
-                                            <select class="form-control col-sm-12">
-                                                <option value="0">- เลือกจังหวัด -</option>
-                                            </select>
-                                        </span>
+                                        สมุทรปราการ
                                     </td>
                                     <td valign="bottom">
                                         <label class="control-label col-lg-12"><span class="font_header_detail"><b>อำเภอ/เขต</b></span></label>
                                     </td>
                                     <td valign="top">
-                                        <span id="amphur">
-                                            <select class="form-control col-sm-12">
-                                                <option value='0'>- เลือกอำเภอ -</option>
-                                            </select>
-                                        </span>
+                                        บางบ่อ
                                     </td>
                                     <td valign="bottom">
                                         <label class="control-label col-lg-12"><span class="font_header_detail"><b>ตำบล/แขวง</b></span></label>
                                     </td>
                                     <td valign="top">
-                                        <span id="district">
-                                            <select class="form-control col-sm-12">
-                                                <option value='0'>- เลือกตำบล -</option>
-                                            </select>
-                                        </span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td colspan='4'>
-                                        <font color='red'><b>กรณีที่ตั้งโรงงานตามโฉนดที่ดิน มีมากกว่า 1 จังหวัด หรือ 1 อำเภอ หรือ 1 ตำบล</b></font>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td valign="bottom" width='20%'>
-                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>จังหวัด</b></span></label>
-                                    </td>
-                                    <td valign="top">
-                                        <span id="province2">
-                                            <select class="form-control col-sm-12">
-                                                <option value="0">- เลือกจังหวัด -</option>
-                                            </select>
-                                        </span>
-                                    </td>
-                                    <td valign="bottom">
-                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>อำเภอ/เขต</b></span></label>
-                                    </td>
-                                    <td valign="top">
-                                        <span id="amphur2">
-                                            <select class="form-control col-sm-12">
-                                                <option value='0'>- เลือกอำเภอ -</option>
-                                            </select>
-                                        </span>
-                                    </td>
-                                    <td valign="bottom">
-                                        <label class="control-label col-lg-12"><span class="font_header_detail"><b>ตำบล/แขวง</b></span></label>
-                                    </td>
-                                    <td valign="top">
-                                        <span id="district2">
-                                            <select class="form-control col-sm-12">
-                                                <option value='0'>- เลือกตำบล -</option>
-                                            </select>
-                                        </span>
+                                        คลองสวน
                                     </td>
                                 </tr>
                             </table>
@@ -555,7 +506,7 @@
 
                             <div class="table-responsive div_header p-4">
                                 <div class="card-header">
-                                    <span class="font_header"><b>เอกสารประกอบการขออนุญาตก่อสร้าง ดัดแปลง รื้อถอน หรือเคลื่อนย้ายอาคาร (ข.1) ที่ต้องนำส่งให้เจ้าหน้าที่พิจารณา</b></span>
+                                    <span class="font_header"><b>เอกสารประกอบการขอหนังสือแจ้งการก่อสร้าง ดัดแปลง หรือ รื้อถอนอาคาร โดยไม่ยื่นคําขอรับใบอนญาตจากเจ้าพนักงานท้องถิ่น ตามมาตรา 39 ทวิ (ยผ.1) ที่ต้องนำส่งให้เจ้าหน้าที่พิจารณา</b></span>
                                 </div>
                                 <table width="100%" border="0" align="center" cellpadding="5" cellspacing="1" class="table table-bordered">
                                     <tr>
